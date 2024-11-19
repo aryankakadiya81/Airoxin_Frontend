@@ -268,7 +268,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$17.50"
 					],
 					"500 - 999 Pieces": [
@@ -472,7 +472,7 @@
 					"id": "05",
 					"Table_Name": "Minimum Order Quantity",
 					"Minimum Order Quantity": [
-						"200 Piece"
+						"250 Piece"
 					],
 					"Minimum Order Quantity For Size Customization": [
 						"300 Piece/Per Size"
@@ -490,7 +490,7 @@
 						"300 Piece"
 					],
 					"Minimum Order Quantity For Packaging Customization": [
-						"200 Piece"
+						"250 Piece"
 					],
 					"Minimum Order Quantity For Print/Design Customization": [
 						"100 Piece/Per Design"
@@ -517,7 +517,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$5.50"
 					],
 					"500 - 999 Pieces": [
@@ -756,7 +756,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$9.50"
 					],
 					"500 - 999 Pieces": [
@@ -1005,7 +1005,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$9.50"
 					],
 					"500 - 999 Pieces": [
@@ -1252,7 +1252,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$6.50"
 					],
 					"500 - 999 Pieces": [
@@ -1512,7 +1512,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$14.00"
 					],
 					"500 - 999 Pieces": [
@@ -1761,7 +1761,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$14.00"
 					],
 					"500 - 999 Pieces": [
@@ -1960,7 +1960,7 @@
 					"id": "05",
 					"Table_Name": "Minimum Order Quantity",
 					"Minimum Order Quantity": [
-						"200 Piece"
+						"250 Piece"
 					],
 					"Minimum Order Quantity For Size Customization": [
 						"300 Piece/Per Size"
@@ -2005,7 +2005,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$14.50"
 					],
 					"500 - 999 Pieces": [
@@ -2257,7 +2257,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$9.00"
 					],
 					"500 - 999 Pieces": [
@@ -2505,7 +2505,7 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
+					"250 - 499 Pieces": [
 						"$13.00"
 					],
 					"500 - 999 Pieces": [
@@ -2669,7 +2669,7 @@
 						"2 Piece"
 					],
 					"Sample Price": [
-						"$50.00/Piece"
+						"$55.00/Piece"
 					],
 					"Sample Time": [
 						"7 Working Days"
@@ -2753,14 +2753,14 @@
 				{
 					"id": "07",
 					"Table_Name": "Pricing",
-					"200 - 499 Pieces": [
-						"$9.90"
+					"250 - 499 Pieces": [
+						"$13.90"
 					],
 					"500 - 999 Pieces": [
-						"$9.00"
+						"$11.00"
 					],
 					">= 1000 Pieces": [
-						"$7.90"
+						"$10.00"
 					],
 					"Note": [
 						"Factory Reasonable Price.",
