@@ -223,7 +223,7 @@
 					"id": "05",
 					"Table_Name": "Minimum Order Quantity",
 					"Minimum Order Quantity": [
-						"200 Piece"
+						"250 Piece"
 					],
 					"Minimum Order Quantity For Size Customization": [
 						"300 Piece/Per Size"
@@ -241,7 +241,7 @@
 						"300 Piece"
 					],
 					"Minimum Order Quantity For Packaging Customization": [
-						"200 Piece"
+						"250 Piece"
 					],
 					"Minimum Order Quantity For Print/Design Customization": [
 						"100 Piece/Per Design"
