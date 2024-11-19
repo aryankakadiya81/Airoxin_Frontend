@@ -1,0 +1,27 @@
+[
+    {
+        "id": "00",
+        "name": "All",
+        "images": []
+    },
+    {
+        "id": "01",
+        "name": "CMAI 2020",
+        "images": [
+            "https://i.postimg.cc/MG4XcvkZ/1.jpg",
+            "https://i.postimg.cc/1tqXDsPG/2.jpg",
+            "https://i.postimg.cc/SKjJNcvt/3.jpg",
+            "https://i.postimg.cc/CxcRgcmq/4.jpg"
+        ]
+    },
+    {
+        "id": "02",
+        "name": "CMAI 2021",
+        "images": [
+            "https://i.postimg.cc/MG4XcvkZ/1.jpg",
+            "https://i.postimg.cc/CxcRgcmq/4.jpg",
+            "https://i.postimg.cc/1tqXDsPG/2.jpg",
+            "https://i.postimg.cc/SKjJNcvt/3.jpg"
+        ]
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "id":"01",
+        "Title":"Nature of Business",
+        "Subtitles":["Import-Export"],
+        "Image":"https://i.postimg.cc/76Xx9nLM/Import-Export.png",
+        "Icon":"bi bi-building",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"02",
+        "Title":"Additional Business",
+        "Subtitles":["Manufacturer","Wholesaler", "Trader", "Service Provider", "Import", "Export"],
+        "Image":"https://i.postimg.cc/VsGfbgpz/Wholeseller.png",
+        "Icon":"bi bi-building-fill-add",
+        "Background_Color":"#656D4A",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"04",
+        "Title":"Year of Establishment",
+        "Subtitles":["2022"],
+        "Image":"https://i.postimg.cc/bvxYDhc5/Establish.png",
+        "Icon":"fa-solid fa-flag-checkered",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"05",
+        "Title":"Leagel Status of Firm",
+        "Subtitles":["Sole Proprietorship"],
+        "Image":"https://i.postimg.cc/fLMzYrMR/Firm.png",
+        "Icon":"fa-solid fa-scale-balanced",
+        "Background_Color":"#656D4A",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"06",
+        "Title":"Payment Mode",
+        "Subtitles":["L/C","T/T","D/A","D/P","CAD"],
+        "Image":"https://i.postimg.cc/brBqcYkZ/Payment.png",
+        "Icon":"fa-solid fa-money-bill-1-wave",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"07",
+        "Title":"Primary Competitive Advantage",
+        "Subtitles":["Large Product Line","Large Production Capacity","Provide Customized Solutions"],
+        "Image":"https://i.postimg.cc/jj0dSj9N/Advantages.png",
+        "Icon":"bi bi-hand-thumbs-up-fill",
+        "Background_Color":"#656D4A",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"08",
+        "Title":"Customized Packaging",
+        "Subtitles":["OEM Service","Lable Customized","Etc..."],
+        "Image":"https://i.postimg.cc/MpjpwBsq/Packaging.png",
+        "Icon":"bi bi-box-fill",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"09",
+        "Title":"24/7 Support",
+        "Subtitles":["Yes"],
+        "Image":"https://i.postimg.cc/X7tnsJnh/Support.png",
+        "Icon":"fa-solid fa-circle-question",
+        "Background_Color":"#656D4A",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"10",
+        "Title":"Shipment Mode",
+        "Subtitles":["By Shipping Line","By Air Cargo","By Road"],
+        "Image":"https://i.postimg.cc/yYDVh9Cc/Transport.png",
+        "Icon":"fa-solid fa-truck",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"11",
+        "Title":"Sample Service",
+        "Subtitles":["Yes"],
+        "Image":"https://i.postimg.cc/Yq52R37Y/Yes.png",
+        "Icon":"fa-solid fa-circle-check",
+        "Background_Color":"#656D4A",
+        "Font_Color":"#ffffff"
+    },
+    {
+        "id":"03",
+        "Title":"Company CEO",
+        "Subtitles":["Mr. ARYAN KAKADIYA"],
+        "Image":"https://i.postimg.cc/3NR3c04M/Aryan-Suit-SVG.png",
+        "Icon":"bi bi-person-circle",
+        "Background_Color":"#936639",
+        "Font_Color":"#ffffff"
+    }
+]

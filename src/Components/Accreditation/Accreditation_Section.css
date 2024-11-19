@@ -1,0 +1,42 @@
+.imgimg{
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.imgimg:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+ .Popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+} 
+
+.Popup :is(img){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+} 
+
+.Popup span{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+    color: white;
+
+}

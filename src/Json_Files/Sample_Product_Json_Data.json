@@ -1,0 +1,267 @@
+{
+	"Category": [
+		{
+			"id": "01",
+			"Icon": "fa-solid fa-shirt",
+			"Category_Name": "Readymade Garments",
+			"Details": "Readymade garments, a testament to human ingenuity, weave together threads of comfort, style, and self-expression. Each piece, crafted with meticulous care and attention to detail, offers a canvas for personal expression. From the vibrant hues of summer dresses to the cozy warmth of winter sweaters, readymade garments empower us to embrace our individuality and curate wardrobes that reflect our unique personalities."
+		},
+		{
+			"id": "02",
+			"Icon": "fa-solid fa-child",
+			"Category_Name": "Under Garments",
+			"Details": "Undergarments, the hidden foundation of our attire, are often overlooked but play a vital role in our comfort and confidence. Crafted with intricate designs and luxurious fabrics, they offer a sense of intimacy and self-care. From the delicate lace of a bra to the softness of a pair of silk pajamas, undergarments provide a sanctuary of comfort and indulgence. They are more than just clothing; they are an expression of personal style and a testament to the artistry of design."
+		},
+		{
+			"id": "03",
+			"Icon": "fa-solid fa-bag-shopping",
+			"Category_Name": "Clothing Accessories",
+			"Details": "Clothing accessories, the finishing touches that elevate our outfits, are more than mere adornments. They are expressions of personal style, cultural heritage, and individuality. From the delicate shimmer of a necklace to the bold statement of a statement belt, accessories have the power to transform a simple ensemble into a work of art. They add depth, texture, and personality to our attire, allowing us to showcase our unique sense of fashion and self-expression."
+		}
+	],
+	"SubCategory": [
+		{
+			"id": "01",
+			"SubCategory_Name": "Tshirts",
+			"Category_Name": "Readymade Garments",
+			"Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+			"Details": "Elevate your wardrobe with our premium t-shirts, designed to offer comfort, style, and durability. Crafted from high-quality materials and featuring unique designs, our t-shirts are perfect for everyday wear or special occasions. Experience the difference of our exceptional quality and timeless appeal."
+		},
+		{
+			"id": "02",
+			"SubCategory_Name": "Shirts",
+			"Category_Name": "Readymade Garments",
+			"Image": "https://i.postimg.cc/Mp4PKCv4/Shirt.jpg",
+			"Details": "Elevate your wardrobe with our premium shirts, crafted from the finest fabrics and designed to offer both comfort and style. Our collection features a variety of cuts, colors, and patterns, ensuring there's something for everyone. Whether you're looking for a casual everyday shirt or a formal piece for special occasions, our shirts are the perfect choice."
+		},
+		{
+			"id": "03",
+			"SubCategory_Name": "Jeans",
+			"Category_Name": "Readymade Garments",
+			"Image": "https://i.postimg.cc/K8FcpWZ6/Jeans.jpg",
+			"Details": "Experience the difference of our exceptional jeans, designed to make a statement. With meticulous attention to detail and a commitment to quality, our jeans are crafted to exceed your expectations. From timeless classics to modern trends, our collection offers something for every taste and occasion."
+		},
+		{
+			"id": "04",
+			"SubCategory_Name": "Mens",
+			"Category_Name": "Under Garments",
+			"Image": "https://i.postimg.cc/0Q1V77G0/Mens.jpg",
+			"Details": "Experience the difference of our exceptional men's underwear, designed to provide superior comfort and support. With a focus on quality and innovation, our underwear is crafted to exceed your expectations. Discover the perfect fit for your active lifestyle and enjoy the confidence that comes with wearing premium undergarments."
+		},
+		{
+			"id": "05",
+			"SubCategory_Name": "Womens",
+			"Category_Name": "Under Garments",
+			"Image": "https://i.postimg.cc/SRBRKNbR/Womens.jpg",
+			"Details": "Crafted from the finest materials, our lingerie offers a perfect blend of style, comfort, and durability. Choose from a variety of styles, including bras, panties, and corsets, to find the perfect fit for your lifestyle."
+		},
+		{
+			"id": "06",
+			"SubCategory_Name": "Jewelry",
+			"Category_Name": "Clothing Accessories",
+			"Image": "https://i.postimg.cc/63QG7dBT/Nackless.jpg",
+			"Details": "Indulge in the beauty of our ethically sourced jewelry, crafted with care and respect for the environment. Our collection features a variety of styles, from classic to contemporary, ensuring there's something to suit every taste. Discover the joy of owning unique and sustainable jewelry that reflects your values."
+		},
+		{
+			"id": "07",
+			"SubCategory_Name": "Bags and Purses",
+			"Category_Name": "Clothing Accessories",
+			"Image": "https://i.postimg.cc/rpjrFhXv/Bag.jpg",
+			"Details": "Experience the luxury of our handcrafted bags, created using the finest materials and traditional techniques. Each bag is a testament to our commitment to quality and artistry. Explore our diverse collection and find the perfect piece to complement your lifestyle and personal style."
+		},
+		{
+			"id": "08",
+			"SubCategory_Name": "Belts",
+			"Category_Name": "Clothing Accessories",
+			"Image": "https://i.postimg.cc/PxFv1Pqy/Belt.jpg",
+			"Details": "Experience the luxury of our handcrafted belts, made from the finest materials and finished with meticulous care. Each belt is a testament to our commitment to quality and craftsmanship. Explore our diverse collection and find the perfect belt to complete your outfit and express your personal style."
+		}
+	],
+	"Products": [
+		{
+			"id": "01",
+			"SubCategory_Name": "Shirts",
+			"Category_Name": "Readymade Garments",
+			"Product_Name": "Light Plaid Premium Cotton Shirt",
+			"Thumbnail_Image": "https://i.postimg.cc/TYsPPwbM/1.jpg",
+			"Images": [
+				"https://i.postimg.cc/TYsPPwbM/1.jpg",
+				"https://i.postimg.cc/fR0RSN73/2.jpg",
+				"https://i.postimg.cc/MpRzKYxV/IMG-20241001-WA0015.jpg",
+				"https://i.postimg.cc/4d8gFLbk/IMG-20241001-WA0011.jpg",
+				"https://i.postimg.cc/L4C9yXNY/IMG-20241001-WA0025.jpg",
+				"https://i.postimg.cc/bvcNQBLm/IMG-20241001-WA0021.jpg",
+				"https://i.postimg.cc/bvxYL9Bp/IMG-20241001-WA0022.jpg",
+				"https://i.postimg.cc/vmsb16Hj/IMG-20241001-WA0016.jpg",
+				"https://i.postimg.cc/RhDvqsNQ/IMG-20241001-WA0023.jpg",
+				"https://i.postimg.cc/RhFMS5VZ/IMG-20241001-WA0034.jpg",
+				"https://i.postimg.cc/HsrpFghS/IMG-20241001-WA0032.jpg"
+			],
+			"Tables": [
+				{
+					"id": "01",
+					"Table_Name": "General Information",
+					"Product Name": [
+						"Light Plaid Premium Cotton Shirt"
+					],
+					"Packaging": [
+						"Pastic Bag"
+					],
+					"Selling Units": [
+						"Single Item"
+					],
+					"Single Package Size": [
+						"Approx 25cm * 20cm * 5cm"
+					],
+					"Single Gross Weight": [
+						"0.500 kg"
+					],
+					"Material": [
+						"100% Cotton"
+					]
+				},
+				{
+					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Men"
+					],
+					"Age Group": [
+						"Adult"
+					],
+					"Pattern Type": [
+						"Plaid (Chex)"
+					],
+					"Shirts Type": [
+						"DRESS SHIRTS"
+					],
+					"Color": [
+						"White",
+						"Light Yellow",
+						"Light Green",
+						"Ice White"
+					],
+					"Sleeve": [
+						"Full"
+					],
+					"Collar": [
+						"Turn-down Collar"
+					],
+					"Style": [
+						"Formal"
+					],
+					"Size": [
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"500 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Maximum Order Quantity For Sample": [
+						"4 Piece"
+					],
+					"Sample Price": [
+						"$30.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"100 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"800 Piece"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"800 Piece"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"500 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"300 Piece"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Pricing",
+					"100 - 499 Pieces": [
+						"$13.50"
+					],
+					"500 - 999 Pieces": [
+						"$8.50"
+					],
+					">= 1000 Pieces": [
+						"$7.50"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
+				}
+			]
+		}
+	]
+}
