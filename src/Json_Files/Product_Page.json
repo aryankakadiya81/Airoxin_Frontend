@@ -8,34 +8,7 @@
 		}
 	],
 	"SubCategory": [
-		{
-			"id": "01",
-			"SubCategory_Name": "T-Shirts",
-			"Category_Name": "Readymade Garments",
-			"Image": "https://i.postimg.cc/9FzX0Ggv/8.png",
-			"Details": "Elevate your wardrobe with our premium t-shirts, designed to offer comfort, style, and durability. Crafted from high-quality materials and featuring unique designs, our t-shirts are perfect for everyday wear or special occasions. Experience the difference of our exceptional quality and timeless appeal."
-		},
-		{
-			"id": "02",
-			"SubCategory_Name": "Hoodies & Sweatshirt",
-			"Category_Name": "Readymade Garments",
-			"Image": "https://i.postimg.cc/nr0rXB09/2-f.png",
-			"Details": "Experience the difference of our exceptional jeans, designed to make a statement. With meticulous attention to detail and a commitment to quality, our jeans are crafted to exceed your expectations. From timeless classics to modern trends, our collection offers something for every taste and occasion."
-		},
-		{
-			"id": "03",
-			"SubCategory_Name": "Shorts",
-			"Category_Name": "Readymade Garments",
-			"Image": "https://i.postimg.cc/YqD8Y3h7/3.png",
-			"Details": "Experience the difference of our exceptional jeans, designed to make a statement. With meticulous attention to detail and a commitment to quality, our jeans are crafted to exceed your expectations. From timeless classics to modern trends, our collection offers something for every taste and occasion."
-		},
-		{
-			"id": "04",
-			"SubCategory_Name": "Co-Ord Set",
-			"Category_Name": "Readymade Garments",
-			"Image": "https://i.postimg.cc/Kc388qST/18.png",
-			"Details": "Experience the difference of our exceptional jeans, designed to make a statement. With meticulous attention to detail and a commitment to quality, our jeans are crafted to exceed your expectations. From timeless classics to modern trends, our collection offers something for every taste and occasion."
-		}
+		
 	],
 	"Products": [
 		
