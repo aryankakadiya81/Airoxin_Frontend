@@ -206,7 +206,7 @@ const ContactUs_Section = () => {
                                                     Country <span className="text-danger">*</span>
                                                 </label>
                                                 <div className="input-group">
-                                                    {/* <span className="input-group-text"><i class="py-1 bi bi-globe-americas"></i></span> */}
+                                                    {/* <span className="input-group-text"><i className="py-1 bi bi-globe-americas"></i></span> */}
 
 
                                                     <div className="dropdown">
@@ -218,7 +218,7 @@ const ContactUs_Section = () => {
                                                             {
                                                                 CountryJson.map((el) => {
                                                                     return (
-                                                                        <button class="fs-6 dropdown-item" onClick={() => {
+                                                                        <button className="fs-6 dropdown-item" onClick={() => {
                                                                             return(setCountry(el.name),setCountryCode(el.code),setCountryDiel(el.dial_code))}}>{el.name}  {`(${el.dial_code})`}</button>
 
                                                                     )
@@ -240,7 +240,7 @@ const ContactUs_Section = () => {
                                                 </label>
                                                 <div className="input-group">
                                                     <span className="input-group-text">
-                                                        <i class="bi bi-telephone-fill"></i>
+                                                        <i className="bi bi-telephone-fill"></i>
                                                     </span>
                                                     <input
                                                         type="tel"
@@ -263,7 +263,7 @@ const ContactUs_Section = () => {
                                                 </label>
                                                 <div className="input-group">
                                                     <span className="input-group-text">
-                                                        <i class="bi bi-envelope-fill"></i>
+                                                        <i className="bi bi-envelope-fill"></i>
 
                                                     </span>
                                                     <input
