@@ -29,7 +29,8 @@ const SubCategory_Section = () => {
           </div>
           <div className="row g-4">
             {
-              ProductData.Products.filter((el) => { return el.SubCategory_Name == SubCategory && el.Category_Name == Category }).map((el) => {
+             ProductData.SubCategory.length != 0 
+             ? ProductData.Products.filter((el) => { return el.SubCategory_Name == SubCategory && el.Category_Name == Category }).map((el) => {
                 return (
                   <>
                     <div key={el.id} className="col-12 col-sm-6 col-xl-4 animate__animated animate__fadeInUp">
@@ -54,6 +55,7 @@ const SubCategory_Section = () => {
                   </>
                 )
               })
+              : <div className='text-center fs-1'> Comming Soon...</div>
               
             }
 

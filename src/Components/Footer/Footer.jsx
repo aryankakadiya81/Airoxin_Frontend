@@ -1,4 +1,4 @@
-import Pdf from '../../Assets/Pdf/Airoxin International Brochure.pdf'
+import Pdf from '../../Assets/Pdf/Brochuer.zip'
 import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf'
 import React, { useState, useContext } from 'react';
 import { Global } from '../../App.jsx';
@@ -49,7 +49,7 @@ const Footer = () => {
         const pdfUrl = Pdf;
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "AIROXIN Brochure.pdf"; // specify the filename
+        link.download = "AIROXIN Brochure.zip"; // specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
