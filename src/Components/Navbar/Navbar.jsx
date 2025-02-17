@@ -11,17 +11,19 @@ const Navbar = () => {
 
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
+
+    let Style={}
     return (
         <>
             <div className='sticky-top '>
                 <nav className="navbar bg-primary navbar-expand-lg navbar-light static-top" style={{ backgroundColor: "#79adff" }}>
                     <div className="container">
-                        <Link onClick={()=>{window.scrollTo(0, 0)}} className="navbar-brand" to="/">
+                        <Link onClick={() => { window.scrollTo(0, 0) }} className="navbar-brand" to="/">
                             <img
                                 src={Logo}
                                 draggable="false"
                                 alt="Airoxin"
-                                height={45}
+                                height={57}
                             />
                         </Link>
                         <button
@@ -34,12 +36,12 @@ const Navbar = () => {
                             aria-label="Toggle navigation"
                         >
                             <span className="fa-solid fa-bars fs-3 text-white border-0" />
-                            
+
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item fs-5 active">
-                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" to="/Home">
+                                    <Link onClick={() => { window.scrollTo(0, 0) }} className="nav-link" to="/Home">
                                         HOME
                                     </Link>
                                 </li>
@@ -58,13 +60,19 @@ const Navbar = () => {
                                         aria-labelledby="navbarDropdown"
                                     >
                                         <li>
-                                            <Link onClick={()=>{window.scrollTo(0, 0)}} className="dropdown-item" to="/About">
+                                            <Link onClick={() => { window.scrollTo(0, 0) }} className="dropdown-item" to="/About">
                                                 ABOUT US
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link onClick={()=>{window.scrollTo(0, 0)}} className="dropdown-item" to="/Accreditation">
+                                            <Link onClick={() => { window.scrollTo(0, 0) }} className="dropdown-item" to="/Accreditation">
                                                 ACCREDITATION
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link onClick={() => { window.scrollTo(0, 0) }} className="dropdown-item" 
+                                            to='/Tradefair'>
+                                                TRADE FAIR PARTICIPATION
                                             </Link>
                                         </li>
                                     </ul>
@@ -100,17 +108,13 @@ const Navbar = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item fs-5">
-                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" aria-current="page" to="/Team">
+                                    <Link onClick={() => { window.scrollTo(0, 0) }} className="nav-link" aria-current="page" to="/Team">
                                         OUR TEAM
                                     </Link>
                                 </li>
+
                                 <li className="nav-item fs-5">
-                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link" aria-current="page" to='/Tradefair'>
-                                        TRADE FAIR PARTICIPATION
-                                    </Link>
-                                </li>
-                                <li className="nav-item fs-5">
-                                    <Link onClick={()=>{window.scrollTo(0, 0)}} className="nav-link " aria-current="page" to="/Contact">
+                                    <Link onClick={() => { window.scrollTo(0, 0) }} className="nav-link " aria-current="page" to="/Contact">
                                         CONTACT US
                                     </Link>
                                 </li>

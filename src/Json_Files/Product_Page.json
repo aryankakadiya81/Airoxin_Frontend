@@ -2,9 +2,21 @@
 	"Category": [
 		{
 			"id": "01",
-			"Icon": "fa-solid fa-shirt",
+			"Icon": "fa-solid fa-shirt p-3",
 			"Category_Name": "Readymade Garments",
-			"Details": "Readymade garments, a testament to human ingenuity, weave together threads of comfort, style, and self-expression. Each piece, crafted with meticulous care and attention to detail, offers a canvas for personal expression. From the vibrant hues of summer dresses to the cozy warmth of winter sweaters, readymade garments empower us to embrace our individuality and curate wardrobes that reflect our unique personalities."
+			"Details": "Readymade Garments Are Manufactured In Standard Sizes And Are Sold In A Finished Condition, Ready To Be Worn. They Are Mass-produced In Factories Using Machines, Which Makes Them More Affordable Than Custom-made Clothing. Readymade Garments Come In A Wide Variety Of Styles, Colors, And Sizes, Making Them A Popular Choice For People Of All Ages."
+		},
+		{
+			"id": "02",
+			"Icon": "fa-solid fa-house p-3",
+			"Category_Name": "Home Decor",
+			"Details": "Home Decor Is A Way To Express Your Heritage And Beliefs Through The Items You Choose To Decorate Your Home. It Can Be A Way To Connect With Your Roots And To Share Your Culture With Others. There Are Many Different Ways To Incorporate Cultural Decor Into Your Home, From Using Traditional Colors And Patterns To Displaying Meaningful Objects And Artwork."
+		},
+		{
+			"id": "03",
+			"Icon": "fa-solid fa-industry p-3",
+			"Category_Name": "Granules",
+			"Details": "Granules Are Small, Bead-like Pieces That Serve As The Raw Material For Manufacturing A Wide Range Of Products.  These Granules Are Typically Made From Various Types Of Materials. They Are Fed Into Molding Machines Where They Are Melted And Shaped Into Their Final Form, Ultimately Becoming Anything From Bottles And Containers To Toys And Automotive Parts."
 		}
 	],
 	"SubCategory": [

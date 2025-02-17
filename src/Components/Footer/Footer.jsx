@@ -75,9 +75,10 @@ const Footer = () => {
                     <section className="py-4 py-md-5 py-xl-8 border-top">
                         <div className="container overflow-hidden">
                             <div className="row gy-4 gy-lg-0">
-                                <div className="col-12 col-md-6 col-lg-4">
+                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
                                     <div className="widget">
-                                        <h4 className="widget-title mb-4 text-white fs-2">Get in Touch</h4>
+                                        <h4 className="widget-title mb-2 text-white fs-2">Get in Touch</h4>
+                                        <hr className='text-white w-50 h-100 mb-2'></hr>
                                         <div className="row mb-3 text-white">
                                             <i className="col-2 fa-solid fa-location-dot fs-3 align-content-center"></i>
                                             <p className='col-10 fs-5'>
@@ -125,9 +126,10 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
                                     <div className="widget">
-                                        <h4 className="widget-title mb-4 fs-2 text-white">Quick Links</h4>
+                                        <h4 className="widget-title mb-2 fs-2 text-white">Quick Links</h4>
+                                        <hr className='text-white w-50 h-100 mb-2'></hr>
                                         <ul className="list-unstyled">
                                             <li className="mb-2">
                                                 <Link to="/Home" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
@@ -145,6 +147,11 @@ const Footer = () => {
                                                 </Link>
                                             </li>
                                             <li className="mb-2">
+                                                <Link onClick={() => { window.scrollTo(0, 0) }} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
+                                                    <i className="bi bi-dash"></i> Trade Fair Participation
+                                                </Link>
+                                            </li>
+                                            <li className="mb-2">
                                                 <Link to="/Team" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
                                                     <i className="bi bi-dash"></i> Our Team
                                                 </Link>
@@ -154,17 +161,14 @@ const Footer = () => {
                                                     <i className="bi bi-dash"></i> Contact Us
                                                 </Link>
                                             </li>
-                                            <li className="mb-0">
-                                                <Link onClick={() => { window.scrollTo(0, 0) }} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Trade Fair Participation
-                                                </Link>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
                                     <div className="widget">
-                                        <h4 className="widget-title mb-4 fs-2 text-white">Products</h4>
+                                        <h4 className="widget-title mb-2 fs-2 text-white">Products</h4>
+                                        <hr className='text-white w-50 h-100 mb-2'></hr>
                                         <ul className="list-unstyled">
 
                                             {Product_Data.Category.map((el) => {
@@ -184,10 +188,11 @@ const Footer = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-12 col-lg-4">
+                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
 
                                     <div className="widget">
-                                        <h4 className="widget-title mb-4 fs-2 text-white">Our Newsletter</h4>
+                                        <h4 className="widget-title mb-2 fs-2 text-white">Our Newsletter</h4>
+                                        <hr className='text-white w-50 h-100 mb-3'></hr>
 
                                         <form onSubmit={HSubmit}>
                                             <div className="row gy-4">
@@ -274,8 +279,7 @@ const Footer = () => {
                                                 src={Logo}
                                                 draggable="false"
                                                 alt="BootstrapBrain Logo"
-                                                width={175}
-                                                height={57}
+                                                width={225}
                                             />
                                         </Link>
                                     </div>
