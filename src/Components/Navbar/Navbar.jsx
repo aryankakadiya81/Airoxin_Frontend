@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <>
             <div className='sticky-top '>
-                <nav className="navbar bg-primary navbar-expand-lg navbar-light static-top" style={{ backgroundColor: "#79adff" }}>
+                <nav className="navbar bg-primary navbar-expand-lg navbar-light static-top">
                     <div className="container">
                         <Link onClick={() => { window.scrollTo(0, 0) }} className="navbar-brand" to="/">
                             <img
