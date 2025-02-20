@@ -4,6 +4,8 @@ import { Global } from '../../App';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import Product_Data from '../../Json_Files/Product_Page.json';
+import Design from '../../Json_Files/Design Json/Colour_Json.json';
+
 
 const Navbar = () => {
 

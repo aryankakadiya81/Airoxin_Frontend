@@ -4,6 +4,7 @@ import './Service_Section.css';
 import Product_Data from '../../Json_Files/Product_Page.json';
 // import Bbg from '../../Assets/Wallpaper/Earth_Wall.jpg';
 import { Link } from 'react-router-dom';
+import Design from '../../Json_Files/Design Json/Colour_Json.json';
 
 
 const Service_Section = () => {
