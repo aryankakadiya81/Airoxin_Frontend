@@ -1,8 +1,9 @@
-import Pdf from '../../Assets/Pdf/Brochuer.zip'
-import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf'
+import { Global } from '../../App';
 import React, { useState, useContext } from 'react';
-import { Global } from '../../App.jsx';
-import Logo from '../../Assets/Logo/HORIZONTAL/HORIZONTAL.svg';
+import { motion } from 'framer-motion';
+import Pdf from '../../Assets/Pdf/Brochuer.zip';
+import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf';
+import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
 import { Link } from 'react-router-dom';
 import Contact_Json from '../../Json_Files/Company_Contact_Page.json';
 import Product_Data from '../../Json_Files/Product_Page.json';
@@ -11,327 +12,266 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 const Footer = () => {
+    const { Categorys, SubCategorys } = useContext(Global);
+    const [Category, setCategory] = Categorys;
+    const [SubCategory, setSubCategory] = SubCategorys;
 
+    const [Email, setEmail] = useState("");
+    const [Data, setData] = useState(Contact_Json);
 
-    let { Categorys, SubCategorys } = useContext(Global);
-
-    let [Category, setCategory] = Categorys;
-    let [SubCategory, setSubCategory] = SubCategorys;
-
-    let [Email, setEmail] = useState("");
-
+    // Handle Subscribe Form Submission
     const HSubmit = async (e) => {
-
-        // console.log(Name, Email, Phone, Subject, Msg);
         e.preventDefault();
         toast.success("Subscribe Successfully");
         try {
-            const response = await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
-                Name: "From Subscribe",
-                Email: Email,
-                Country: "From Subscribe",
-                CountryCode: "From Subscribe",
-                CountryDielCode: "From Subscribe",
-                Mobile: "From Subscribe",
-                Sub: "From Subscribe",
-                Txt: "From Subscribe"
+            await axios.post("https://airoxin-backend.onrender.com/v1/Mail", {
+                name: "From Subscribe",
+                email: Email,
+                country: "From Subscribe",
+                countrycode: "From Subscribe",
+                phone: "From Subscribe",
+                subject: "From Subscribe",
+                message: "From Subscribe"
             });
             setEmail("");
-
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
+    };
 
-
-    }
-
-    let DownloadBroucher = () => {
-        const pdfUrl = Pdf;
+    // Download Brochure
+    const DownloadBroucher = () => {
         const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "AIROXIN Brochure.zip"; // specify the filename
+        link.href = Pdf;
+        link.download = "AIROXIN Brochure.zip";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
-    let DownloadCard = () => {
-        const pdfUrl = Pdf2;
+    // Download Card
+    const DownloadCard = () => {
         const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "AIROXIN CARD.pdf"; // specify the filename
+        link.href = Pdf2;
+        link.download = "AIROXIN CARD.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
 
-
-
-    let [Data, setData] = useState(Contact_Json);
     return (
-        <>
-            <div>
-                <footer className="footer" style={{ backgroundColor: "#343a3e" }}>
-                    <section className="py-4 py-md-5 py-xl-8 border-top">
-                        <div className="container overflow-hidden">
-                            <div className="row gy-4 gy-lg-0">
-                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div className="widget">
-                                        <h4 className="widget-title mb-2 text-white fs-2">Get in Touch</h4>
-                                        <hr className='text-white w-50 h-100 mb-2'></hr>
-                                        <div className="row mb-3 text-white">
-                                            <i className="col-2 fa-solid fa-location-dot fs-3 align-content-center"></i>
-                                            <p className='col-10 fs-5'>
-                                                {Data.add}
-                                            </p>
-                                        </div>
-                                        <div className="row mb-3 text-white">
-                                            <i className="col-2 fa-solid fa-phone fs-3 align-content-center"></i>
+        <footer className="bg-[#1E2B33] text-white py-16 px-4 relative overflow-hidden">
+            {/* Overlay for Unique Effect */}
+            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-20"></div>
 
-
-                                            {Data.phone.map((ele) => {
-                                                return (
-                                                    <>
-                                                        <a
-                                                            className="col-10 link-info text-decoration-none text-white fs-5"
-                                                            href={`tel:${ele}`}
-                                                        >
-                                                            {ele}
-                                                        </a>
-                                                        <br></br>
-                                                    </>
-                                                )
-                                            })}
-
-                                        </div>
-                                        <div className="row mb-3 text-white">
-                                            <i className="col-2 bi bi-envelope-fill fs-3 align-content-center"></i>
-                                            <div className='col-10'>
-
-                                                {Data.email.map((ele) => {
-                                                    return (
-                                                        <>
-                                                            <a
-                                                                className=" link-info text-decoration-none text-white fs-5"
-                                                                href={`mailto:${ele}`}
-                                                            >
-                                                                {ele}
-                                                            </a><br></br>
-                                                        </>
-                                                    )
-                                                })}
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div className="widget">
-                                        <h4 className="widget-title mb-2 fs-2 text-white">Quick Links</h4>
-                                        <hr className='text-white w-50 h-100 mb-2'></hr>
-                                        <ul className="list-unstyled">
-                                            <li className="mb-2">
-                                                <Link to="/Home" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Home
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link to="/About" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> About Us
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link to="/Accreditation" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Accreditation
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link onClick={() => { window.scrollTo(0, 0) }} to="/Tradefair" className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Trade Fair Participation
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link to="/Team" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Our Team
-                                                </Link>
-                                            </li>
-                                            <li className="mb-2">
-                                                <Link to="/Contact" onClick={() => { window.scrollTo(0, 0) }} className="link-info text-decoration-none fs-5 text-white">
-                                                    <i className="bi bi-dash"></i> Contact Us
-                                                </Link>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-                                    <div className="widget">
-                                        <h4 className="widget-title mb-2 fs-2 text-white">Products</h4>
-                                        <hr className='text-white w-50 h-100 mb-2'></hr>
-                                        <ul className="list-unstyled">
-
-                                            {Product_Data.Category.map((el) => {
-                                                return (
-                                                    <li key={el.id} className="mb-2">
-                                                        <Link onClick={() => {
-                                                            window.scrollTo(0, 0); setCategory(el.Category_Name);
-                                                        }} to="/Category" className="link-info text-decoration-none fs-5 text-white">
-                                                            <i className="bi bi-dash"></i> {el.Category_Name}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })}
-
-
-
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
-
-                                    <div className="widget">
-                                        <h4 className="widget-title mb-2 fs-2 text-white">Our Newsletter</h4>
-                                        <hr className='text-white w-50 h-100 mb-3'></hr>
-
-                                        <form onSubmit={HSubmit}>
-                                            <div className="row gy-4">
-                                                <div className="col-12">
-                                                    <div className="input-group">
-                                                        <span
-                                                            className="input-group-text"
-                                                            id="email-newsletter-addon"
-                                                        >
-                                                            <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width={16}
-                                                                height={16}
-                                                                fill="currentColor"
-                                                                className="bi bi-envelope"
-                                                                viewBox="0 0 16 16"
-                                                            >
-                                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                                            </svg>
-                                                        </span>
-                                                        <input
-                                                            type="email"
-                                                            className="form-control"
-                                                            id="email-newsletter"
-                                                            placeholder="Email Address"
-                                                            aria-label="email-newsletter"
-                                                            aria-describedby="email-newsletter-addon"
-                                                            value={Email}
-                                                            onChange={(e) => setEmail(e.target.value)}
-                                                            required
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="col-12">
-                                                    <div className="d-grid">
-                                                        <button className="btn btn-primary" type="submit" disabled={!Email}>
-                                                            Subscribe
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-
-
-                                                {/* <div className="col-12">
-                                                    <div className="d-grid">
-                                                    <button className="btn btn-primary" type="submit">
-                                                    Download Card
-                                                    </button>
-                                                    </div>
-                                                    </div> */}
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className='row g-4 mt-1'>
-                                        <div className="col-6">
-                                            <div className="d-grid">
-                                                <button className="btn btn-primary" onClick={DownloadBroucher}>
-                                                    Download<br />Broucher
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-6">
-                                            <div className="d-grid">
-                                                <button className="btn btn-primary" onClick={DownloadCard}>
-                                                    Download<br />Card
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            {/* Container */}
+            <div className="container mx-auto max-w-7xl relative z-10">
+                {/* Grid Layout */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {/* Section 1: Get in Touch */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="space-y-4"
+                    >
+                        {/* Logo */}
+                        <div className="flex justify-center sm:justify-start mb-4">
+                            <img
+                                src={Logo}
+                                alt="Company Logo"
+                                className="w-32 h-auto sm:w-40"
+                            />
                         </div>
-                    </section>
 
-                    <div className="py-2 py-md-5 py-xl-3 border-top border-light-subtle" style={{ backgroundColor: "#e8f2ff" }}>
-                        <div className="container overflow-hidden">
-                            <div className="row gy-4 gy-md-0 align-items-sm-center">
-                                <div className="col-xs-12 col-sm-6 col-md-4 order-0 order-md-0">
-                                    <div className="footer-logo-wrapper text-center text-sm-start">
-                                        <Link onClick={() => { window.scrollTo(0, 0) }} to="/Home">
-                                            <img
-                                                src={Logo}
-                                                draggable="false"
-                                                alt="BootstrapBrain Logo"
-                                                width={225}
-                                            />
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="col-xs-12 col-md-4 order-2 order-md-1">
+                        <h3 className="text-xl font-bold text-blue-500">Get in Touch</h3>
+                        <p className="text-gray-400">{Data.add}</p>
+                        <ul className="space-y-2">
+                            {Data.phone.map((ele, index) => (
+                                <li key={index} className="text-gray-400 flex items-center">
+                                    <i className="fa-solid fa-phone text-blue-500 mr-2"></i>
+                                    {ele}
+                                </li>
+                            ))}
+                            {Data.email.map((ele, index) => (
+                                <li key={index} className="text-gray-400 flex items-center">
+                                    <i className="fa-solid fa-envelope text-blue-500 mr-2"></i>
+                                    {ele}
+                                </li>
+                            ))}
+                        </ul>
 
-                                    <div className="credits text-dark text-center mt-0 fs-5">
-                                        © 2024. {Data.name}
-                                    </div>
-                                    <div className="footer-copyright-wrapper text-center fs-5">
-                                        All Rights Reserved.
-                                    </div>
-                                </div>
-                                <div className="col-xs-12 col-sm-6 col-md-4 order-1 order-md-2">
-                                    <div className="social-media-wrapper">
-                                        <ul className="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
-                                            <li className="me-3">
-                                                <a target="_blank" href={Data.facebook} className="link-dark link-opacity-75-hover">
-                                                    <i className="fs-2 fa-brands fa-square-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li className="me-3">
-                                                <a target="_blank" href={Data.twitter} className="link-dark link-opacity-75-hover">
-                                                    <i className="fs-2 fa-brands fa-square-x-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li className="me-3">
-                                                <a target="_blank" href={Data.linkedin} className="link-dark link-opacity-75-hover">
-                                                    <i className="fs-2 fa-brands fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            <li className="me-3">
-                                                <a target="_blank" href={Data.whatsapp} className="link-dark link-opacity-75-hover">
-                                                    <i className="fs-2 fa-brands fa-square-whatsapp"></i>
-                                                </a>
-                                            </li>
-                                            <li className="">
-                                                <a target="_blank" href={Data.instagram} className="link-dark link-opacity-75-hover">
-                                                    <i className="fs-2 fa-brands fa-square-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        {/* Social Media Buttons */}
+                        <div className="flex space-x-4 mt-4">
+                            <a
+                                href={Data.facebook}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                            >
+                                <i className="fa-brands fa-facebook text-2xl sm:text-3xl"></i>
+                            </a>
+                            <a
+                                href={Data.instagram}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-pink-500 hover:text-pink-400 transition-colors duration-300"
+                            >
+                                <i className="fa-brands fa-instagram text-2xl sm:text-3xl"></i>
+                            </a>
+                            <a
+                                href={Data.twitter}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                            >
+                                <i className="fa-brands fa-x-twitter text-2xl sm:text-3xl"></i>
+                            </a>
+                            <a
+                                href={Data.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-500 transition-colors duration-300"
+                            >
+                                <i className="fa-brands fa-linkedin text-2xl sm:text-3xl"></i>
+                            </a>
+                            <a
+                                href={Data.whatsapp}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-green-500 hover:text-green-400 transition-colors duration-300"
+                            >
+                                <i className="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+                            </a>
                         </div>
-                    </div>
-                </footer>
+                    </motion.div>
 
+                    {/* Section 2: Quick Links */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="space-y-4"
+                    >
+                        <h3 className="text-xl font-bold text-blue-500">Quick Links</h3>
+                        <ul className="space-y-2">
+                            <li>
+                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/About" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/Accreditation" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    Accreditation
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/Tradefair" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    Trade Fair Participation
+                                </Link>
+                            </li>
+                            {/* <li>
+                                <Link to="/Team" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    Our Team
+                                </Link>
+                            </li> */}
+                            <li>
+                                <Link to="/Contact" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                    Contact Us
+                                </Link>
+                            </li>
+                        </ul>
+                    </motion.div>
+
+                    {/* Section 3: Products */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        viewport={{ once: true }}
+                        className="space-y-4"
+                    >
+                        <h3 className="text-xl font-bold text-blue-500">Products</h3>
+                        <ul className="space-y-2">
+                            {Product_Data.Category.map((el, index) => (
+                                <li key={index}>
+                                    <Link
+                                        to="/Category"
+                                        onClick={() => {
+                                            window.scrollTo(0, 0);
+                                            setCategory(el.Category_Name);
+                                        }}
+                                        className="text-gray-400 hover:text-blue-500 transition-colors"
+                                    >
+                                        {el.Category_Name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.div>
+
+                    {/* Section 4: Newsletter */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.6 }}
+                        viewport={{ once: true }}
+                        className="space-y-4"
+                    >
+                        <h3 className="text-xl font-bold text-blue-500">Our Newsletter</h3>
+                        <form onSubmit={HSubmit} className="space-y-4">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                value={Email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
+                            />
+                            <button
+                                type="submit"
+                                className="w-full py-3 text-lg font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md transition-colors duration-300"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                        <div className="space-y-2">
+                            <button
+                                onClick={DownloadBroucher}
+                                className="w-full py-3 text-lg font-bold text-white bg-green-500 hover:bg-green-600 rounded-md transition-colors duration-300"
+                            >
+                                Download Brochure
+                            </button>
+                            <button
+                                onClick={DownloadCard}
+                                className="w-full py-3 text-lg font-bold text-white bg-purple-500 hover:bg-purple-600 rounded-md transition-colors duration-300"
+                            >
+                                Download Card
+                            </button>
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* Copyright Section */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    viewport={{ once: true }}
+                    className="mt-12 text-center text-gray-400"
+                >
+                    © 2024. {Data.name}. All Rights Reserved.
+                </motion.div>
             </div>
-        </>
-    )
-}
+        </footer>
+    );
+};
 
-export default Footer
+export default Footer;

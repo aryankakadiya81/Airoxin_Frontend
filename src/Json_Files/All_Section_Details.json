@@ -1,68 +1,69 @@
 {
     "Shlogan_Section": {
-        "id":"01",
+        "id": "01",
         "Section_Name_in_File": "Hero_Section",
-        "Shlogen_black_line": "Global Connections, ",
-        "Shlogen_blue_line": "Local Solutions",
-        "Paragraph": "Airoxin International Is A Manufacturing Company Specializing In The Manufacturing & Import-Export Of Goods Worldwide. With A Strong Commitment To Quality, Reliability, And Innovation, We Bridge The Gap Between International Markets, Providing Efficient And Effective Solutions For Our Clients. From Raw Materials To Finished Goods, Airoxin International Is Your Trusted Partner In Global Business. Airoxin International Is India Based Company. We Provide Best Solutions And Effective Price To Our Clients. Our Client Is Our First Priority."
+        "Shlogen_black_line": "From Our Factory, To Your Future",
+        "Paragraph": "We Manufacture. We Export. We Import. We're A Collective Of Makers, Bridging Global Markets With Direct Manufacturing Expertise. Experience The Difference Of A Trade Partner Built On Production."
     },
     "About_Company_Section": {
-        "id":"01",
+        "id": "01",
         "Section_Name_in_File": "About_Company",
-        "Paragraph": "Airoxin International Is A Leading Global Company Dedicated To Connecting Businesses Worldwide. With A Strong Foundation Built On Trust, Reliability, And Innovation, We Specialize In The Manufacturing & Import-export Of Goods Worldwide, Offering Comprehensive Solutions To Meet The Diverse Needs Of Our Clients."
+        "Paragraph": "We're Manufacturers First, Trade Experts Second. Our Direct Production Experience Allows Us To Control Every Step Of Import And Export, Ensuring Quality And Efficiency From Factory To Market.This Direct Oversight Translates To Unwavering Reliability And Consistent Delivery, Building The Foundation Of Trust Our Clients Depend On."
     },
-    "Consign_Section":{
-        "id":"01",
+    "Consign_Section": {
+        "id": "01",
         "Section_Name_in_File": "Consign_Section",
-        "Paragraph":"Our Client is Our First Priority. We are Providing Best Quality. ",
-        "Box":[
+        "Paragraph": "We're Passionate About Your Success, That's Why We Deliver Premium Quality, Precise Quantities, And The Best Possible Rates. ",
+        "Box": [
             {
-                "id":"01",
-                "Icon":"fa-solid fa-boxes-stacked",
-                "Count":"100+",
-                "Name":"Consignment Done"
+                "id": "01",
+                "Icon": "fa-solid fa-boxes-stacked",
+                "Count": "100+",
+                "Name": "Consignment Done"
             },
             {
-                "id":"02",
-                "Icon":"fa-solid fa-thumbs-up",
-                "Count":"10+",
-                "Name":"Happy Buyers"
+                "id": "02",
+                "Icon": "fa-solid fa-thumbs-up",
+                "Count": "10+",
+                "Name": "Happy Buyers"
             },
             {
-                "id":"03",
-                "Icon":"fa-solid fa-trophy",
-                "Count":"02+",
-                "Name":"Years Experience"
+                "id": "03",
+                "Icon": "fa-solid fa-trophy",
+                "Count": "02+",
+                "Name": "Years Experience"
             },
             {
-                "id":"04",
-                "Icon":"fa-solid fa-shirt",
-                "Count":"120+",
-                "Name":"Products"
+                "id": "04",
+                "Icon": "fa-solid fa-shirt",
+                "Count": "120+",
+                "Name": "Products"
             }
         ]
     },
-    "Work_Section":{
-        "id":"01",
+    "Work_Section": {
+        "id": "01",
         "Section_Name_in_File": "Work_Section",
-        "Work_Shlogen":"Your Global Partner, Delivering Quality, Reliability and Innovation.",
-        "Paragraph":"Airoxin International Is A Premier Global Company Specializing In The Seamless Import-export & Manufacturing Of Goods Worldwide. With A Strong Focus On Quality, Reliability, And Innovation, We Serve As A Trusted Bridge Between International Markets, Connecting Businesses. We Are Presenting Indian Market To The World."
+        "Work_Shlogen": "Large-Scale Manufacturing, Streamlined Trade",
+        "Paragraph": "We Manufacture On A Large Scale, Managing Huge Production And A Vast Supply Chain. Our Import And Export Operations Are Streamlined To Ensure Efficient Global Distribution, Delivering Quality And Quantity You Can Rely On."
     },
-    "Why_Choose_Us_Section":{
-        "id":"01",
+    "Why_Choose_Us_Section": {
+        "id": "01",
         "Section_Name_in_File": "Why_Choose_Us",
-        "Title":"Why Choose Us ?",
+        "Title": "Why Choose Us ?",
         "Features": [
-            "Sourcing and Procurement",
-            "Quality Control",
-            "Logistics and Shipping",
-            "Market Research",
-            "After-Sales Support",
-            "We Help in Export-Import Documentation",
-            "Competitive Pricing",
-            "Strong Customer Support",
-            "24/7 Support",
-            "Complete Client Satisfaction"
+            "Manufacturers: Quality From Start To Finish.",
+            "Direct Production: Faster, Cheaper Global Trade.",
+            "Best Rates: We Manufacture, You Save.",
+            "Integrity: Reliable, Transparent Partnerships.",
+            "Vast Supply: Consistent, Timely Delivery.",
+            "Full Service: Easy Import/export Logistics.",
+            "Expert Quality: We Know Production Best.",
+            "Custom Solutions: Your Needs, Our Focus.",
+            "Efficient Delivery: Fast, Safe Global Reach.",
+            "Huge Capacity: We Meet Any Scale.",
+            "Seamless Process: From Source To Doorstep.",
+            "Makers' Commitment: Your Global Success."
         ]
     }
 }

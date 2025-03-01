@@ -1,58 +1,76 @@
 import React, { useState } from 'react';
-import './Accreditation_Section.css'
+import { motion } from 'framer-motion';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css'; // Import default styles for the lightbox
 import Cdata from '../../Json_Files/Cirtificate.json';
-// import Bbg from 'https://i.postimg.cc/DwD4m3s9/Acc.jpg';
-
 
 const Accreditation_Section = () => {
+    const [selectedImageIndex, setSelectedImageIndex] = useState(-1);
 
-    let Bbg = "https://i.postimg.cc/DwD4m3s9/Acc.jpg"
-    let [Data, setData] = useState(Cdata);
-    let [Img, setImg] = useState(null);
+    // Extract image URLs and names for the lightbox
+    const images = Cdata.map((el) => ({
+        src: el.img,
+        alt: el.Name,
+        title: el.Name,
+        description: el.Name, // Optional: Add descriptions if needed
+    }));
 
     return (
-        <>
-            <div>
+        <section className=" text-white py-16">
+            {/* Container */}
+            <div className="container mx-auto px-4">
+                {/* Section Title */}
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="text-center mb-12"
+                >
+                    <h1 className="text-4xl sm:text-5xl font-bold">Our Accreditations</h1>
+                </motion.div>
 
-                <div className="container overflow-hidden my-5 py-2 pb-5">
-                    <div className="row g-4">
+                {/* Grid Layout */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {Cdata.map((el, index) => (
+                        <motion.div
+                            key={el.id}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.2 }}
+                            className="relative group rounded-lg overflow-hidden shadow-lg bg-gray-800 hover:bg-gray-700 transition-colors cursor-pointer"
+                            onClick={() => setSelectedImageIndex(index)}
+                        >
+                            {/* Image */}
+                            <img
+                                src={el.img}
+                                alt={el.Name}
+                                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
 
-                        {
-                            Data.map((el) => {
-                                return (
-
-                                    <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 border-0 animate__animated animate__fadeInUp' key={el.id}>
-                                        <div className='imgdiv shadow-sm p-3 border-3 rounded-4' style={{ backgroundImage: `url(${Bbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                                            <div className='overflow-hidden' onClick={()=>{setImg(el.img)}}>
-
-                                                <img src={el.img}
-                                                    className="imgimg card-img-top rounded-4"
-                                                    draggable="false"
-                                                    alt={el.Name}
-                                                    height={320} />
-
-                                            </div>
-
-                                            <div className="text-center my-2 fs-4 fw-bold">
-                                                <div>{el.Name}</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-
-                        <div className='Popup bg-black' style={{display: Img ? 'block' : 'none'}}>
-                            <span onClick={()=>{setImg(null)}}>&times;</span>
-                            <img draggable="false" src={Img}/>
-                        </div>
-
-                    </div>
+                            {/* Title */}
+                            <div className="p-4 text-center">
+                                <h3 className="text-lg font-bold">{el.Name}</h3>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
 
+                {/* Image Viewer Popup */}
+                {selectedImageIndex !== -1 && (
+                    <Lightbox
+                        slides={images}
+                        open={selectedImageIndex !== -1}
+                        index={selectedImageIndex}
+                        close={() => setSelectedImageIndex(-1)}
+                        animation={{ fade: 300, swipe: 500 }} // Smooth animations
+                        controller={{ closeOnBackdropClick: true }} // Close on clicking outside
+                    />
+                )}
             </div>
-        </>
-    )
-}
+        </section>
+    );
+};
 
-export default Accreditation_Section
+export default Accreditation_Section;

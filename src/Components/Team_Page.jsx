@@ -12,7 +12,7 @@ const Team_Page = () => {
             <Helmet_Jsx Title={Data.Team.Title}></Helmet_Jsx>
             <Navbar></Navbar>
             {/* <Heading Title="Backbone of Our Company" Font="50px"></Heading> */}
-            <Team_Section></Team_Section>
+            {/* <Team_Section></Team_Section> */}
             <Footer></Footer>
         </div>
     )

@@ -1,69 +1,185 @@
+// import React, { useContext } from 'react';
+// import { Global } from '../../App';
+// import ProductData from '../../Json_Files/Product_Page.json';
+// import { Link, useNavigate } from 'react-router-dom';
+
+
+// const Category_Section = () => {
+
+//     let Navigate = useNavigate();
+
+//     let { Categorys, SubCategorys } = useContext(Global);
+//     let [Category, setCategory] = Categorys;
+//     let [SubCategory, setSubCategory] = SubCategorys;
+
+//     return (
+//         <>
+//             <div className='bg-white'>
+
+
+//                 <div className="container my-5">
+//                     <div className='container d-flex justify-content-start my-5'>
+//                         <button onClick={() => { Navigate("/Home"); window.scrollTo(0, 0); }} className='fs-4 px-4 btn btn-primary'><i className="bi bi-arrow-left"></i> Back</button>
+//                     </div>
+//                     <div className="row g-4">
+//                         {
+//                            ProductData.SubCategory.length != 0 
+//                            ? ProductData.SubCategory.filter((el) => { return el.Category_Name == Category }).map((el) => {
+//                                 return (
+//                                     <>
+//                                         <div key={el.id} className="col-12 col-sm-6 col-xl-4 animate__animated animate__fadeInUp">
+//                                             <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
+//                                                 <div className="card-body text-center">
+//                                                     <div>
+//                                                         <img src={el.Image}
+//                                                         draggable="false" alt="Product image" className="card-img-top" height={400}/>
+//                                                     </div>
+
+//                                                     <h4 className="my-4 fw-bold">
+//                                                         {el.SubCategory_Name}
+//                                                     </h4>
+
+
+//                                                     <Link onClick={() => { setSubCategory(el.SubCategory_Name); window.scrollTo(0, 0); }} to="/Category/Subcategory" type="button" className="btn btn-primary mb-3">
+//                                                         LEARN MORE
+//                                                     </Link>
+
+//                                                 </div>
+//                                             </div>
+//                                         </div>
+//                                     </>
+//                                 )
+//                             }) 
+//                             : <div className='text-center fs-1'> Comming Soon...</div>
+//                         }
+
+//                     </div>
+//                 </div>
+
+
+
+
+//                 <div>
+//                 </div>
+//             </div>
+//         </>
+//     )
+// }
+
+// export default Category_Section
+
+
 import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
 import { Global } from '../../App';
 import ProductData from '../../Json_Files/Product_Page.json';
 import { Link, useNavigate } from 'react-router-dom';
 
-
 const Category_Section = () => {
-
-    let Navigate = useNavigate();
-
-    let { Categorys, SubCategorys } = useContext(Global);
-    let [Category, setCategory] = Categorys;
-    let [SubCategory, setSubCategory] = SubCategorys;
+    const navigate = useNavigate();
+    const { Categorys, SubCategorys } = useContext(Global);
+    const [Category, setCategory] = Categorys;
+    const [SubCategory, setSubCategory] = SubCategorys;
 
     return (
-        <>
-            <div className='bg-white'>
+        <section className="text-white py-16">
+            {/* Container */}
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="text-4xl sm:text-5xl font-bold text-center mb-12 text-blue-500"
+                >
+                    {Category}
+                </motion.h1>
+            <div className="container mx-auto px-4">
+                {/* Back Button */}
+                {/* Heading */}
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="mb-8"
+                >
+                    <button
+                        onClick={() => {
+                            navigate("/Home");
+                            window.scrollTo(0, 0);
+                        }}
+                        className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                    >
+                        <i className="bi bi-arrow-left"></i>
+                        Back
+                    </button>
+                </motion.div>
 
 
-                <div className="container my-5">
-                    <div className='container d-flex justify-content-start my-5'>
-                        <button onClick={() => { Navigate("/Home"); window.scrollTo(0, 0); }} className='fs-4 px-4 btn btn-primary'><i className="bi bi-arrow-left"></i> Back</button>
-                    </div>
-                    <div className="row g-4">
-                        {
-                           ProductData.SubCategory.length != 0 
-                           ? ProductData.SubCategory.filter((el) => { return el.Category_Name == Category }).map((el) => {
-                                return (
-                                    <>
-                                        <div key={el.id} className="col-12 col-sm-6 col-xl-4 animate__animated animate__fadeInUp">
-                                            <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
-                                                <div className="card-body text-center">
-                                                    <div>
-                                                        <img src={el.Image}
-                                                        draggable="false" alt="Product image" className="card-img-top" height={400}/>
-                                                    </div>
+                {/* Grid Layout */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 lg:mx-10 gap-8">
+                    {ProductData.SubCategory.length !== 0 ? (
+                        ProductData.SubCategory
+                            .filter((el) => el.Category_Name === Category)
+                            .map((el) => (
+                                <Link to="/Category/Subcategory"
+                                    onClick={() => {
+                                        setSubCategory(el.SubCategory_Name);
+                                        window.scrollTo(0, 0);
+                                    }}>
+                                    <motion.div
+                                        key={el.id}
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.6 }}
+                                        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors"
+                                    >
+                                        {/* Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
-                                                    <h4 className="my-4 fw-bold">
-                                                        {el.SubCategory_Name}
-                                                    </h4>
-
-
-                                                    <Link onClick={() => { setSubCategory(el.SubCategory_Name); window.scrollTo(0, 0); }} to="/Category/Subcategory" type="button" className="btn btn-primary mb-3">
-                                                        LEARN MORE
-                                                    </Link>
-
-                                                </div>
-                                            </div>
+                                        {/* Image */}
+                                        <div className="overflow-hidden">
+                                            <img
+                                                src={el.Image}
+                                                draggable="false"
+                                                alt={el.SubCategory_Name}
+                                                className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110"
+                                            />
                                         </div>
-                                    </>
-                                )
-                            }) 
-                            : <div className='text-center fs-1'> Comming Soon...</div>
-                        }
 
-                    </div>
-                </div>
-
-
-
-
-                <div>
+                                        {/* Content */}
+                                        <div className="p-6 text-center relative z-10">
+                                            <h4 className="text-xl font-bold mb-4 text-white">{el.SubCategory_Name}</h4>
+                                            <Link
+                                                to="/Category/Subcategory"
+                                                onClick={() => {
+                                                    setSubCategory(el.SubCategory_Name);
+                                                    window.scrollTo(0, 0);
+                                                }}
+                                                className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors inline-block"
+                                            >
+                                                LEARN MORE
+                                            </Link>
+                                        </div>
+                                    </motion.div>
+                                </Link>
+                            ))
+                    ) : (
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="col-span-full text-center text-3xl font-bold text-gray-500 h-screen"
+                        >
+                            Coming Soon...
+                        </motion.div>
+                    )}
                 </div>
             </div>
-        </>
-    )
-}
+        </section>
+    );
+};
 
-export default Category_Section
+export default Category_Section;

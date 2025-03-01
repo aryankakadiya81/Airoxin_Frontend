@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { motion } from "framer-motion";
 import React, { useState, createContext } from 'react';
 import Logo from './Assets/Logo/ICON/icon.jpg'
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
@@ -21,6 +22,19 @@ import { ToastContainer } from 'react-toastify';
 
 
 
+
+
+
+// 'dark-charcoal': '#212A31',
+//         'gray-blue': '#2E3944',
+//         'deep-navy': '#124E66',
+//         'rich-navy': '#1A3D58',
+//         'darker-navy': '#15334C',
+//         'charcoal-gray': '#25333C',
+//         'mid-charcoal': '#1E2B33',
+//         'very-dark-navy': '#0F2639',
+//         'soft-gray-blue': '#2C373F',
+//         'balanced-blue-gray': '#192F40',
 
 // import Img from './Components/Img';
 
@@ -65,7 +79,8 @@ const App = () => {
     // }
     return (
         <>
-            <div className='user-select-none'>
+            <div className="select-none scroll-smooth">
+                <motion.Cursor/>
                 <ToastContainer></ToastContainer>
                 <SpeedInsights />
                 <Global.Provider value={{ Categorys: [Category, setCategory], SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product] }} >

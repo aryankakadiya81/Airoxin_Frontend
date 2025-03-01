@@ -1,42 +1,68 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Error_Page = () => {
     const scrollToTop = () => {
-        window.scrollTo(0, 0)
-    }
+        window.scrollTo(0, 0);
+    };
+
     return (
-        <>
-            <div>
-                <section className="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="text-center">
-                                    <h2 className="d-flex justify-content-center align-items-center gap-2 mb-4">
-                                        <span className="display-1 fw-bold">4</span>
-                                        <i className="bi bi-exclamation-circle-fill text-danger display-4" />
-                                        <span className="display-1 fw-bold bsb-flip-h">4</span>
-                                    </h2>
-                                    <h3 className="h2 mb-2 fs-1">Oops! You're lost.</h3>
-                                    <p className="mb-5 fs-3">The page you are looking for was not found.</p>
-                                    <Link
-                                        className="btn bsb-btn-5xl btn-primary rounded-pill px-5 fs-2 m-0"
-                                        to="/"
-                                        role="button"
-                                        onClick={scrollToTop}
-                                    >
-                                        Back to Home
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <section className="bg-gray-900 text-white min-h-screen flex items-center justify-center py-16">
+            {/* Container */}
+            <div className="container mx-auto px-4">
+                {/* Content */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-center"
+                >
+                    {/* Error Code */}
+                    <h2 className="flex justify-center items-center gap-2 mb-8 text-7xl sm:text-8xl font-bold text-blue-500">
+                        <span>4</span>
+                        <i className="bi bi-exclamation-circle-fill text-red-500 text-6xl sm:text-7xl"></i>
+                        <span className="flip-horizontal">4</span>
+                    </h2>
 
+                    {/* Heading */}
+                    <motion.h3
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="text-4xl sm:text-5xl font-bold mb-4 text-gray-100"
+                    >
+                        Oops! You're lost.
+                    </motion.h3>
+
+                    {/* Description */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="text-lg sm:text-xl text-gray-400 mb-8"
+                    >
+                        The page you are looking for was not found.
+                    </motion.p>
+
+                    {/* Back to Home Button */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
+                    >
+                        <Link
+                            to="/"
+                            onClick={scrollToTop}
+                            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors"
+                        >
+                            Back to Home
+                        </Link>
+                    </motion.div>
+                </motion.div>
             </div>
-        </>
-    )
-}
+        </section>
+    );
+};
 
-export default Error_Page
+export default Error_Page;
