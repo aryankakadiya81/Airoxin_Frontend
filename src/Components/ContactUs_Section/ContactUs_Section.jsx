@@ -168,7 +168,7 @@ const ContactUs_Section = () => {
             </div>
 
             {/* Content Grid */}
-            <div className="container mx-auto max-w-6xl items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mx-auto max-w-6xl items-center grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Column: Contact Information */}
                 <div
                     className="space-y-6"
