@@ -93,7 +93,7 @@ const Category_Section = () => {
                 >
                     {Category}
                 </motion.h1>
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1920px] mx-auto px-4">
                 {/* Back Button */}
                 {/* Heading */}
                 <motion.div
@@ -144,7 +144,7 @@ const Category_Section = () => {
                                                 src={el.Image}
                                                 draggable="false"
                                                 alt={el.SubCategory_Name}
-                                                className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110"
+                                                className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110 block"
                                             />
                                         </div>
 

@@ -116,7 +116,7 @@ const Tradefair_Participation = () => {
     return (
         <section className=" text-white py-16">
             {/* Container */}
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1920px] mx-auto px-4">
                 {/* Dark Mode Heading */}
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}

@@ -17,12 +17,12 @@ const Consign_Section = () => {
             <section
                 // className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#124E66] via-[#192F40] to-[#212A31] relative overflow-hidden"
 
-                className="py-28 h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Bbg})` }}
+                className="py-28 h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat block" style={{ backgroundImage: `url(${Bbg})` }}
             >
                 {/* Overlay for Better Visibility */}
                 {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
 
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
                         {/* Left Column: Text Content */}
                         <motion.div

@@ -18,7 +18,7 @@ const About_Company = () => {
 
     return (
 
-        <section id="about" className="relative py-44 bg-[#192F40] overflow-hidden h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Img1})` }}>
+        <section id="about" className="relative py-44 bg-[#192F40] overflow-hidden h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat block" style={{ backgroundImage: `url(${Img1})` }}>
             {/* Unique Dark Background Corners */}
             {/* <div className="absolute top-0 left-0 w-48 h-48 bg-[#1E1E1E] rounded-full blur-3xl opacity-50"></div>
             <div className="absolute bottom-0 right-0 w-48 h-48 bg-[#1E1E1E] rounded-full blur-3xl opacity-50"></div> */}
@@ -27,7 +27,7 @@ const About_Company = () => {
             {/* Dark Overlay for Better Visibility */}
             <div className="w-full h-full bg-black bg-opacity-70 z-10"></div>
             {/* Content Container */}
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-[1920px] mx-auto px-4 relative z-10">
                 {/* Title */}
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const About_Company = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-lg sm:text-xl text-center text-gray-300 leading-relaxed max-w-3xl mx-auto mb-12"
+                    className="text-xl py-10 sm:text-2xl 2xl:mx-64 xl:mx-64 text-center text-gray-300 leading-relaxed mx-auto mb-12"
                 >
                     {Details.About_Company_Section.Paragraph}
                 </motion.p>

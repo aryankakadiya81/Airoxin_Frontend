@@ -38,7 +38,7 @@ const Hero_Section = () => {
   return (
 
 
-    <section className="relative bg-fixed bg-cover w-full h-screen transition-all duration-1000 ease-in-out sm:py-72" style={{ backgroundImage: `url(${backgroundImages[currentImage]})` }}>
+    <section className="relative bg-fixed bg-cover w-full h-screen transition-all duration-1000 block ease-in-out sm:py-72" style={{ backgroundImage: `url(${backgroundImages[currentImage]})` }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 flex justify-center items-center h-full text-center text-white px-4">
@@ -46,7 +46,7 @@ const Hero_Section = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="space-y-4"
+          className="space-y-4 max-w-[1920px]"
         >
           <h1 className="text-4xl sm:text-5xl font-bold leading-tight ">
             {Details.Shlogan_Section.Shlogen_black_line}

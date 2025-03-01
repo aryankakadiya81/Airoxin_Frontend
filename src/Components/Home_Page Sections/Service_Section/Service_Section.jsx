@@ -21,8 +21,8 @@ const Service_Section = () => {
         <>
 
 
-            <section className="py-28 h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat" style={{ backgroundImage: `url(${Bbg})` }}>
-                <div className="container mx-auto sm:px-1 md:px-10">
+            <section className="py-28 h-auto bg-fixed bg-center w-auto bg-cover bg-no-repeat block" style={{ backgroundImage: `url(${Bbg})` }}>
+                <div className="max-w-[1920px] mx-auto px-10">
                     <motion.h2 className="text-5xl font-bold text-center text-white mb-8" initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.0 }}

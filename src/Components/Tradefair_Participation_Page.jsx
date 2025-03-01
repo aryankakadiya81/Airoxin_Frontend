@@ -23,7 +23,7 @@ const Tradefair_Participation_Page = () => {
                         loop
                         muted
                         playsInline
-                        className="fixed top-0 left-0 w-full h-full object-cover z-0"
+                        className="fixed top-0 left-0 w-full h-full object-cover z-0 block"
                     >
                         <source src={Vid1} type="video/mp4" />
                         Your browser does not support the video tag.

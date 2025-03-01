@@ -49,7 +49,7 @@ const Navbar = () => {
     return (
         <nav className={`bg-[#192F40] p-4 mt-0 sticky top-0 z-50 font-semibold sm:text-lg lg:text-lg md:text-base`}>
 
-            <div className="container mx-auto flex flex-wrap items-center justify-between">
+            <div className="max-w-[1920px] mx-auto flex flex-wrap items-center justify-between">
                 <Link onClick={() => { window.scrollTo(0, 0) }} to="/">
                     <img
                         src={Logo}

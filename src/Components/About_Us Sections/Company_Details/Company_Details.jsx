@@ -9,7 +9,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 const Company_Details = () => {
     return (
-        <div className="py-16 px-7">
+        <div className=" py-16 px-7">
             {/* Swiper Slider */}
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
@@ -30,7 +30,7 @@ const Company_Details = () => {
                 // pagination={{ clickable: true }} // Pagination dots
                 pagination={false} // Pagination dots
 
-                className="rounded-2xl"
+                className="rounded-2xl max-w-[1920px]"
             >
                 {Details.map((el) => (
                     <SwiperSlide key={el.id}>

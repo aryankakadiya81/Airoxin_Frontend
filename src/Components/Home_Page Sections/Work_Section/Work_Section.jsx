@@ -34,11 +34,11 @@ const Work_Section = () => {
   return (
     <div
       ref={ref}
-      className="relative bg-cover bg-fixed bg-center bg-no-repeat text-white py-12 md:py-28"
+      className="relative bg-cover bg-fixed bg-center bg-no-repeat text-white py-12 md:py-28 block"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="w-full h-full bg-black bg-opacity-70 z-10"></div> {/* Dark overlay */}
-      <div className="container mx-auto px-4 relative z-10"> {/* z-10 for content above overlay */}
+      <div className="max-w-[1920px] mx-auto px-4 relative z-10"> {/* z-10 for content above overlay */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={animationControls}
@@ -51,7 +51,7 @@ const Work_Section = () => {
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium my-16">
               {Detail.Work_Section.Work_Shlogen}
             </h3>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 md:mb-12 mx-auto max-w-3xl text-[#e5e7eb]">
+            <p className="md:text-2xl leading-relaxed mb-8 md:mb-12 mx-auto text-xl pb-10 sm:text-2xl 2xl:mx-64 xl:mx-64 text-[#e5e7eb]">
               {Detail.Work_Section.Paragraph}
             </p>
           </div>

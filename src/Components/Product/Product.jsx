@@ -52,7 +52,7 @@ const Product = () => {
                 loop
                 muted
                 playsInline
-                className="fixed top-0 left-0 w-full h-full object-cover z-0"
+                className="block fixed top-0 left-0 w-full h-full object-cover z-0"
             >
                 <source src={Vid1} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -77,7 +77,7 @@ const Product = () => {
                         {Selected_Product.Product_Name}
                     </motion.h1>
                     {/* Container */}
-                    <div className="container mx-auto lg:px-10">
+                    <div className="max-w-[1920px] mx-auto lg:px-10">
                         {/* Back Button */}
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
@@ -101,7 +101,7 @@ const Product = () => {
 
 
                         {/* Grid Layout */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mx-5">
                             {/* Left Column: Swiper Slider for Images */}
                             <div className="space-y-4">
                                 <Swiper
@@ -110,7 +110,7 @@ const Product = () => {
                                     slidesPerView={1}
                                     navigation
                                     pagination={{ clickable: true }}
-                                    className="rounded-lg lg:h-[750px] h-full shadow-lg overflow-hidden"
+                                    className="rounded-lg lg:h-[750px] h-full shadow-lg overflow-hidden block"
                                 >
                                     {Selected_Product.Images.map((el, index) => (
                                         <SwiperSlide key={index}>
@@ -125,7 +125,7 @@ const Product = () => {
                                                     src={el}
                                                     draggable="false"
                                                     alt={`Product ${index}`}
-                                                    className="w-full 2xl:h-[750px] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+                                                    className="w-full 2xl:h-[750px] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer block"
                                                 />
                                             </motion.div>
                                         </SwiperSlide>

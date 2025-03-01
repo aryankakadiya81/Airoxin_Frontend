@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-20"></div>
 
             {/* Container */}
-            <div className="container mx-auto max-w-7xl relative z-10">
+            <div className="max-w-[1920px] mx-auto relative z-10">
                 {/* Grid Layout */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Section 1: Get in Touch */}

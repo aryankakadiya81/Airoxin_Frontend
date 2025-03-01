@@ -6,7 +6,7 @@ const Why_Choose_Us = () => {
     return (
         <section className="text-white py-16">
             {/* Container */}
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1920px] mx-auto px-4">
                 {/* Section Title */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}

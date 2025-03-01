@@ -1,85 +1,3 @@
-// import React, { useContext } from 'react';
-// import { Global } from '../../App';
-// import ProductData from '../../Json_Files/Product_Page.json';
-// import Seo_Data from '../../Json_Files/SEO_Meta_Keyword.json'
-// import Helmet_Jsx from '../../Helmet_Jsx';
-// import { Link, useNavigate } from 'react-router-dom';
-// import Heading from '../Mini_Components/Heading';
-
-// const SubCategory_Section = () => {
-
-//   let Navigate = useNavigate();
-
-//   let { Categorys, SubCategorys, Selected_Products } = useContext(Global);
-//   let [Category, setCategory] = Categorys;
-//   let [SubCategory, setSubCategory] = SubCategorys;
-//   let [Selected_Product, setSelected_Product] = Selected_Products;
-
-
-//   return (
-//     <>
-//       <div className='bg-white'>
-
-//       <Helmet_Jsx Title={Seo_Data.Productpage.Title} Desc={Seo_Data.Productpage.Description}></Helmet_Jsx>
-//         <Heading Title={SubCategory}></Heading>
-
-//         <div className="container my-5">
-//           <div className='container d-flex justify-content-start my-5'>
-//             <button onClick={() => {window.scrollTo(0, 0); Navigate(-1); }} className='fs-4 px-4 btn btn-primary'><i className="bi bi-arrow-left"></i> Back</button>
-//           </div>
-//           <div className="row g-4">
-//             {
-//              ProductData.SubCategory.length != 0 
-//              ? ProductData.Products.filter((el) => { return el.SubCategory_Name == SubCategory && el.Category_Name == Category }).map((el) => {
-//                 return (
-//                   <>
-//                     <div key={el.id} className="col-12 col-sm-6 col-xl-4 animate__animated animate__fadeInUp">
-//                       <div className="card border-0 border-2 rounded-4 border-bottom border-primary shadow-lg placeholder-glow">
-//                         <div className="card-body text-center">
-//                           <div>
-//                             <img draggable="false" src={el.Thumbnail_Image} alt="Product image" className="card-img-top" height={400}/>
-//                           </div>
-
-//                           <h4 className="my-4 fw-bold">
-//                             {el.Product_Name}
-//                           </h4>
-
-
-//                           <Link to="/Category/Subcategory/Product" onClick={() => {window.scrollTo(0, 0); setSelected_Product(el);}} type="button" className="btn btn-primary mb-3">
-//                             LEARN MORE
-//                           </Link>
-
-//                         </div>
-//                       </div>
-//                     </div>
-//                   </>
-//                 )
-//               })
-//               : <div className='text-center fs-1'> Comming Soon...</div>
-
-//             }
-
-//           </div>
-//           {/* <div className='container d-flex justify-content-start my-5 ms-5 ps-5'>
-//             <button onClick={() => { Navigate(-1); window.scrollTo(0, 0); }} className='px-4 fs-4  btn btn-primary'>&#11164; Back</button>
-//           </div> */}
-//         </div>
-
-
-
-
-//         <div>
-//         </div>
-//       </div>
-
-//     </>
-//   )
-
-// }
-
-// export default SubCategory_Section
-
-
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Global } from '../../App';
@@ -105,7 +23,7 @@ const SubCategory_Section = () => {
         loop
         muted
         playsInline
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
+        className="fixed top-0 left-0 w-full h-full object-cover z-0 block"
       >
         <source src={Vid1} type="video/mp4" />
         Your browser does not support the video tag.
@@ -121,7 +39,7 @@ const SubCategory_Section = () => {
           <Helmet_Jsx Title={Seo_Data.Productpage.Title} Desc={Seo_Data.Productpage.Description}></Helmet_Jsx>
 
           {/* Container */}
-          <div className="container mx-auto px-10">
+          <div className="max-w-[1920px] mx-auto">
 
 
             <motion.h1
@@ -146,7 +64,7 @@ const SubCategory_Section = () => {
                   navigate(-1);
                   window.scrollTo(0, 0);
                 }}
-                className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                className="flex ms-8 items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
               >
                 <i className="bi bi-arrow-left"></i>
                 Back
@@ -173,7 +91,7 @@ const SubCategory_Section = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors"
+                        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors mx-5"
                       >
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
