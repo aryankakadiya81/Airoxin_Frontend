@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './Navbar.css';
 import { useState } from 'react';
 import { Global } from '../../App';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';

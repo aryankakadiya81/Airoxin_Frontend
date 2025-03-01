@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Global } from '../../../App';
-import './Service_Section.css';
 import Product_Data from '../../../Json_Files/Product_Page.json';
 import Bbg from '../../../Assets/Service/S_B2.jpeg';
 import { Link } from 'react-router-dom';
