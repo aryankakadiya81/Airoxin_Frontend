@@ -118,7 +118,7 @@ const Category_Section = () => {
 
                 {/* Grid Layout */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 lg:mx-10 gap-8">
-                    {ProductData.SubCategory.length !== 0 ? (
+                    {ProductData.SubCategory.filter((el) => el.Category_Name === Category).length !== 0 ? (
                         ProductData.SubCategory
                             .filter((el) => el.Category_Name === Category)
                             .map((el) => (
@@ -171,7 +171,7 @@ const Category_Section = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="col-span-full text-center text-3xl font-bold text-gray-500 h-screen"
+                            className="col-span-full text-center text-3xl font-bold text-[white] h-screen"
                         >
                             Coming Soon...
                         </motion.div>

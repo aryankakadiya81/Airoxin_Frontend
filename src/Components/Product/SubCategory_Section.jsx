@@ -75,7 +75,7 @@ const SubCategory_Section = () => {
 
             {/* Grid Layout */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-10 lg:gap-12">
-              {ProductData.Products.length !== 0 ? (
+              {ProductData.Products.filter((el) => el.SubCategory_Name === SubCategory && el.Category_Name === Category).length !== 0 ? (
                 ProductData.Products
                   .filter((el) => el.SubCategory_Name === SubCategory && el.Category_Name === Category)
                   .map((el) => (

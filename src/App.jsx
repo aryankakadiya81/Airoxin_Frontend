@@ -1,7 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { motion } from "framer-motion";
-import React, { useState, createContext } from 'react';
-import Logo from './Assets/Logo/ICON/icon.jpg'
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, createContext, useEffect } from 'react';
+import Logo from './Assets/Logo/WHITE/MAIN/MAIN WHITE.svg'
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home_Page from './Components/Home_Page';
@@ -11,7 +11,6 @@ import Team_Page from './Components/Team_Page';
 import ContactUs_Page from './Components/ContactUs_Page';
 import Accreditation_Page from './Components/Accreditation_Page';
 import Tradefair_Participation_Page from './Components/Tradefair_Participation_Page';
-
 import Category_Page from './Components/Category_Page';
 import SubCategory_Section from './Components/Product/SubCategory_Section';
 import Product from './Components/Product/Product';
@@ -48,42 +47,74 @@ const App = () => {
     let [SubCategory, setSubCategory] = useState(Pro_Data.Products[0].SubCategory_Name);
     let [Selected_Product, setSelected_Product] = useState(Pro_Data.Products[0]);
 
-    // {
-    //     "id": "01",
-    //     "SubCategory_Name": "Tshirts",
-    //     "Category_Name": "Readymade Garments",
-    //     "Product_Name": "Round Nack T-shirt",
-    //     "Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-    //     "Images": [
-    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
-    //         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
-    //     ],
-    //     "Tables": [
-    //         {
-    //             "id": "01",
-    //             "Table_Name": "General Information",
-    //             "Product Name": ["Round Nack T-shirt"],
-    //             "Packaging": ["Pastic Bag"],
-    //             "Size of Packing": ["20cm * 20cm * 10cm"],
-    //             "Sleeve": ["Full"]
-    //         },
-    //         {
-    //             "id": "02",
-    //             "Table_Name": "Pricing",
-    //             "1 - 34 pieces": ["$5.90"],
-    //             "35 - 599 pieces": ["$5.70"]
-    //         }
-    //     ]
-    // }
+    const [IsLoading, setIsLoading] = useState(true);
+
+    // Simulate a loading process (e.g., fetching data or rendering components)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false); // Hide loader after 2 seconds (simulating loading)
+        }, 2000);
+
+        return () => clearTimeout(timer); // Cleanup timer on component unmount
+    }, [IsLoading]);
+
     return (
         <>
-            <div className="select-none scroll-smooth">
-                <motion.Cursor/>
+
+            {/* Loader */}
+            
+            <AnimatePresence>
+                {IsLoading && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{
+                            opacity: 0,
+                            transition: { duration: 0.5 },
+                        }}
+                        className="fixed inset-0 z-50 flex items-center justify-center"
+                    >
+                        {/* Background */}
+                        <motion.div
+                            initial={{ scale: 1 }}
+                            exit={{
+                                scale: [1, 0], // Simulate "closing doors" effect
+                                transition: { duration: 0.8, ease: "easeInOut" },
+                            }}
+                            className="absolute inset-0 bg-gray-900"
+                        />
+
+                        {/* Static Logo */}
+                        <img
+                            src={Logo} // Replace with your logo path
+                            alt="Static Logo"
+                            className="w-32 h-32 mb-6 z-50"
+                        />
+
+                        {/* Progress Bar */}
+                        {/* <motion.div className="w-full max-w-md bg-gray-700 rounded-full overflow-hidden h-4">
+                            <motion.div
+                                initial={{ width: 0 }}
+                                animate={{ width: "100%" }}
+                                transition={{ duration: 3, ease: "linear" }}
+                                className="h-full bg-blue-500"
+                            />
+                        </motion.div> */}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+
+            {!IsLoading && (<div className="select-none scroll-smooth">
+                <motion.Cursor />
                 <ToastContainer></ToastContainer>
                 <SpeedInsights />
-                <Global.Provider value={{ Categorys: [Category, setCategory], SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product] }} >
+                <Global.Provider
+                    value={{
+                        Categorys: [Category, setCategory],
+                        SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product],
+                        Loader: [IsLoading, setIsLoading]
+                    }} >
 
                     <FloatingWhatsApp
                         phoneNumber="+91 9925614381"
@@ -124,9 +155,40 @@ const App = () => {
                     </BrowserRouter>
                 </Global.Provider>
 
-            </div>
+            </div>)}
+
         </>
     )
 }
 
 export default App
+
+// {
+//     "id": "01",
+//     "SubCategory_Name": "Tshirts",
+//     "Category_Name": "Readymade Garments",
+//     "Product_Name": "Round Nack T-shirt",
+//     "Thumbnail_Image": "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+//     "Images": [
+//         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+//         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+//         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg",
+//         "https://i.postimg.cc/GtzvfyWY/T-shirt.jpg"
+//     ],
+//     "Tables": [
+//         {
+//             "id": "01",
+//             "Table_Name": "General Information",
+//             "Product Name": ["Round Nack T-shirt"],
+//             "Packaging": ["Pastic Bag"],
+//             "Size of Packing": ["20cm * 20cm * 10cm"],
+//             "Sleeve": ["Full"]
+//         },
+//         {
+//             "id": "02",
+//             "Table_Name": "Pricing",
+//             "1 - 34 pieces": ["$5.90"],
+//             "35 - 599 pieces": ["$5.70"]
+//         }
+//     ]
+// }

@@ -22,7 +22,11 @@ import Design from '../../Json_Files/Design_Json/Colour_Json.json';
 
 const Navbar = () => {
 
-    let Colors = [Design.Colour, Design.Colour_1, Design.Colour_2, Design.Colour_3, Design.Colour_4, Design.Colour_5, Design.Colour_6]
+    
+
+    let { Loader } = useContext(Global);
+    
+      let [IsLoading, setIsLoading] = Loader;
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
@@ -46,11 +50,16 @@ const Navbar = () => {
         setIsDropdownOpen1(!isDropdownOpen1);
     };
 
+    let Scroll = () => {
+        window.scrollTo(0, 0);
+        setIsLoading(true); 
+    }
+
     return (
         <nav className={`bg-[#192F40] p-4 mt-0 sticky top-0 z-50 font-semibold sm:text-lg lg:text-lg md:text-base`}>
 
             <div className="max-w-[1920px] mx-auto flex flex-wrap items-center justify-between">
-                <Link onClick={() => { window.scrollTo(0, 0) }} to="/">
+                <Link onClick={Scroll} to="/">
                     <img
                         src={Logo}
                         draggable="false"
@@ -96,7 +105,7 @@ const Navbar = () => {
                 >
                     <ul className="font-basef text-md flex flex-col md:flex-row md:justify-end md:items-center text-[#FFFFFF] md:gap-x-4">
                         <li>
-                            <Link onClick={() => { window.scrollTo(0, 0) }} to="/Home" className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]">
+                            <Link onClick={Scroll} to="/Home" className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]">
                                 Home
                             </Link>
                         </li>
@@ -136,20 +145,20 @@ const Navbar = () => {
                                     onMouseEnter={() => setIsDropdownOpen(true)}
                                 >
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
-                                        <Link onClick={() => { window.scrollTo(0, 0) }} to="/About" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                        <Link onClick={Scroll} to="/About" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                             role="menuitem">
                                             ABOUT US
                                         </Link>
                                     </li>
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
-                                        <Link onClick={() => { window.scrollTo(0, 0) }} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                        <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                             role="menuitem" to="/Accreditation">
                                             ACCREDITATION
                                         </Link>
                                     </li>
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
 
-                                        <Link onClick={() => { window.scrollTo(0, 0) }} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                        <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                             role="menuitem"
                                             to='/Tradefair'>
                                             TRADE FAIR PARTICIPATION
@@ -200,7 +209,7 @@ const Navbar = () => {
                                         Product_Data.Category.map((el) => {
                                             return (
                                                 <li key={el.id} onMouseEnter={() => setIsDropdownOpen1(true)}>
-                                                    <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); }} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                                    <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); setIsLoading(true);}} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                                         role="menuitem"
                                                         to="/Category">
                                                         {el.Category_Name}
@@ -216,14 +225,14 @@ const Navbar = () => {
                         </li>
                         {/* <li>
 
-                            <Link onClick={() => { window.scrollTo(0, 0) }} className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]" to="/Team">
+                            <Link onClick={Scroll} className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]" to="/Team">
                                 Our Team
                             </Link>
                         </li> */}
 
 
                         <li>
-                            <Link to="/Contact" onClick={() => { window.scrollTo(0, 0) }} className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]" >
+                            <Link to="/Contact" onClick={Scroll} className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]" >
                                 Contact
                             </Link>
                         </li>

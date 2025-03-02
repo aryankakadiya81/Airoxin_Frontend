@@ -18,9 +18,9 @@ import Vid1 from "../../Assets/Vedio/Vid1.mp4";
 const Product = () => {
     const navigate = useNavigate();
     const { Categorys, SubCategorys, Selected_Products } = useContext(Global);
-    const [Category] = Categorys;
-    const [SubCategory] = SubCategorys;
-    const [Selected_Product] = Selected_Products;
+    const [Category, setCategory] = Categorys;
+    const [SubCategory, setSubCategory] = SubCategorys;
+    const [Selected_Product,setSelected_Product] = Selected_Products;
 
     const KeySkip = ['id', 'Table_Name'];
 
