@@ -38,7 +38,7 @@ const Hero_Section = () => {
   return (
 
 
-    <section className="relative bg-fixed bg-cover w-full h-screen transition-all duration-1000 block ease-in-out sm:py-72" style={{ backgroundImage: `url(${backgroundImages[currentImage]})` }}>
+    <section className="relative bg-fixed bg-cover w-full h-screen transition-all duration-1000 inline-block ease-in-out sm:py-72" style={{ backgroundImage: `url(${backgroundImages[currentImage]})` }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 flex justify-center items-center h-full text-center text-white px-4">
