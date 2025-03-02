@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { Global } from '../../../App';
 import { motion } from 'framer-motion';
 import Details from '../../../Json_Files/All_Section_Details.json';
 import Img1 from '../../../Assets/About/About_Us.jpeg';
@@ -9,12 +10,18 @@ import Img1 from '../../../Assets/About/About_Us.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 const About_Company = () => {
+
+
+    let { Loader } = useContext(Global);
+    let [IsLoading, setIsLoading] = Loader;
+
     let Navigate = useNavigate();
     const scrollToTopAbout = () => {
         window.scrollTo(0, 0);
         Navigate("/Contact");
+        setIsLoading(true);
     }
-    let i = 0;
+
 
     return (
 
@@ -56,6 +63,7 @@ const About_Company = () => {
                     className="flex justify-center"
                 >
                     <button
+                        onClick={scrollToTopAbout}
                         className="px-8 py-4 bg-[#124E66] hover:bg-[#1A3D58] text-white font-semibold rounded-lg shadow-md transition-all duration-300 ease-in-out"
                     >
                         Contact Now

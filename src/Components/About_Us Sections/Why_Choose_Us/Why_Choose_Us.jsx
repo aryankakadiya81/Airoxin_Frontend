@@ -15,7 +15,7 @@ const Why_Choose_Us = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center mb-12"
                 >
-                    <h1 className="text-4xl sm:text-5xl font-bold">{Details.Why_Choose_Us_Section.Title}</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">{Details.Why_Choose_Us_Section.Title}</h1>
                 </motion.div>
 
                 {/* Features Grid */}
@@ -30,7 +30,7 @@ const Why_Choose_Us = () => {
                             className="flex items-start space-x-4 p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition-colors"
                         >
                             {/* Icon */}
-                            <div className="flex-shrink-0 text-blue-500">
+                            <div className="flex-shrink-0 text-[#22c55e]">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="28"

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { Global } from '../../../App';
 import { motion } from 'framer-motion';
 // import Contact from '../../../Json_Files/Company_Contact_Page.json';
 import Details from '../../../Json_Files/All_Section_Details.json';
@@ -9,12 +10,17 @@ import Details from '../../../Json_Files/All_Section_Details.json';
 import { useNavigate } from 'react-router-dom';
 
 const About_Company = () => {
+
+    let { Loader } = useContext(Global);
+    let [IsLoading, setIsLoading] = Loader;
+
     let Navigate = useNavigate();
     const scrollToTopAbout = () => {
         window.scrollTo(0, 0);
         Navigate("/Contact");
+        setIsLoading(true);
     }
-    let i = 0;
+
 
     return (
 

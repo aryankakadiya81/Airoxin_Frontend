@@ -12,11 +12,11 @@ import { Link } from 'react-router-dom';
 const Service_Section = () => {
 
     // let Bbg = "https://i.postimg.cc/qMJ35L45/Earth-Wall.jpg";
-    let { Categorys, SubCategorys } = useContext(Global);
+    let { Categorys, SubCategorys , Loader} = useContext(Global);
 
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
-    
+    let [IsLoading, setIsLoading] = Loader;
     return (
         <>
 
@@ -49,7 +49,7 @@ const Service_Section = () => {
                                     <motion.p className="text-gray-600 my-10 text-lg">
                                         {product.Details}
                                     </motion.p>
-                                    <Link onClick={() => { setCategory(product.Category_Name); window.scrollTo(0, 0); }} to="/Category">
+                                    <Link onClick={() => { setCategory(product.Category_Name); window.scrollTo(0, 0); setIsLoading(true)}} to="/Category">
                                         <motion.button
                                             className="px-6 py-2 bg-[#124E66] hover:bg-[#212A31] text-white rounded-lg focus:outline-none transition-all duration-200 ease-in-out"
                                             whileHover={{ scale: 1.1 }}

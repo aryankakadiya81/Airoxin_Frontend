@@ -12,12 +12,19 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 const Footer = () => {
-    const { Categorys, SubCategorys } = useContext(Global);
+    const { Categorys, SubCategorys, Loader } = useContext(Global);
     const [Category, setCategory] = Categorys;
     const [SubCategory, setSubCategory] = SubCategorys;
+    let [IsLoading, setIsLoading] = Loader;
 
     const [Email, setEmail] = useState("");
     const [Data, setData] = useState(Contact_Json);
+
+    let Scroll = () => {
+        window.scrollTo(0, 0);
+        setIsLoading(true);
+    }
+
 
     // Handle Subscribe Form Submission
     const HSubmit = async (e) => {
@@ -158,32 +165,32 @@ const Footer = () => {
                         <h3 className="text-xl font-bold text-blue-500">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link to="/" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/About" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/About" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/Accreditation" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/Accreditation" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Accreditation
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/Tradefair" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/Tradefair" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Trade Fair Participation
                                 </Link>
                             </li>
                             {/* <li>
-                                <Link to="/Team" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/Team" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Our Team
                                 </Link>
                             </li> */}
                             <li>
-                                <Link to="/Contact" onClick={() => window.scrollTo(0, 0)} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                <Link to="/Contact" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Contact Us
                                 </Link>
                             </li>
@@ -207,6 +214,7 @@ const Footer = () => {
                                         onClick={() => {
                                             window.scrollTo(0, 0);
                                             setCategory(el.Category_Name);
+                                            setIsLoading(true);
                                         }}
                                         className="text-gray-400 hover:text-blue-500 transition-colors"
                                     >

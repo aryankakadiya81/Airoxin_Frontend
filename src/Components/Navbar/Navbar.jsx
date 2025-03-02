@@ -22,19 +22,18 @@ import Design from '../../Json_Files/Design_Json/Colour_Json.json';
 
 const Navbar = () => {
 
-    
-
-    let { Loader } = useContext(Global);
-    
-      let [IsLoading, setIsLoading] = Loader;
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
-
-    let { Categorys, SubCategorys } = useContext(Global);
-
+    
+    let { Categorys, SubCategorys, Loader } = useContext(Global);
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
+    let [IsLoading, setIsLoading] = Loader;
+    let Scroll = () => {
+        window.scrollTo(0, 0);
+        setIsLoading(true);
+    }
 
 
     const toggleMobileMenu = () => {
@@ -50,10 +49,6 @@ const Navbar = () => {
         setIsDropdownOpen1(!isDropdownOpen1);
     };
 
-    let Scroll = () => {
-        window.scrollTo(0, 0);
-        setIsLoading(true); 
-    }
 
     return (
         <nav className={`bg-[#192F40] p-4 mt-0 sticky top-0 z-50 font-semibold sm:text-lg lg:text-lg md:text-base`}>
@@ -209,7 +204,7 @@ const Navbar = () => {
                                         Product_Data.Category.map((el) => {
                                             return (
                                                 <li key={el.id} onMouseEnter={() => setIsDropdownOpen1(true)}>
-                                                    <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); setIsLoading(true);}} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                                    <Link onClick={() => { setCategory(el.Category_Name); window.scrollTo(0, 0); setIsLoading(true); }} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                                         role="menuitem"
                                                         to="/Category">
                                                         {el.Category_Name}

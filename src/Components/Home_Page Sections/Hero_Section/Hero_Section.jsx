@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useContext } from 'react';
+import { Global } from '../../../App';
 import Details from '../../../Json_Files/All_Section_Details.json';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
@@ -15,11 +16,21 @@ import H9 from '../../../Assets/Hero/H9.jpeg';
 
 
 const Hero_Section = () => {
+
+
+  let { Categorys, SubCategorys, Loader } = useContext(Global);
+  let [Category, setCategory] = Categorys;
+  let [SubCategory, setSubCategory] = SubCategorys;
+  let [IsLoading, setIsLoading] = Loader;
+  
+
   let Navigate = useNavigate();
   const scrollToTophero = () => {
-    window.scrollTo(0, 0)
-    Navigate("/About")
-  }
+    setIsLoading(true);
+    window.scrollTo(0, 0);
+    Navigate("/About");
+  };
+
 
   const backgroundImages = [
     H9, H4, H5
