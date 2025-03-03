@@ -102,7 +102,7 @@ const SubCategory_Section = () => {
                             src={el.Thumbnail_Image}
                             draggable="false"
                             alt={el.Product_Name}
-                            className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110"
+                            className="w-full p-3 rounded-2xl h-[420px] transition-transform duration-300 group-hover:scale-110"
                           />
                         </div>
 

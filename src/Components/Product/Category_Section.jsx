@@ -144,7 +144,7 @@ const Category_Section = () => {
                                                 src={el.Image}
                                                 draggable="false"
                                                 alt={el.SubCategory_Name}
-                                                className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110 block"
+                                                className="w-full p-3 rounded-2xl h-[420px] transition-transform duration-300 group-hover:scale-110"
                                             />
                                         </div>
 

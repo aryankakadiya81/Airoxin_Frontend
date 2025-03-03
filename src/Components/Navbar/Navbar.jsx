@@ -25,7 +25,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
-    
+
     let { Categorys, SubCategorys, Loader } = useContext(Global);
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
@@ -239,3 +239,28 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+// 1. #0d1a26
+// 2. #111827
+// 3. #192f40
+// 4. #264b65
+// 5. #385c7e
+// 6. #4a6d96
+// 7. #1e3a5f
+// 8. #2b4c73
+// 9. #5a7b9c
+// 10 #ffffff
+
+
+// 1. #0d1a26 (Background)
+// 2. #111827 (Background / Grounding Elements)
+// 3. #192f40 (Accents / Secondary Background)
+// 4. #2b3c5e (Borders / Secondary Highlights)
+// 5. #384b5c (Text / Neutral Elements)
+// 6. #4a5568 (Paragraph Text / Subtle Contrasts)
+// 7. #5a677a (Highlights / Overlays)
+// 8. #b38b5f (Buttons / Headings / Accents)
+// 9. #7a3e4e (Dramatic Accents / Highlights)
+// 10 #ffffff (Text / Icons / White Space)

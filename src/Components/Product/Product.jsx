@@ -20,7 +20,7 @@ const Product = () => {
     const { Categorys, SubCategorys, Selected_Products } = useContext(Global);
     const [Category, setCategory] = Categorys;
     const [SubCategory, setSubCategory] = SubCategorys;
-    const [Selected_Product,setSelected_Product] = Selected_Products;
+    const [Selected_Product, setSelected_Product] = Selected_Products;
 
     const KeySkip = ['id', 'Table_Name'];
 
@@ -110,7 +110,7 @@ const Product = () => {
                                     slidesPerView={1}
                                     navigation
                                     pagination={{ clickable: true }}
-                                    className="rounded-lg lg:h-[750px] h-full shadow-lg overflow-hidden block"
+                                    className="rounded-lg h-[636px] shadow-lg overflow-hidden block"
                                 >
                                     {Selected_Product.Images.map((el, index) => (
                                         <SwiperSlide key={index}>
@@ -125,7 +125,8 @@ const Product = () => {
                                                     src={el}
                                                     draggable="false"
                                                     alt={`Product ${index}`}
-                                                    className="w-full 2xl:h-[750px] object-cover transition-transform duration-300 hover:scale-105 cursor-pointer block"
+                                                    className="w-full p-3 rounded-2xl h-[636px] transition-transform duration-300 group-hover:scale-110"
+
                                                 />
                                             </motion.div>
                                         </SwiperSlide>
