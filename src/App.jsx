@@ -146,7 +146,7 @@ const App = () => {
 
                             <Route path='/Category' element={<Category_Page></Category_Page>}></Route>
 
-                            <Route path='/Category/Subcategory' element={<SubCategory_Section></SubCategory_Section>}></Route>
+                            {/* <Route path='/Category/Subcategory' element={<SubCategory_Section></SubCategory_Section>}></Route> */}
 
                             <Route path='/Category/Subcategory/Product' element={<Product></Product>}></Route>
 
