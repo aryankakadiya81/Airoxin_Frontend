@@ -1,7 +1,7 @@
 import { Global } from '../../App';
 import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
-import Pdf from '../../Assets/Pdf/Brochuer.zip';
+import Pdf from '../../Assets/Pdf/Airoxin International Catalog.pdf';
 import Pdf2 from '../../Assets/Pdf/Airoxin International Card.pdf';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
 import { Link } from 'react-router-dom';
@@ -50,7 +50,7 @@ const Footer = () => {
     const DownloadBroucher = () => {
         const link = document.createElement("a");
         link.href = Pdf;
-        link.download = "AIROXIN Brochure.zip";
+        link.download = "AIROXIN Brochure.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

@@ -18,9 +18,9 @@
 			"SubCategory_Name": "Tableware Products",
 			"Category_Name": "Tableware Products",
 			"Product_Name": "Tableware Products",
-			"Thumbnail_Image": "",
+			"Thumbnail_Image": "https://ik.imagekit.io/airoxin/MAIN.jpg?updatedAt=1741076944918",
 			"Images": [
-				""
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1727264004/samples/shoe.jpg"
 			],
 			"Tables": [
 				{
