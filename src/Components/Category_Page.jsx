@@ -16,7 +16,7 @@ const Category_Page = () => {
     let [Category, setCategory] = Categorys;
     let [SubCategory, setSubCategory] = SubCategorys;
 
-    console.log(Category, SubCategory);
+    // console.log(Category, SubCategory);
     return (
         <>
             <Helmet_Jsx Title={Seo_Data.Productpage.Title} Desc={Seo_Data.Productpage.Description}></Helmet_Jsx>

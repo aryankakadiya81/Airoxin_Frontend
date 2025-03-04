@@ -312,6 +312,526 @@
 					]
 				}
 			]
+		},
+		{
+			"id": "01",
+			"SubCategory_Name": "Co-Ord Set",
+			"Category_Name": "Readymade Garments",
+			"Product_Name": "Regular Co-Ord Set",
+			"Thumbnail_Image": "https://i.postimg.cc/0yPkZ96G/14.png",
+			"Images": [
+				"https://i.postimg.cc/0yPkZ96G/14.png",
+				"https://i.postimg.cc/Kvncn1Yv/15.png",
+				"https://i.postimg.cc/02g2MYPB/16.png",
+				"https://i.postimg.cc/N0Nj5Zj6/17.png",
+				"https://i.postimg.cc/Kc388qST/18.png",
+				"https://i.postimg.cc/SR9S1s7d/19.png",
+				"https://i.postimg.cc/hGK0SQXJ/20.png",
+				"https://i.postimg.cc/CxTNQQYs/21.png",
+				"https://i.postimg.cc/8zRHQmzQ/22.png",
+				"https://i.postimg.cc/tRcDhgMf/23.png",
+				"https://i.postimg.cc/hGhq3vKm/3.png",
+				"https://i.postimg.cc/dtT6nYM0/24.png",
+				"https://i.postimg.cc/9FtVDsxD/2.png",
+				"https://i.postimg.cc/28fr8Cxp/2-1.png",
+				"https://i.postimg.cc/CKMKMwSM/4.png",
+				"https://i.postimg.cc/zDhqryKS/5-1.png",
+				"https://i.postimg.cc/Y9Z2xggj/6.png",
+				"https://i.postimg.cc/4dDZcGk9/7.png",
+				"https://i.postimg.cc/NM9BLMVt/7-1.png",
+				"https://i.postimg.cc/mk74NnB6/8.png",
+				"https://i.postimg.cc/mrrbfVyt/8-1.png",
+				"https://i.postimg.cc/Z5HTMX3G/8-2.png",
+				"https://i.postimg.cc/yNr7V9Ln/9.png",
+				"https://i.postimg.cc/g2HJPx9B/Oversized-Tshirt-Size-Chart.png",
+				"https://i.postimg.cc/CLH4CrgB/Cusom-Tshirt.png",
+				"https://i.postimg.cc/0NNZyYh6/Tshirt-Logo-Position.png",
+				"https://i.postimg.cc/J4bp64bh/Shorts-Logo-Position.png",
+				"https://i.postimg.cc/BZ5FR8wR/Print-Type.png",
+				"https://i.postimg.cc/jj96qGz9/Brand-Building.png",
+				"https://i.postimg.cc/6QYw4Mtk/Fabric.png",
+				"https://i.postimg.cc/cL0XVymB/Label.png",
+				"https://i.postimg.cc/qMj9Lz9K/Accesorries-CUSTOMIZATION.png",
+				"https://i.postimg.cc/Bvq4vr95/Buying-Process.png",
+				"https://i.postimg.cc/brQqrpJT/Choose-Us.png",
+				"https://i.postimg.cc/W4D1qXFx/Selling-Price-Chart.png",
+				"https://i.postimg.cc/vBf83Tvz/Customer-Review.png",
+				"https://i.postimg.cc/TwDVKC0P/Delivery-Time.png",
+				"https://i.postimg.cc/7h42fDbB/Packing-And-Shipping.png"
+			],
+			"Tables": [
+				{
+					"id": "01",
+					"Table_Name": "General Information",
+					"Product Name": [
+						"Oversized Co-Ord Set"
+					],
+					"Also Known As": [
+						"Oversized Co-Ord Set",
+						"T-Shirt and Shorts Pair"
+					],
+					"Packaging": [
+						"2 Pic/1 Plastic Bag",
+						"Custom..."
+					],
+					"Product Type": [
+						"Pair"
+					],
+					"GSM": [
+						"250-260 GSM"
+					],
+					"Selling Units": [
+						"Pair (Short+Tshirt)"
+					],
+					"Single Package Size": [
+						"Approx 30 cm X 27 cm X 8 cm"
+					],
+					"Single Gross Weight": [
+						"Approx 1.200 kg"
+					],
+					"Material": [
+						"French Terry 100% Combed Cotton Double Bio-Washed Silicon Finish Fabric"
+					],
+					"Fabric": [
+						"100% Cotton"
+					],
+					"Fabric Type": [
+						"Knitted"
+					]
+				},
+				{
+					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Unisex"
+					],
+					"Fit Type": [
+						"Oversized"
+					],
+					"Color": [
+						"Black",
+						"Off White",
+						"Lavender",
+						"Mink Chiku",
+						"Sage Green",
+						"Maroon",
+						"Navy Blue",
+						"Sky Blue",
+						"Custom..."
+					],
+					"Sleeve Length": [
+						"Half"
+					],
+					"Shorts Length": [
+						"Knee Length"
+					],
+					"Season": [
+						"Any"
+					],
+					"Size": [
+						"S",
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Feature": [
+						"Breathable",
+						"Sustainable",
+						"Custom available"
+					],
+					"Printing": [
+						"Screen Printing",
+						"Tie Dye",
+						"Puff",
+						"Embroidery",
+						"Carving",
+						"Digital",
+						"Flocking",
+						"Reflective",
+						"Silicon"
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"2000 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Minimum Order Quantity Sample": [
+						"2 Piece"
+					],
+					"Sample Price": [
+						"$90.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Colour/Color Customization": [
+						"Yes"
+					],
+					"Fabric Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"250 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"300 Piece/Per Size"
+					],
+					"Minimum Order Quantity Colour/Color Customization": [
+						"300 Piece/Per Color"
+					],
+					"Minimum Order Quantity Fabric Customization": [
+						"300 Piece/Per Color"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"300 Piece/Per Pattern"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"250 Piece"
+					],
+					"Minimum Order Quantity For Print/Design Customization": [
+						"100 Piece/Per Design"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "07",
+					"Table_Name": "Pricing",
+					"250 - 499 Pieces": [
+						"$14.00"
+					],
+					"500 - 999 Pieces": [
+						"$12.90"
+					],
+					">= 1000 Pieces": [
+						"$11.00"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
+				}
+			]
+		},
+		{
+			"id": "07",
+			"SubCategory_Name": "T-Shirts",
+			"Category_Name": "Readymade Garments",
+			"Product_Name": "Skinny Tshirt",
+			"Thumbnail_Image": "https://i.postimg.cc/0yPkZ96G/14.png",
+			"Images": [
+				"https://i.postimg.cc/0yPkZ96G/14.png",
+				"https://i.postimg.cc/Kvncn1Yv/15.png",
+				"https://i.postimg.cc/02g2MYPB/16.png",
+				"https://i.postimg.cc/N0Nj5Zj6/17.png",
+				"https://i.postimg.cc/Kc388qST/18.png",
+				"https://i.postimg.cc/SR9S1s7d/19.png",
+				"https://i.postimg.cc/hGK0SQXJ/20.png",
+				"https://i.postimg.cc/CxTNQQYs/21.png",
+				"https://i.postimg.cc/8zRHQmzQ/22.png",
+				"https://i.postimg.cc/tRcDhgMf/23.png",
+				"https://i.postimg.cc/hGhq3vKm/3.png",
+				"https://i.postimg.cc/dtT6nYM0/24.png",
+				"https://i.postimg.cc/9FtVDsxD/2.png",
+				"https://i.postimg.cc/28fr8Cxp/2-1.png",
+				"https://i.postimg.cc/CKMKMwSM/4.png",
+				"https://i.postimg.cc/zDhqryKS/5-1.png",
+				"https://i.postimg.cc/Y9Z2xggj/6.png",
+				"https://i.postimg.cc/4dDZcGk9/7.png",
+				"https://i.postimg.cc/NM9BLMVt/7-1.png",
+				"https://i.postimg.cc/mk74NnB6/8.png",
+				"https://i.postimg.cc/mrrbfVyt/8-1.png",
+				"https://i.postimg.cc/Z5HTMX3G/8-2.png",
+				"https://i.postimg.cc/yNr7V9Ln/9.png",
+				"https://i.postimg.cc/g2HJPx9B/Oversized-Tshirt-Size-Chart.png",
+				"https://i.postimg.cc/CLH4CrgB/Cusom-Tshirt.png",
+				"https://i.postimg.cc/0NNZyYh6/Tshirt-Logo-Position.png",
+				"https://i.postimg.cc/J4bp64bh/Shorts-Logo-Position.png",
+				"https://i.postimg.cc/BZ5FR8wR/Print-Type.png",
+				"https://i.postimg.cc/jj96qGz9/Brand-Building.png",
+				"https://i.postimg.cc/6QYw4Mtk/Fabric.png",
+				"https://i.postimg.cc/cL0XVymB/Label.png",
+				"https://i.postimg.cc/qMj9Lz9K/Accesorries-CUSTOMIZATION.png",
+				"https://i.postimg.cc/Bvq4vr95/Buying-Process.png",
+				"https://i.postimg.cc/brQqrpJT/Choose-Us.png",
+				"https://i.postimg.cc/W4D1qXFx/Selling-Price-Chart.png",
+				"https://i.postimg.cc/vBf83Tvz/Customer-Review.png",
+				"https://i.postimg.cc/TwDVKC0P/Delivery-Time.png",
+				"https://i.postimg.cc/7h42fDbB/Packing-And-Shipping.png"
+			],
+			"Tables": [
+				{
+					"id": "01",
+					"Table_Name": "General Information",
+					"Product Name": [
+						"Oversized Co-Ord Set"
+					],
+					"Also Known As": [
+						"Oversized Co-Ord Set",
+						"T-Shirt and Shorts Pair"
+					],
+					"Packaging": [
+						"2 Pic/1 Plastic Bag",
+						"Custom..."
+					],
+					"Product Type": [
+						"Pair"
+					],
+					"GSM": [
+						"250-260 GSM"
+					],
+					"Selling Units": [
+						"Pair (Short+Tshirt)"
+					],
+					"Single Package Size": [
+						"Approx 30 cm X 27 cm X 8 cm"
+					],
+					"Single Gross Weight": [
+						"Approx 1.200 kg"
+					],
+					"Material": [
+						"French Terry 100% Combed Cotton Double Bio-Washed Silicon Finish Fabric"
+					],
+					"Fabric": [
+						"100% Cotton"
+					],
+					"Fabric Type": [
+						"Knitted"
+					]
+				},
+				{
+					"id": "02",
+					"Table_Name": "Other Attributes",
+					"Gender": [
+						"Unisex"
+					],
+					"Fit Type": [
+						"Oversized"
+					],
+					"Color": [
+						"Black",
+						"Off White",
+						"Lavender",
+						"Mink Chiku",
+						"Sage Green",
+						"Maroon",
+						"Navy Blue",
+						"Sky Blue",
+						"Custom..."
+					],
+					"Sleeve Length": [
+						"Half"
+					],
+					"Shorts Length": [
+						"Knee Length"
+					],
+					"Season": [
+						"Any"
+					],
+					"Size": [
+						"S",
+						"M",
+						"L",
+						"XL",
+						"XXL",
+						"Custom..."
+					],
+					"Feature": [
+						"Breathable",
+						"Sustainable",
+						"Custom available"
+					],
+					"Printing": [
+						"Screen Printing",
+						"Tie Dye",
+						"Puff",
+						"Embroidery",
+						"Carving",
+						"Digital",
+						"Flocking",
+						"Reflective",
+						"Silicon"
+					],
+					"Quality": [
+						"100% Premium Quality"
+					],
+					"Supply Ability": [
+						"2000 Piece/Pieces per Day"
+					],
+					"Place of Origin": [
+						"India"
+					],
+					"Sample Service": [
+						"Yes"
+					]
+				},
+				{
+					"id": "03",
+					"Table_Name": "Sample",
+					"Minimum Order Quantity Sample": [
+						"2 Piece"
+					],
+					"Sample Price": [
+						"$90.00/Piece"
+					],
+					"Sample Time": [
+						"7 Working Days"
+					],
+					"Sample Shipping Modes": [
+						"By Air"
+					]
+				},
+				{
+					"id": "04",
+					"Table_Name": "Customization or OEM ODM",
+					"Size Customization": [
+						"Yes"
+					],
+					"Colour/Color Customization": [
+						"Yes"
+					],
+					"Fabric Customization": [
+						"Yes"
+					],
+					"Pattern Customization": [
+						"Yes"
+					],
+					"Label Customization": [
+						"Yes"
+					],
+					"Packaging Customization": [
+						"Yes"
+					],
+					"OEM Service": [
+						"Yes",
+						"As Per Your Requirement"
+					]
+				},
+				{
+					"id": "05",
+					"Table_Name": "Minimum Order Quantity",
+					"Minimum Order Quantity": [
+						"250 Piece"
+					],
+					"Minimum Order Quantity For Size Customization": [
+						"300 Piece/Per Size"
+					],
+					"Minimum Order Quantity Colour/Color Customization": [
+						"300 Piece/Per Color"
+					],
+					"Minimum Order Quantity Fabric Customization": [
+						"300 Piece/Per Color"
+					],
+					"Minimum Order Quantity For Pattern Customization": [
+						"300 Piece/Per Pattern"
+					],
+					"Minimum Order Quantity For Label Customization": [
+						"300 Piece"
+					],
+					"Minimum Order Quantity For Packaging Customization": [
+						"250 Piece"
+					],
+					"Minimum Order Quantity For Print/Design Customization": [
+						"100 Piece/Per Design"
+					]
+				},
+				{
+					"id": "06",
+					"Table_Name": "Shipping and Payment Terms",
+					"Shipping": [
+						"By Air (Fedex, DHL, Etc...)",
+						"By Sea"
+					],
+					"Payment": [
+						"L/C",
+						"T/T",
+						"D/A",
+						"D/P",
+						"CAD"
+					],
+					"Delivery Time": [
+						"Depends on Quantity"
+					]
+				},
+				{
+					"id": "07",
+					"Table_Name": "Pricing",
+					"250 - 499 Pieces": [
+						"$14.00"
+					],
+					"500 - 999 Pieces": [
+						"$12.90"
+					],
+					">= 1000 Pieces": [
+						"$11.00"
+					],
+					"Note": [
+						"Factory Reasonable Price.",
+						"No Middle Price.",
+						"We Can Discuss to Your Satisfy For Big OEM Order"
+					]
+				}
+			]
 		}
 	]
 }
