@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily:{
+      DM:["Rubik","sans-serif"]
+    },
     screens: {
       'xxs': '240px',
       'xs': '480px', // Added a smaller breakpoint
@@ -13,7 +16,9 @@ module.exports = {
       '2xl': '1536px',
       '3xl': '1920px', // Added a larger breakpoint
     },
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 }

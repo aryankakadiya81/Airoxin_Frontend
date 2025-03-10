@@ -1,21 +1,24 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
-import About_Company from './About_Us Sections/About_Company/About_Company';
-import Work_Section from './About_Us Sections/Work_Section/Work_Section';
+import About_Company from './All_Sections/About_Company/About_Company';
 // import Heading from './Mini_Components/Heading';
-import Vid1 from "../Assets/Vedio/Vid1.mp4";
-import Company_Details from './About_Us Sections/Company_Details/Company_Details';
-import Why_Choose_Us from './About_Us Sections/Why_Choose_Us/Why_Choose_Us';
+// import Vid1 from "../Assets/Vedio/Vid1.mp4";
+import Company_Details from './All_Sections/Company_Details/Company_Details';
+import Why_Choose_Us from './All_Sections/Why_Choose_Us/Why_Choose_Us';
 import Helmet_Jsx from '../Helmet_Jsx';
 import Seo_Data from '../Json_Files/SEO_Meta_Keyword.json';
+import Vision_Mission_Section from './All_Sections/Vision_Mission_Section/Vision_Mission_Section';
+import Product_Features_Section from './All_Sections/Product_Features_Section/Product_Features_Section';
+import Product_Advantage_Section from './All_Sections/Product_Advantage_Section/Product_Advantage_Section';
+import Consign_Section from './All_Sections/Consign_Section/Consign_Section';
 
 const AboutUs_Page = () => {
     return (
         <>
-            <div className="user-select-none">
+            <div className="user-select-none bg-gray-900">
                 {/* SEO Meta Tags */}
-                <Helmet_Jsx Title={Seo_Data.Aboutpage.Title} Desc={Seo_Data.Aboutpage.Description} Url={Seo_Data.Aboutpage.Url}></Helmet_Jsx>
+                <Helmet_Jsx All={Seo_Data.Aboutpage}></Helmet_Jsx>
 
                 {/* Navbar */}
                 <Navbar />
@@ -23,7 +26,7 @@ const AboutUs_Page = () => {
                 {/* Main Content with Background Video */}
                 <div className="relative overflow-hidden">
                     {/* Background Video */}
-                    <video
+                    {/* <video
                         autoPlay
                         loop
                         muted
@@ -32,10 +35,10 @@ const AboutUs_Page = () => {
                     >
                         <source src={Vid1} type="video/mp4" />
                         Your browser does not support the video tag.
-                    </video>
+                    </video> */}
 
                     {/* Overlay for Better Readability */}
-                    <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+                    <div className="absolute inset-0 bg-opacity-50 z-10"></div>
 
                     {/* Main Content */}
                     <div className="relative z-20">
@@ -43,7 +46,11 @@ const AboutUs_Page = () => {
                         {/* <Hero_Section></Hero_Section> */}
                         <About_Company />
                         <Company_Details />
-                        <Work_Section />
+                        <Consign_Section></Consign_Section>
+                        <Product_Features_Section></Product_Features_Section>
+                        <Vision_Mission_Section></Vision_Mission_Section>
+                        <Product_Advantage_Section></Product_Advantage_Section>
+                        {/* <Work_Section /> */}
                         <Why_Choose_Us />
                     </div>
                 </div>

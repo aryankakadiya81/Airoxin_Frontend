@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "emoji": "🌍",
+      "title": "Global Reforestation",
+      "description": "Planting 1 million trees across 15 countries",
+      "progress": 85
+    },
+    {
+      "id": 2,
+      "emoji": "💡",
+      "title": "Solar Initiatives",
+      "description": "Installing renewable energy systems for communities",
+      "progress": 72
+    },
+    {
+      "id": 3,
+      "emoji": "♻️",
+      "title": "Recycling Programs",
+      "description": "Zero-waste management solutions for cities",
+      "progress": 95
+    },
+    {
+      "id": 4,
+      "emoji": "🌊",
+      "title": "Ocean Cleanup",
+      "description": "Removing plastic waste from marine ecosystems",
+      "progress": 68
+    },
+    {
+      "id": 5,
+      "emoji": "🚲",
+      "title": "Sustainable Transport",
+      "description": "EV charging network development",
+      "progress": 45
+    }
+  ]

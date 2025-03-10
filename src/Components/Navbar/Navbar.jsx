@@ -4,20 +4,6 @@ import { Global } from '../../App';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import Product_Data from '../../Json_Files/Product_Page.json';
-import Design from '../../Json_Files/Design_Json/Colour_Json.json';
-
-
-
-// 'dark-charcoal': '#212A31',
-//'gray-blue': '#2E3944',
-//'deep-navy': '#124E66',
-//'rich-navy': '#1A3D58',
-//'darker-navy': '#15334C',
-//'charcoal-gray': '#25333C',
-//'mid-charcoal': '#1E2B33',
-//'very-dark-navy': '#0F2639',
-//'soft-gray-blue': '#2C373F',
-//'balanced-blue-gray': '#192F40',
 
 
 const Navbar = () => {
@@ -104,6 +90,11 @@ const Navbar = () => {
                                 Home
                             </Link>
                         </li>
+                        <li>
+                            <Link onClick={Scroll} to="/About" className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]">
+                                About Us
+                            </Link>
+                        </li>
 
                         <li onMouseEnter={() => setIsDropdownOpen(true)}
                             onMouseLeave={() => setIsDropdownOpen(false)} onClick={toggleDropdown}>
@@ -140,25 +131,42 @@ const Navbar = () => {
                                     onMouseEnter={() => setIsDropdownOpen(true)}
                                 >
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
-                                        <Link onClick={Scroll} to="/About" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
-                                            role="menuitem">
-                                            ABOUT US
+
+                                        <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                            role="menuitem"
+                                            to='/Infrastructure'>
+                                            Infrastructure
                                         </Link>
                                     </li>
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
                                         <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
-                                            role="menuitem" to="/Accreditation">
-                                            ACCREDITATION
+                                            role="menuitem" to="/Certificates">
+                                            Certificates
                                         </Link>
                                     </li>
+
+
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>
+                                        <Link onClick={Scroll} to="/ProductGallery" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                            role="menuitem">
+                                            Product Gallery
+                                        </Link>
+                                    </li>
+                                    {/* <li onMouseEnter={() => setIsDropdownOpen(true)}>
+                                        <Link onClick={Scroll} to="/ProductGallery" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                            role="menuitem">
+                                            Get Catalogue
+
+                                        </Link>
+                                    </li> */}
+                                    {/* <li onMouseEnter={() => setIsDropdownOpen(true)}>
 
                                         <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                             role="menuitem"
                                             to='/Tradefair'>
                                             TRADE FAIR PARTICIPATION
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             )}
                         </li>
@@ -172,7 +180,7 @@ const Navbar = () => {
                                 aria-label="Toggle dropdown"
                                 onMouseEnter={() => setIsDropdownOpen1(true)}
                             >
-                                Product
+                                Products
                                 <svg
                                     className={`w-4 h-4 ml-1 transition-transform duration-200 ${isDropdownOpen1 ? 'rotate-180' : 'rotate-0'
                                         }`}
@@ -239,28 +247,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-// 1. #0d1a26
-// 2. #111827
-// 3. #192f40
-// 4. #264b65
-// 5. #385c7e
-// 6. #4a6d96
-// 7. #1e3a5f
-// 8. #2b4c73
-// 9. #5a7b9c
-// 10 #ffffff
-
-
-// 1. #0d1a26 (Background)
-// 2. #111827 (Background / Grounding Elements)
-// 3. #192f40 (Accents / Secondary Background)
-// 4. #2b3c5e (Borders / Secondary Highlights)
-// 5. #384b5c (Text / Neutral Elements)
-// 6. #4a5568 (Paragraph Text / Subtle Contrasts)
-// 7. #5a677a (Highlights / Overlays)
-// 8. #b38b5f (Buttons / Headings / Accents)
-// 9. #7a3e4e (Dramatic Accents / Highlights)
-// 10 #ffffff (Text / Icons / White Space)

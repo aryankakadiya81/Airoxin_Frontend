@@ -5,18 +5,20 @@ import Logo from './Assets/Logo/WHITE/MAIN/MAIN WHITE.svg'
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home_Page from './Components/Home_Page';
-import Error_Page from './Components/Error_Page/Error_Page'
+import Error_Page from './Components/All_Sections/Error_Page/Error_Page'
 import AboutUs_Page from './Components/AboutUs_Page';
-import Team_Page from './Components/Team_Page';
+// import Team_Page from './Components/Team_Page';
 import ContactUs_Page from './Components/ContactUs_Page';
-import Accreditation_Page from './Components/Accreditation_Page';
 import Tradefair_Participation_Page from './Components/Tradefair_Participation_Page';
 import Category_Page from './Components/Category_Page';
-import SubCategory_Section from './Components/Product/SubCategory_Section';
-import Product from './Components/Product/Product';
+// import SubCategory_Section from './Components/Product/SubCategory_Section';
+import Product from './Components/All_Sections/Product/Product';
 import Pro_Data from './Json_Files/Product_Page.json'
 // import Tostify from './Tostify';
 import { ToastContainer } from 'react-toastify';
+import Infrastructure_Page from "./Components/Infrastructure_Page";
+import Certificate_Page from "./Components/Certificate_Page";
+import Product_Gallery_Page from "./Components/Product_Gallery_Page";
 // import Company_Details from './Components/Company_Details/Company_Details';
 
 
@@ -49,7 +51,7 @@ const App = () => {
 
     const [IsLoading, setIsLoading] = useState(true);
 
-    // Simulate a loading process (e.g., fetching data or rendering components)
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false); // Hide loader after 2 seconds (simulating loading)
@@ -60,39 +62,40 @@ const App = () => {
 
     return (
         <>
+            <div className="font-DM bg-gray-900">
 
-            {/* Loader */}
-            
-            <AnimatePresence>
-                {IsLoading && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{
-                            opacity: 0,
-                            transition: { duration: 0.5 },
-                        }}
-                        className="fixed inset-0 z-50 flex items-center justify-center"
-                    >
-                        {/* Background */}
+                {/* Loader */}
+
+                <AnimatePresence>
+                    {IsLoading && (
                         <motion.div
-                            initial={{ scale: 1 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             exit={{
-                                scale: [1, 0], // Simulate "closing doors" effect
-                                transition: { duration: 0.8, ease: "easeInOut" },
+                                opacity: 0,
+                                transition: { duration: 0.5 },
                             }}
-                            className="absolute inset-0 bg-gray-900"
-                        />
+                            className="fixed inset-0 z-50 flex items-center justify-center"
+                        >
+                            {/* Background */}
+                            <motion.div
+                                initial={{ scale: 1 }}
+                                exit={{
+                                    scale: [1, 0], // Simulate "closing doors" effect
+                                    transition: { duration: 0.8, ease: "easeInOut" },
+                                }}
+                                className="absolute inset-0 bg-gray-900"
+                            />
 
-                        {/* Static Logo */}
-                        <img
-                            src={Logo} // Replace with your logo path
-                            alt="Static Logo"
-                            className="w-32 h-32 mb-6 z-50"
-                        />
+                            {/* Static Logo */}
+                            <img
+                                src={Logo} // Replace with your logo path
+                                alt="Static Logo"
+                                className="w-32 h-32 mb-6 z-50"
+                            />
 
-                        {/* Progress Bar */}
-                        {/* <motion.div className="w-full max-w-md bg-gray-700 rounded-full overflow-hidden h-4">
+                            {/* Progress Bar */}
+                            {/* <motion.div className="w-full max-w-md bg-gray-700 rounded-full overflow-hidden h-4">
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={{ width: "100%" }}
@@ -100,63 +103,68 @@ const App = () => {
                                 className="h-full bg-blue-500"
                             />
                         </motion.div> */}
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
 
 
-            {!IsLoading && (<div className="select-none scroll-smooth">
-                <motion.Cursor />
-                <ToastContainer></ToastContainer>
-                <SpeedInsights />
-                <Global.Provider
-                    value={{
-                        Categorys: [Category, setCategory],
-                        SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product],
-                        Loader: [IsLoading, setIsLoading]
-                    }} >
+                {!IsLoading && (<div className="select-none scroll-smooth">
+                    <motion.Cursor />
+                    <ToastContainer theme="dark"></ToastContainer>
+                    <SpeedInsights />
+                    <Global.Provider
+                        value={{
+                            Categorys: [Category, setCategory],
+                            SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product],
+                            Loader: [IsLoading, setIsLoading]
+                        }} >
 
-                    <FloatingWhatsApp
-                        phoneNumber="+91 9925614381"
-                        accountName="AIROXIN INTERNATIONAL"
-                        chatMessage="Hello Dear, How Can I Help You?"
-                        avatar={Logo}
-                    />
-                    <BrowserRouter>
+                        <FloatingWhatsApp
+                            phoneNumber="+91 9925614381"
+                            accountName="AIROXIN INTERNATIONAL"
+                            chatMessage="Hello Dear, How Can I Help You?"
+                            avatar={Logo}
+                        />
+                        <BrowserRouter>
 
 
-                        <Routes>
+                            <Routes>
 
-                            <Route path="*" element={<Error_Page></Error_Page>}></Route>
+                                <Route path="*" element={<Error_Page></Error_Page>}></Route>
 
-                            <Route path="/Error" element={<Error_Page></Error_Page>}></Route>
+                                <Route path="/Error" element={<Error_Page></Error_Page>}></Route>
 
-                            <Route path="/" element={<Home_Page></Home_Page>}></Route>
+                                <Route path="/" element={<Home_Page></Home_Page>}></Route>
 
-                            <Route path="/Home" element={<Home_Page></Home_Page>}></Route>
-                            <Route path="/About" element={<AboutUs_Page></AboutUs_Page>}></Route>
+                                <Route path="/Home" element={<Home_Page></Home_Page>}></Route>
+                                <Route path="/About" element={<AboutUs_Page></AboutUs_Page>}></Route>
 
-                            <Route path="/Team" element={<Team_Page></Team_Page>}></Route>
+                                {/* <Route path="/Team" element={<Team_Page></Team_Page>}></Route> */}
 
-                            <Route path="/Contact" element={<ContactUs_Page></ContactUs_Page>}></Route>
+                                <Route path="/Contact" element={<ContactUs_Page></ContactUs_Page>}></Route>
 
-                            <Route path='/Accreditation' element={<Accreditation_Page></Accreditation_Page>}></Route>
+                                <Route path='/Certificates' element={<Certificate_Page></Certificate_Page>}></Route>
 
-                            <Route path='/Tradefair' element={<Tradefair_Participation_Page></Tradefair_Participation_Page>}></Route>
+                                <Route path='/Infrastructure' element={<Infrastructure_Page></Infrastructure_Page>}></Route>
 
-                            <Route path='/Category' element={<Category_Page></Category_Page>}></Route>
+                                <Route path='/ProductGallery' element={<Product_Gallery_Page></Product_Gallery_Page>}></Route>
 
-                            {/* <Route path='/Category/Subcategory' element={<SubCategory_Section></SubCategory_Section>}></Route> */}
 
-                            <Route path='/Category/Subcategory/Product' element={<Product></Product>}></Route>
+                                <Route path='/Tradefair' element={<Tradefair_Participation_Page></Tradefair_Participation_Page>}></Route>
 
-                        </Routes>
+                                <Route path='/Category' element={<Category_Page></Category_Page>}></Route>
 
-                    </BrowserRouter>
-                </Global.Provider>
+                                {/* <Route path='/Category/Subcategory' element={<SubCategory_Section></SubCategory_Section>}></Route> */}
 
-            </div>)}
+                                <Route path='/Category/Subcategory/Product' element={<Product></Product>}></Route>
 
+                            </Routes>
+
+                        </BrowserRouter>
+                    </Global.Provider>
+
+                </div>)}
+            </div>
         </>
     )
 }

@@ -2,42 +2,79 @@
     "Shlogan_Section": {
         "id": "01",
         "Section_Name_in_File": "Hero_Section",
-        "Shlogen_black_line": "From Our Factory, To Your Future",
-        "Paragraph": "We Manufacture. We Export. We Import. We're A Collective Of Makers, Bridging Global Markets With Direct Manufacturing Expertise. Experience The Difference Of A Trade Partner Built On Production."
+        "Shlogen_Word": "Sustainable",
+        "Shlogen_black_line": "Food Packaging Solutions",
+        "Paragraph": "Our Eco-friendly Disposable Products Are Aesthetically Pleasing Products So That Customers Can Enjoy Food Without Any Negative Impact On The Taste & Health As Plastic Products Do. Due To Durability These Products Are Gaining Popularity Among Food, Health And Nature Conscious Peoples."
     },
     "About_Company_Section": {
         "id": "01",
         "Section_Name_in_File": "About_Company",
-        "Paragraph": "We're Manufacturers First, Trade Experts Second. Our Direct Production Experience Allows Us To Control Every Step Of Import And Export, Ensuring Quality And Efficiency From Factory To Market.This Direct Oversight Translates To Unwavering Reliability And Consistent Delivery, Building The Foundation Of Trust Our Clients Depend On."
+        "Title": "About Our Green Journy",
+        "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741576802/General/bxj4ouq1jxafvfo02j2e.png",
+        "Small_Paragraph": "Eco-friendly Disposable Tableware Is A Sustainable Alternative To Plastic And Styrofoam.",
+        "Paragraph": "Traditional Plastic And Styrofoam Options, Known For Their Persistent Pollution And Slow Decomposition, Are Gradually Being Replaced By Products Crafted From Renewable Resources. Materials Like Sugarcane Bagasse, Bamboo, Palm Leaves, And Cornstarch Offer A Guilt-free Dining Experience, As They Naturally Break Down, Minimizing Landfill Waste And Contributing To A Circular Economy.",
+        "Features_About": [
+            "It Helps Reduce Plastic Waste.",
+            "Composting Is Often Possible.",
+            "It Lessens Landfill Burden.",
+            "It's A Growing Market Trend.",
+            "These Products Decompose Naturally.",
+            "It Offers A Dining Solution."
+        ],
+        "Counter_Data": [
+            {
+                "id": 1,
+                "value": 350000, 
+                
+                "label": "Annual Production in KG"
+            },
+            {
+                "id": 2,
+                "value": 80, 
+                "label": "Workers & Professionals"
+            },
+            {
+                "id": 3,
+                "value": 18, 
+                "label": "Exported Countries"
+            },
+            {
+                "id": 4,
+                "value": 90000, 
+                "label": "SqFt Area"
+            }
+        ]
     },
     "Consign_Section": {
         "id": "01",
         "Section_Name_in_File": "Consign_Section",
+        "Main_Title": "About Our Export Journy",
+        "Title": "Our Export Journy",
         "Paragraph": "We're Passionate About Your Success, That's Why We Deliver Premium Quality, Precise Quantities, And The Best Possible Rates. ",
         "Box": [
             {
                 "id": "01",
                 "Icon": "fa-solid fa-boxes-stacked",
-                "Count": "100+",
-                "Name": "Consignment Done"
+                "Count": 18,
+                "Name": "Exported Countries"
+            },
+            {
+                "id": "04",
+                "Icon": "bi bi-box-fill",
+                "Count": 25,
+                "Name": "Products"
             },
             {
                 "id": "02",
                 "Icon": "fa-solid fa-thumbs-up",
-                "Count": "10+",
+                "Count": 10,
                 "Name": "Happy Buyers"
             },
             {
                 "id": "03",
                 "Icon": "fa-solid fa-trophy",
-                "Count": "02+",
+                "Count": 4,
                 "Name": "Years Experience"
-            },
-            {
-                "id": "04",
-                "Icon": "fa-solid fa-shirt",
-                "Count": "120+",
-                "Name": "Products"
             }
         ]
     },
@@ -64,6 +101,130 @@
             "Huge Capacity: We Meet Any Scale.",
             "Seamless Process: From Source To Doorstep.",
             "Makers' Commitment: Your Global Success."
+        ]
+    },
+    "Vision_and_Mission": {
+        "id": "01",
+        "Section_Name_in_File": "Vision_Mission_Section",
+        "title": "Our Vision & Mission",
+        "vision": {
+            "title": "Our Vision",
+            "description": "To lead the market in sustainable disposables, reducing our carbon footprint while promoting innovation and environmental stewardship globally.",
+            "iconPath": "🚀"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "To harness Earth’s most renewable resources, transforming plant waste into eco-friendly products that nurture and protect the environment while delivering high-quality disposable solutions for our clients.",
+            "iconPath": "🎯"
+        },
+        "coreValues": [
+            {
+                "id": 1,
+                "icon": "🌱",
+                "title": "Innovation",
+                "description": "Pioneering eco-friendly technologies"
+            },
+            {
+                "id": 2,
+                "icon": "♻️",
+                "title": "Sustainability",
+                "description": "Zero-waste practices implementation"
+            },
+            {
+                "id": 3,
+                "icon": "🌍",
+                "title": "Community",
+                "description": "Global environmental stewardship"
+            }
+        ]
+    },
+    "Product_Features_Section": {
+        "id": 6,
+        "Section_Name_in_File": "Product_Features_Section",
+        "Title": "Product Features",
+        "Data": [
+            {
+                "id": 1,
+                "emoji": "❄️",
+                "title": "Freezer Safe"
+            },
+            {
+                "id": 2,
+                "emoji": "📟",
+                "title": "Microwave Safe"
+            },
+            {
+                "id": 3,
+                "emoji": "🥤",
+                "title": "Disposable"
+            },
+            {
+                "id": 4,
+                "emoji": "🌳",
+                "title": "Compostable"
+            },
+            {
+                "id": 5,
+                "emoji": "♻️",
+                "title": "Biodegradable"
+            },
+            {
+                "id": 6,
+                "emoji": "✅",
+                "title": "Food Grade Composted"
+            },
+            {
+                "id": 7,
+                "emoji": "📋",
+                "title": "Certified Product"
+            },
+            {
+                "id": 8,
+                "emoji": "💧",
+                "title": "Water Resistant"
+            },
+            {
+                "id": 9,
+                "emoji": "🛡️",
+                "title": "Leak Proof"
+            },
+            {
+                "id": 10,
+                "emoji": "🌍",
+                "title": "Sustainable"
+            }
+        ]
+    },
+    "Product_Advantage_Section": {
+        "id": 6,
+        "Section_Name_in_File": "Product_Advantage_Section",
+        "Title": "Product Advantage",
+        "Data": [
+            {
+                "id": 1,
+                "emoji": "🌍",
+                "title": "100% Eco Friendly"
+            },
+            {
+                "id": 2,
+                "emoji": "🗑️",
+                "title": "Reduce Waste"
+            },
+            {
+                "id": 3,
+                "emoji": "🍽️",
+                "title": "Used For Hot & Cold Foods"
+            },
+            {
+                "id": 4,
+                "emoji": "✅",
+                "title": "Durable"
+            },
+            {
+                "id": 5,
+                "emoji": "🌿",
+                "title": "Non-Toxic"
+            }
         ]
     }
 }

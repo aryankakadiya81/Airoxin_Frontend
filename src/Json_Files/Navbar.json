@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "Name": "Navbar",
+    "Data": [
+        {
+            "id": 1,
+            "Name":"Home",
+            "Direction":"/Home"
+        },
+        {
+            "id": 2,
+            "Name":"About Us",
+            "Direction":"/About"
+        }
+    ]
+}

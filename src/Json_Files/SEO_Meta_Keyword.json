@@ -1,50 +1,86 @@
 {
     "Homepage": {
-        "Title": "Your Global Trade Partner - Airoxin International",
-        "Description": [
-            "Airoxin International is a leading global trade company specializing in the import-export of readymade garments and other products. Benefit from our expertise, global network, and commitment to quality.",
-            "Provide Best Import-Export Service and Delever quality Product",
-            "Explore International Business with us. We will give you best Service and Product."
-        ],
-        "Url": "https://www.airoxin.com/"
+        "Title": "Airoxin International - Eco Friendly Bagasse Tableware Manufacturer, Exporter & Wholesale",
+        "Keywords": "Bagasse tableware manufacturer, Biodegradable tableware manufacturer, Bagasse pulp tableware supplier, Eco-friendly tableware wholesale, Sustainable disposable plates, Custom eco-friendly tableware, Compostable bowls and plates manufacturer, Biodegradable tableware exporter, Private label disposable tableware, Natural bagasse tableware, Eco-friendly packaging solutions, Plant-based tableware, Custom biodegradable tableware, Wholesale bamboo and bagasse plates, Sugarcane-based tableware supplier, Eco-conscious disposable tableware, Compostable bagasse packaging supplier, Sustainable catering supplies, Bulk eco-friendly tableware, Disposable compartment plates manufacturer",
+        "Abstract": "AIROXIN INTERNATIONAL | Eco-Friendly Tableware Wholesale, Manufacturer & Exporter",
+        "Description": "Airoxin International is a top manufacturer & exporter of eco-friendly tableware wholesale. Durable, sustainable, and stylish products for health-conscious customers.",
+        "Url": "https://www.airoxin.com/",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
     },
     "Aboutpage": {
-        "Title": "About Airoxin International",
-        "Description": [
-            "At AIROXIN INTERNATIONAL, our vision is to make global trade simple, reliable, and accessible. We connect businesses worldwide, drive growth, and build strong relationships.",
-            "At AIROXIN INTERNATIONAL, our mission is to provide fast, reliable, and affordable import-export services that exceed customer expectations. We aim to build lasting relationships, deliver expert solutions, and make global trade easy.",
-            "Sourcing and Procurement,Quality Control,Logistics and Shipping,Market Research,After-Sales Support,We Help in Export-Import Documentation,Competitive Pricing,Strong Customer Support,24/7 Support,Complete Client Satisfaction"
-        ],
-        "Url": "https://www.airoxin.com/About"
+        "Title": "Airoxin International - Eco Friendly Bagasse Tableware Manufacturer, Exporter & Wholesale",
+        "Keywords": "Bagasse tableware manufacturer, Biodegradable tableware manufacturer, Bagasse pulp tableware supplier, Eco-friendly tableware wholesale, Sustainable disposable plates, Custom eco-friendly tableware, Compostable bowls and plates manufacturer, Biodegradable tableware exporter, Private label disposable tableware, Natural bagasse tableware, Eco-friendly packaging solutions, Plant-based tableware, Custom biodegradable tableware, Wholesale bamboo and bagasse plates, Sugarcane-based tableware supplier, Eco-conscious disposable tableware, Compostable bagasse packaging supplier, Sustainable catering supplies, Bulk eco-friendly tableware, Disposable compartment plates manufacturer",
+        "Abstract": "AIROXIN INTERNATIONAL | Eco-Friendly Tableware Wholesale, Manufacturer & Exporter",
+        "Description": "Airoxin International is a trusted disposable Products manufacturer. Offering eco-friendly, customizable products with competitive pricing and global shipping.",
+        "Url": "https://www.airoxin.com/About",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
     },
-    "Productpage": {
-        "Title": "Product and Service",
-        "Description": [
-            "Explore our comprehensive range of import-export services, tailored to your specific needs.",
-            "We provide Import-Export Service",
-            "Discover our diverse selection of high-quality readymade garments and other products."
-        ]
+    "Productpage":  {
+        "Title": "Products Airoxin International - Eco Friendly Tableware Manufacturer, Exporter & Wholesale",
+        "Keywords": "compostable round plates, eco-friendly bowls, biodegradable tableware, sustainable plates, compostable bowls, eco-friendly tableware, compostable dinnerware, green tableware, Bagasse Plate India",
+        "Abstract": "Compostable Round Plates & Bowls Manufacturer | Bagasse Plate India",
+        "Description": "Discover compostable round plates and bowls, eco-friendly and biodegradable tableware for sustainable dining. Perfect for businesses and eco-conscious customers.",
+        "Url": "https://www.airoxin.com/ProductGallery",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
     },
     "ContactUspage": {
-        "Title": "Contact Us",
-        "Description": [
-            "Explore our comprehensive range of import-export services, tailored to your specific needs.",
-            "We provide Import-Export Service",
-            "Discover our diverse selection of high-quality readymade garments and other products."
-        ],
-        "Url": "https://www.airoxin.com/Contact"
+        "Title": "Contact Us Airoxin International",
+        "Keywords": "contact us, sustainable catering supplies, Airoxin International, eco-friendly catering, sustainable tableware, biodegradable catering supplies, compostable catering products, eco-friendly packaging, sustainable food service, green catering solutions",
+        "Abstract": "Contact Us | Sustainable Catering Supplies | Airoxin International",
+        "Description": "Contact Airoxin International for sustainable catering supplies. Eco-friendly, biodegradable, and customizable tableware and packaging solutions for your business needs.",
+        "Url": "https://www.airoxin.com/Contact",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
+    },
+    "Infrastructure": {
+        "Title": "Airoxin International - Infrastructure",
+        "Keywords": "infrastructure, natural bagasse tableware, plant-based tableware, eco-conscious disposable tableware, sustainable tableware, biodegradable tableware, eco-friendly products, compostable tableware, green packaging solutions, eco-friendly disposable tableware, bagasse products, sustainable food service solutions",
+        "Abstract": "Infrastructure | Natural Bagasse Tableware | Eco-Conscious Disposable | Plant-based Tableware",
+        "Description": "Explore our infrastructure for producing natural bagasse tableware and eco-conscious disposable solutions. Plant-based, sustainable, and biodegradable tableware for all needs.",
+        "Url": "https://www.airoxin.com/Infrastructure",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
     },
     "Team": {
-        "Title": "Team - AIROXIN INTERNATIONAL"
+        "Title": "Team Of Airoxin International - Eco Friendly Bagasse Tableware Manufacturer, Exporter & Wholesale",
+        "Keywords": "Bagasse tableware manufacturer, Biodegradable tableware manufacturer, Bagasse pulp tableware supplier, Eco-friendly tableware wholesale, Sustainable disposable plates, Custom eco-friendly tableware, Compostable bowls and plates manufacturer, Biodegradable tableware exporter, Private label disposable tableware, Natural bagasse tableware, Eco-friendly packaging solutions, Plant-based tableware, Custom biodegradable tableware, Wholesale bamboo and bagasse plates, Sugarcane-based tableware supplier, Eco-conscious disposable tableware, Compostable bagasse packaging supplier, Sustainable catering supplies, Bulk eco-friendly tableware, Disposable compartment plates manufacturer",
+        "Abstract": "AIROXIN INTERNATIONAL | Eco-Friendly Tableware Wholesale, Manufacturer & Exporter",
+        "Description": "Airoxin International is a top manufacturer & exporter of eco-friendly tableware wholesale. Durable, sustainable, and stylish products for health-conscious customers.",
+        "Url": "https://www.airoxin.com/",
+        "Image": "Logo.png",
+        "Distribution": "Global",
+        "Googlebot": "INDEX, FOLLOW",
+        "Robots": "index,follow",
+        "Geo_Place": "Surat,Gujarat",
+        "Geo_Place_1": "Gujarat,India"
     },
-    "Tradefair_Participation":{
+    "Tradefair_Participation": {
         "Title": "AIROXIN INTERNATIONAL"
     },
-    "Accreditation":{
+    "Accreditation": {
         "Title": "AIROXIN INTERNATIONAL"
-    },
-    "General": {
-        "Keywords": "Import-Export, International Trade, Global Sourcing, Supply Chain Management, Customs Clearance, International Logistics, market analysis, global business, trade solutions, reliable partner,global trade,readymade garments,medicine,international business,supply chain management,customs clearance,international logistics,market analysis,global sourcing,Sourcing and Procurement,Quality Control,Logistics and Shipping,Market Research,After-Sales Support,We Help in Export-Import Documentation,Competitive Pricing,Strong Customer Support,24/7 Support,Complete Client Satisfaction,quality products",
-        "Description": "Airoxin International is a leading global trade company specializing in import-export, offering seamless solutions for businesses worldwide. Benefit from our expertise, global network, and commitment to quality."
     }
 }

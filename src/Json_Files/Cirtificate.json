@@ -1,7 +1,10 @@
-[
-    {
-        "id":"01",
-        "Name":"GST Crtificate",
-        "img":"https://i.postimg.cc/qvvpLKtM/GST.png"
-    }
-]
+{
+    "Title":"Our Certificates",
+    "ImageData": [
+        {
+            "id": 1,
+            "Name": "GST Crtificate",
+            "img": "https://i.postimg.cc/qvvpLKtM/GST.png"
+        }
+    ]
+}

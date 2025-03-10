@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
-import Tradefair_Participation from './Tradefair_Participation/Tradefair_Participation';
-import Vid1 from "../Assets/Vedio/Vid1.mp4";
+import Tradefair_Participation from './All_Sections/Tradefair_Participation/Tradefair_Participation';
+import Seo_Data from '../Json_Files/SEO_Meta_Keyword.json'
+
+// import Vid1 from "../Assets/Vedio/Vid1.mp4";
 
 import Helmet_Jsx from '../Helmet_Jsx';
 import Data from '../Json_Files/SEO_Meta_Keyword.json'
@@ -11,14 +13,14 @@ const Tradefair_Participation_Page = () => {
     return (
         <>
             <div>
-                <Helmet_Jsx Title={Data.Tradefair_Participation.Title}></Helmet_Jsx>
+                <Helmet_Jsx All={Seo_Data.Homepage}></Helmet_Jsx>
 
                 <Navbar />
 
                 {/* Main Content with Background Video */}
                 <div className="relative overflow-hidden">
                     {/* Background Video */}
-                    <video
+                    {/* <video
                         autoPlay
                         loop
                         muted
@@ -27,10 +29,10 @@ const Tradefair_Participation_Page = () => {
                     >
                         <source src={Vid1} type="video/mp4" />
                         Your browser does not support the video tag.
-                    </video>
+                    </video> */}
 
                     {/* Overlay for Better Readability */}
-                    <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+                    {/* <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div> */}
 
                     {/* Main Content */}
                     <div className="relative z-20">

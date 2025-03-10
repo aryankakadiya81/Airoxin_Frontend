@@ -7,51 +7,27 @@
             "Import-Export"
         ],
         "Icon": "bi bi-building",
-        "Background_Color": "#124E66",
-        "Font_Color": "#ffffff"
-    },
-    {
-        "id": "02",
-        "Title": "Additional Business",
-        "Subtitles": [
-            "Manufacturer",
-            "Wholesaler",
-            "Import",
-            "Export"
-        ],
-        "Icon": "bi bi-building-fill-add",
-        "Background_Color": "#1A3D58",
+        "Background_Color": "#0F2639",
         "Font_Color": "#ffffff"
     },
     {
         "id": "04",
         "Title": "Year of Establishment",
         "Subtitles": [
-            "2022"
+            "2020"
         ],
         "Icon": "fa-solid fa-flag-checkered",
         "Background_Color": "#25333C",
         "Font_Color": "#ffffff"
     },
     {
-        "id": "05",
-        "Title": "Leagel Status of Firm",
-        "Subtitles": [
-            "Sole Proprietorship"
-        ],
-        "Icon": "fa-solid fa-scale-balanced",
-        "Background_Color": "#15334C",
-        "Font_Color": "#ffffff"
-    },
-    {
         "id": "06",
         "Title": "Payment Mode",
         "Subtitles": [
-            "L/C",
-            "T/T",
-            "D/A",
-            "D/P",
-            "CAD"
+            "100% Advance",
+            "40% Advance and 60% Before Loading",
+            "50% Advance and 50% Before Loading",
+            "L/C"
         ],
         "Icon": "fa-solid fa-money-bill-1-wave",
         "Background_Color": "#1E2B33",

@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "Title": "Our Infrastructure",
+  "Paragraph":"Our Infrastructure Is A Cornerstone Of Our Success, Built Upon The Visionary Leadership Of Our Founders. Their Commitment To Sustainability And Innovation Has Enabled Us To Make Significant Strides In The Eco-friendly, Biodegradable Tableware Industry. Every Aspect Of Our Operations Reflects Our Dedication To Producing High-quality, Environmentally Responsible Products That Meet The Evolving Needs Of Consumers And Businesses Alike.",
+  "Data": [
+    {
+      "id": 1,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/z0ipaimg2nugj1irpfwb.jpg",
+      "alt": "Solar panel assembly line",
+      "description": "Our solar panel production facility using 100% renewable energy"
+    },
+    {
+      "id": 2,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/ziferbxrltsavgbupp6k.jpg",
+      "alt": "Recycling center",
+      "description": "Material recovery and recycling operations"
+    },
+    {
+      "id": 3,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573842/Infrastructure/oxqshnmuvyxmmlvmlnpo.jpg",
+      "alt": "Organic packaging",
+      "description": "Biodegradable packaging production area"
+    }
+  ]
+}
