@@ -78,7 +78,7 @@ const Infrastructure_Section = () => {
                     initial={{ x: -30, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="text-2xl sm:text-3xl text-white mb-6 text-center mt-5"
+                    className="text-xl sm:text-2xl text-white mb-6 text-center mt-5"
                 >
                     {/* Pioneering Sustainable Solutions Since 2012 */}
                     {/* Disposable products are growing in popularity due to their portability and affordability. */}

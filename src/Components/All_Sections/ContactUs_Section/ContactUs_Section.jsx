@@ -11,6 +11,7 @@ import axios from 'axios';
 const ContactUs_Section = () => {
     const ref = useRef(null);
     let [Data, setData] = useState(Contact_Json);
+    let [Load, setLoad] = useState(false);
 
     // const isInView = useInView(ref, { once: true });
     const animationControls = useAnimation();
@@ -102,6 +103,7 @@ const ContactUs_Section = () => {
     };
 
     const handleSubmit = async (e) => {
+        setLoad(true);
         e.preventDefault();
 
         // Validate the form before submission
@@ -110,6 +112,7 @@ const ContactUs_Section = () => {
         }
 
         try {
+            setLoad(true);
             // Simulate API call
 
 
@@ -132,7 +135,7 @@ const ContactUs_Section = () => {
                 countrycode: ""
             });
             setCountryCode("");
-
+            setLoad(false);
             
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -385,6 +388,7 @@ const ContactUs_Section = () => {
 
                         {/* Submit Button */}
                         <button
+                            disabled={Load}
                             type="submit"
                             className="w-full py-3 text-lg font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-md transition-colors duration-300"
                         >
