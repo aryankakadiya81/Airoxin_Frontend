@@ -160,68 +160,65 @@ const Service_Section = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {Product_Data.Category.map((product, ind) => (
-            <motion.div
-              key={ind}
-              variants={{
-                hidden: { y: 50, opacity: 0 },
-                visible: { y: 0, opacity: 1 }
-              }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-800 rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
-              whileHover={{ scale: 1.02 }}
-            >
-              {/* Icon Animation */}
+            <Link
+            key={ind}
+              onClick={() => { setCategory(product.Category_Name); window.scrollTo(0, 0); setIsLoading(true) }} to="/Category">
               <motion.div
-                initial={{ scale: 1 }}
-                animate={{ scale: 0.8 }}
-                transition={{
-                  duration: 1.2,
-                  repeat: Infinity,
-                  repeatType: 'reverse',
-                  ease: 'easeInOut'
+                key={ind}
+                variants={{
+                  hidden: { y: 50, opacity: 0 },
+                  visible: { y: 0, opacity: 1 }
                 }}
-                className="flex justify-center mb-6"
+                transition={{ duration: 0.5 }}
+                className="bg-gray-800 rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
+                whileHover={{ scale: 1.02 }}
               >
-                <div className="text-5xl sm:text-6xl text-green-500">
-                  {product.icon}
-                </div>
-              </motion.div>
-
-              {/* Product Content */}
-              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4">
-                {product.Category_Name}
-              </h3>
-              <p className="text-gray-400 mb-6">{product.Details}</p>
-
-              {/* Details Button */}
-              <Link
-                onClick={() => { setCategory(product.Category_Name); window.scrollTo(0, 0); setIsLoading(true) }} to="/Category"
-                className="flex items-center gap-2 text-green-500 hover:text-green-600 transition-colors duration-200"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Learn More
-                <motion.svg
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: 'linear'
-                  }}
-                  className="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                {/* Icon Animation */}
+                <motion.div
+                  className="flex justify-center"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </motion.svg>
-              </Link>
-            </motion.div>
+
+                  <img src={`${product.Thumbnail_Image}`} className='rounded-2xl'></img>
+
+
+                </motion.div>
+
+                {/* Product Content */}
+                <h3 className="text-xl sm:text-3xl font-semibold text-white my-4 mt-6">
+                  {product.Category_Name}
+                </h3>
+                {/* <p className="text-gray-400 mb-6">{product.Details}</p> */}
+
+                {/* Details Button */}
+                <Link
+                  onClick={() => { setCategory(product.Category_Name); window.scrollTo(0, 0); setIsLoading(true) }} to="/Category"
+                  className="flex text-xl items-center gap-2 text-green-500 hover:text-green-600 transition-colors duration-200"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Learn More
+                  <motion.svg
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      ease: 'linear'
+                    }}
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </motion.svg>
+                </Link>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
       </div>

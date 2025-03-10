@@ -132,15 +132,15 @@ const Category_Section = () => {
         <section className="bg-gray-900 py-20">
             {/* Container */}
             <motion.h2
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.5 }}
-          className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12"
-        >
-          {Category}
-          <span className="block mt-4 h-1 bg-gradient-to-r from-green-500 to-blue-500 w-24 mx-auto rounded-full" />
-        </motion.h2>
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.5 }}
+                className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12"
+            >
+                {Category}
+                <span className="block mt-4 h-1 bg-gradient-to-r from-green-500 to-blue-500 w-24 mx-auto rounded-full" />
+            </motion.h2>
             <div className="max-w-[1920px] mx-auto px-4">
                 {/* Back Button */}
                 {/* Heading */}
@@ -173,7 +173,7 @@ const Category_Section = () => {
                             .filter((el) => el.Category_Name === Category)
                             .map((ele) => (
                                 <>
-                                    <motion.h1
+                                    {/* <motion.h1
                                         initial={{ opacity: 0, y: 50 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
@@ -182,12 +182,16 @@ const Category_Section = () => {
                                     >
                                         {ele.SubCategory_Name}
                                         <span className="block mt-4 h-1 bg-gradient-to-r from-green-500 to-blue-500 w-24 mx-auto rounded-full" />
-                                    </motion.h1>
+                                    </motion.h1> */}
                                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-10 lg:gap-12">
                                         {ProductData.Products.filter((el) => el.SubCategory_Name === ele.SubCategory_Name && el.Category_Name === ele.Category_Name).length !== 0 ? (
                                             ProductData.Products
                                                 .filter((el) => el.SubCategory_Name === ele.SubCategory_Name && el.Category_Name === ele.Category_Name)
-                                                .map((el) => (
+                                                .map((el, ind) => (
+
+
+
+
                                                     <Link
                                                         to="/Category/Subcategory/Product"
                                                         onClick={() => {
@@ -195,67 +199,68 @@ const Category_Section = () => {
                                                             window.scrollTo(0, 0);
                                                         }}>
                                                         <motion.div
-                                                            className="bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
-                                                            whileHover={{ scale: 1.03 }}
-                                                            initial={{ opacity: 0, y: 50 }}
-                                                            whileInView={{ opacity: 1, y: 0 }}
-                                                            viewport={{ once: true }}
+                                                            key={ind}
+                                                            variants={{
+                                                                hidden: { y: 50, opacity: 0 },
+                                                                visible: { y: 0, opacity: 1 }
+                                                            }}
                                                             transition={{ duration: 0.5 }}
+                                                            className="bg-gray-800 rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300"
+                                                            whileHover={{ scale: 1.02 }}
                                                         >
-                                                            {/* Product Image with Zoom Animation */}
+                                                            {/* Icon Animation */}
                                                             <motion.div
-                                                                className="relative h-64 sm:h-80"
-                                                                whileHover={{ scale: 1.1 }}
-                                                                transition={{ duration: 0.3 }}
+                                                                className="flex justify-center"
                                                             >
-                                                                <img
-                                                                    src={el.Images}
-                                                                    alt={el.Product_Name}
-                                                                    className="w-full h-full object-cover"
-                                                                />
-                                                                <motion.div
-                                                                    className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"
-                                                                    initial={{ opacity: 0 }}
-                                                                    whileHover={{ opacity: 1 }}
-                                                                    transition={{ duration: 0.3 }}
-                                                                />
+
+                                                                <img src={el.Images}
+                                                                    alt={el.Product_Name} className='rounded-2xl'></img>
+
+
                                                             </motion.div>
 
-                                                            {/* Content Section */}
-                                                            <div className="p-6">
-                                                                {/* Product Name */}
-                                                                <motion.h3
-                                                                    className="text-2xl text-white font-semibold mb-4 text-center"
-                                                                    initial={{ y: 20, opacity: 0 }}
-                                                                    animate={{ y: 0, opacity: 1 }}
-                                                                    transition={{ duration: 0.5, delay: 0.3 }}
-                                                                >
-                                                                    {el.Product_Name}
-                                                                </motion.h3>
+                                                            {/* Product Content */}
+                                                            <h3 className="text-xl sm:text-3xl font-semibold text-white my-4 mt-6">
+                                                                {el.Product_Name}
+                                                            </h3>
+                                                            {/* <p className="text-gray-400 mb-6">{product.Details}</p> */}
 
-                                                                {/* Details Button */}
-
-                                                                <motion.button
-
-                                                                    onClick={() => {
-                                                                        setSelected_Product(el);
-                                                                        window.scrollTo(0, 0);
-                                                                        navigate("/Category/Subcategory/Product")
+                                                            {/* Details Button */}
+                                                            <Link
+                                                                to="/Category/Subcategory/Product"
+                                                                onClick={() => {
+                                                                    setSelected_Product(el);
+                                                                    window.scrollTo(0, 0);
+                                                                }}
+                                                                className="flex text-xl items-center gap-2 text-green-500 hover:text-green-600 transition-colors duration-200"
+                                                                whileHover={{ scale: 1.05 }}
+                                                                whileTap={{ scale: 0.95 }}
+                                                            >
+                                                                More Details
+                                                                <motion.svg
+                                                                    animate={{ x: [0, 5, 0] }}
+                                                                    transition={{
+                                                                        duration: 1.5,
+                                                                        repeat: Infinity,
+                                                                        ease: 'linear'
                                                                     }}
-                                                                    className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-full mt-4 transition duration-200"
-                                                                    whileHover={{ scale: 1.05 }}
-                                                                    whileTap={{ scale: 0.95 }}
-                                                                    initial={{ opacity: 0 }}
-                                                                    animate={{ opacity: 1 }}
-                                                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                                                    className="w-4 h-4"
+                                                                    fill="none"
+                                                                    viewBox="0 0 24 24"
+                                                                    stroke="currentColor"
                                                                 >
-                                                                    More Details
-                                                                </motion.button>
-
-                                                            </div>
+                                                                    <path
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                        strokeWidth={2}
+                                                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                                                    />
+                                                                </motion.svg>
+                                                            </Link>
                                                         </motion.div>
-
                                                     </Link>
+
+
                                                 ))
                                         ) : (
                                             <motion.div

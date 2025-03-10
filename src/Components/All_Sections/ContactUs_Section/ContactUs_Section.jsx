@@ -166,9 +166,15 @@ const ContactUs_Section = () => {
                     className="space-y-6"
                 >
                     <div>
-                        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-blue-500">Address</h3>
+                        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-blue-500">Corporate / Sales Office</h3>
                         <p className="text-gray-400">
                             {Data.add}
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-blue-500">Factory Address</h3>
+                        <p className="text-gray-400">
+                            {Data.Factory}
                         </p>
                     </div>
                     <div>

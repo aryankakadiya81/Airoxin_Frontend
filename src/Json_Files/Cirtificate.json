@@ -2,9 +2,19 @@
     "Title":"Our Certificates",
     "ImageData": [
         {
+            "id": 2,
+            "Name": "TUV-SUD",
+            "img": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741609433/Certificates/a1vztjvtbxp3nttffvqn.png"
+        },
+        {
             "id": 1,
-            "Name": "GST Crtificate",
-            "img": "https://i.postimg.cc/qvvpLKtM/GST.png"
+            "Name": "BRCGS",
+            "img": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741610399/Certificates/rpt2wgssfredxqsq1f9d.png"
+        },
+        {
+            "id": 3,
+            "Name": "SGS",
+            "img": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741609432/Certificates/jcmohmbfuwe5fg7t9wwh.png"
         }
     ]
 }

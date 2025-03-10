@@ -1,36 +1,32 @@
 {
-    "id": 1,
-    "Title": "Product Gallery",
-    "Data": [
-      {
-        "id": 1,
-        "Image": "https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=",
-        "alt": "Solar panel assembly line",
-        "description": "Our solar panel production facility using 100% renewable energy"
-      },
-      {
-        "id": 2,
-        "Image": "/manufacturing/full2.jpg",
-        "alt": "Recycling center",
-        "description": "Material recovery and recycling operations"
-      },
-      {
-        "id": 3,
-        "Image": "/manufacturing/full3.jpg",
-        "alt": "Organic packaging",
-        "description": "Biodegradable packaging production area"
-      },
-      {
-        "id": 4,
-        "Image": "/manufacturing/full4.jpg",
-        "alt": "Quality control lab",
-        "description": "Eco-certification testing laboratory"
-      },
-      {
-        "id": 5,
-        "Image": "/manufacturing/full5.jpg",
-        "alt": "Carbon capture system",
-        "description": "Innovative carbon capture technology implementation"
-      }
-    ]
-  }
+  "id": 1,
+  "Title": "Product Gallery",
+  "Data": [
+    
+    {
+      "id": 1,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
+      "alt": "Round Plates"
+    },
+    {
+      "id": 2,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612327/General/aqsmnveqovdvyqfcnb6j.jpg",
+      "alt": "Compartment Plates"
+    },
+    {
+      "id": 3,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612329/General/zezlfeogdzmpgvr7qj9y.jpg",
+      "alt": "Square Plates"
+    },
+    {
+      "id": 4,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612331/General/jrz0gwpctk6mdeups2dm.jpg",
+      "alt": "Bowls"
+    },
+    {
+      "id": 5,
+      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612325/General/c7ycfzvzebrxg3kcuuh9.jpg",
+      "alt": "Clamshell"
+    }
+  ]
+}

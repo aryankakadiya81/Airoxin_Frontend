@@ -1,30 +1,79 @@
 {
 	"Category": [
-		
 		{
-			"id": "02",
-			"Icon": "fa-solid fa-house p-3",
-			"Category_Name": "Tableware Products",
-			"Details": "The world is moving at a rapid pace with little to no care given to protecting the environment. It is high time that we take this issue seriously and reduce the pollution that we are doing to environment."
+			"id": 1,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
+			"Category_Name": "Round Plates"
+		},
+		{
+			"id": 2,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612327/General/aqsmnveqovdvyqfcnb6j.jpg",
+			"Category_Name": "Compartment Plates"
+		},
+		{
+			"id": 3,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612329/General/zezlfeogdzmpgvr7qj9y.jpg",
+			"Category_Name": "Square Plates"
+		},
+		{
+			"id": 4,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612331/General/jrz0gwpctk6mdeups2dm.jpg",
+			"Category_Name": "Bowls"
+		},
+		{
+			"id": 5,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612325/General/c7ycfzvzebrxg3kcuuh9.jpg",
+			"Category_Name": "Clamshell"
 		}
 	],
 	"SubCategory": [
-		
-	],
-	"Products": [
 		{
-			"id": "01",
-			"SubCategory_Name": "Round Plates",
-			"Category_Name": "Tableware Products"
+			"id": 1,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
+			"Category_Name": "Round Plates",
+			"SubCategory_Name": "Round Plate"
+
+
 		},
 		{
+			"id": 2,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612327/General/aqsmnveqovdvyqfcnb6j.jpg",
+			"Category_Name": "Compartment Plates",
+			"SubCategory_Name": "Compartment Plate"
+
+		},
+		{
+			"id": 3,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612329/General/zezlfeogdzmpgvr7qj9y.jpg",
+			"Category_Name": "Square Plates",
+			"SubCategory_Name": "Square Plate"
+
+		},
+		{
+			"id": 4,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612331/General/jrz0gwpctk6mdeups2dm.jpg",
+			"Category_Name": "Bowls",
+			"SubCategory_Name": "Bowl"
+
+			
+		},
+		{
+			"id": 5,
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612325/General/c7ycfzvzebrxg3kcuuh9.jpg",
+			"Category_Name": "Clamshell",
+			"SubCategory_Name": "Clamshell"
+		}
+	],
+	"Products": [
+		
+		{
 			"id": "07",
-			"SubCategory_Name": "Round Plates",
-			"Category_Name": "Tableware Products",
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
 			"Product_Name": "6 Inch Round Plate",
-			"Thumbnail_Image": "https://ik.imagekit.io/airoxin/MAIN.jpg?updatedAt=1741076944918",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
 			"Images": [
-				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1727264004/samples/shoe.jpg"
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg"
 			],
 			"Tables": [
 				{
@@ -50,119 +99,6 @@
 					],
 					"Material": [
 						"Sugercane Bagasse"
-					]
-				},
-				{
-					"id": "02",
-					"Table_Name": "Other Attributes",
-					
-					"Quality": [
-						"100% Premium Quality"
-					],
-					"Supply Ability": [
-						"2000 Box per Day"
-					],
-					"Place of Origin": [
-						"India"
-					],
-					"Sample Service": [
-						"Yes"
-					]
-				},
-				{
-					"id": "03",
-					"Table_Name": "Sample",
-					"Minimum Order Quantity Sample": [
-						"3000 Piece"
-					],
-					"Sample Price": [
-						"$90.00/Piece"
-					],
-					"Sample Time": [
-						"7 Working Days"
-					],
-					"Sample Shipping Modes": [
-						"By Air"
-					]
-				},
-				{
-					"id": "04",
-					"Table_Name": "Customization or OEM ODM",
-					"Size Customization": [
-						"Yes"
-					],
-					"Colour/Color Customization": [
-						"Yes"
-					],
-					"Pattern Customization": [
-						"Yes"
-					],
-					"Label Customization": [
-						"Yes"
-					],
-					"Packaging Customization": [
-						"Yes"
-					],
-					"OEM Service": [
-						"Yes",
-						"As Per Your Requirement"
-					]
-				},
-				{
-					"id": "05",
-					"Table_Name": "Minimum Order Quantity",
-					"Minimum Order Quantity": [
-						"250 Piece"
-					],
-					"Minimum Order Quantity For Size Customization": [
-						"300 Piece/Per Size"
-					],
-					"Minimum Order Quantity Colour/Color Customization": [
-						"300 Piece/Per Color"
-					],
-					"Minimum Order Quantity Fabric Customization": [
-						"300 Piece/Per Color"
-					],
-					"Minimum Order Quantity For Pattern Customization": [
-						"300 Piece/Per Pattern"
-					],
-					"Minimum Order Quantity For Label Customization": [
-						"300 Piece"
-					],
-					"Minimum Order Quantity For Packaging Customization": [
-						"250 Piece"
-					],
-					"Minimum Order Quantity For Print/Design Customization": [
-						"100 Piece/Per Design"
-					]
-				},
-				{
-					"id": "06",
-					"Table_Name": "Shipping and Payment Terms",
-					"Shipping": [
-						"By Air (Fedex, DHL, Etc...)",
-						"By Sea"
-					],
-					"Payment": [
-						"L/C",
-						"T/T",
-						"D/A",
-						"D/P",
-						"CAD"
-					],
-					"Delivery Time": [
-						"Depends on Quantity"
-					]
-				},
-				{
-					"id": "07",
-					"Table_Name": "Pricing",
-					"20ft Container": [
-						"$30000 (Thirty Thousand Dollar)"
-					],
-					"Note": [
-						"Factory Reasonable Price.",
-						"No Middle Price."
 					]
 				}
 			]

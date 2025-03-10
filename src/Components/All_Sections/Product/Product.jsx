@@ -97,7 +97,7 @@ const Product = () => {
                                         navigate("/Category");
                                         window.scrollTo(0, 0);
                                     }}
-                                    className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors ms-4 lg:ms-10"
+                                    className="flex items-center gap-2 px-4 py-2 bg-green-600 font-semibold text-white rounded-md hover:bg-green-700 lg:text-2xl text-md transition-colors ms-4 lg:ms-10"
                                 >
                                     <i className="bi bi-arrow-left"></i>
                                     Back

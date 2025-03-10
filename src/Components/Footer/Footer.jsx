@@ -435,6 +435,14 @@ const Footer = () => {
                                 whileHover={{ marginLeft: 10 }}
                                 transition={{ duration: 0.3 }}
                             >
+                                <Link to="/Infrastructure" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                Infrastructure
+                                </Link>
+                            </motion.li>
+                            <motion.li
+                                whileHover={{ marginLeft: 10 }}
+                                transition={{ duration: 0.3 }}
+                            >
                                 <Link to="/Certificates" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Certificates
                                 </Link>
@@ -443,10 +451,18 @@ const Footer = () => {
                                 whileHover={{ marginLeft: 10 }}
                                 transition={{ duration: 0.3 }}
                             >
+                                <Link to="/ProductGallery" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
+                                Product Gallery
+                                </Link>
+                            </motion.li>
+                            {/* <motion.li
+                                whileHover={{ marginLeft: 10 }}
+                                transition={{ duration: 0.3 }}
+                            >
                                 <Link to="/Tradefair" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Trade Fair Participation
                                 </Link>
-                            </motion.li>
+                            </motion.li> */}
                             {/* <motion.li
                                 whileHover={{ marginLeft: 10 }}
                                 transition={{ duration: 0.3 }}

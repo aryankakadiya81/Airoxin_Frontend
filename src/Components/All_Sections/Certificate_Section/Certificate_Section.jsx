@@ -40,14 +40,14 @@ const Certificate_Section = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                                className="relative group rounded-lg overflow-hidden shadow-lg bg-gray-800 hover:bg-gray-700 transition-colors cursor-pointer"
+                                className="relative group rounded-xl overflow-hidden shadow-lg bg-gray-800 hover:bg-gray-700 transition-colors cursor-pointer"
                             // onClick={() => setSelectedImageIndex(index)}
                             >
                                 {/* Image */}
                                 <img
                                     src={el.img}
                                     alt={el.Name}
-                                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                                    className="w-full h-[400PX]  transition-transform duration-300 group-hover:scale-105"
                                 />
 
                                 {/* Title */}

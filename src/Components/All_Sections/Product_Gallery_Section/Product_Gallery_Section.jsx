@@ -64,7 +64,7 @@ const Product_Gallery_Section = () => {
                             <motion.img
                                 src={img.Image}
                                 alt={img.alt}
-                                className="w-full h-64 object-cover rounded-3xl shadow-lg"
+                                className="w-full object-cover rounded-3xl shadow-lg"
                             />
 
                             {/* Overlay */}
