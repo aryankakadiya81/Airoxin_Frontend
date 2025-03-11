@@ -603,7 +603,7 @@ const Footer = () => {
                             transition={{ duration: 0.5 }}
                             className="text-center"
                         >
-                            © 2019 AIROXIN INTERNATIONAL. All rights reserved.
+                            © 2018 AIROXIN INTERNATIONAL. All rights reserved.
                         </motion.p >
                     </div>
 

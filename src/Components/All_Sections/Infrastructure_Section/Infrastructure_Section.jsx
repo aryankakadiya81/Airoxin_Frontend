@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import Lightbox from 'yet-another-react-lightbox';
+// import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import React, { useState } from 'react';
 import Infra from '../../../Json_Files/Infrastructur.json';
 
 const Infrastructure_Section = () => {
-    const [openLightbox, setOpenLightbox] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(0);
+    // const [openLightbox, setOpenLightbox] = useState(false);
+    // const [selectedImage, setSelectedImage] = useState(0);
 
     return (
         <motion.section
@@ -49,18 +49,18 @@ const Infrastructure_Section = () => {
                 >
                     {Infra.Data.map((img, index) => (
                         <motion.div
-                            key={img.id}
+                            key={index}
                             variants={{
                                 hidden: { y: 50, opacity: 0 },
                                 visible: { y: 0, opacity: 1 }
                             }}
                             transition={{ duration: 0.5 }}
                             className="relative group cursor-pointer"
-                            onClick={() => {
-                                setSelectedImage(index);
-                                setOpenLightbox(true);
-                            }}
-                            whileHover={{ scale: 1.03 }}
+                            // onClick={() => {
+                            //     setSelectedImage(index);
+                            //     setOpenLightbox(true);
+                            // }}
+                            // whileHover={{ scale: 1.03 }}
                         >
                             {/* Thumbnail */}
                             <motion.img
@@ -89,7 +89,7 @@ const Infrastructure_Section = () => {
             
 
             {/* Lightbox */}
-            <Lightbox
+            {/* <Lightbox
                 open={openLightbox}
                 close={() => setOpenLightbox(false)}
                 slides={Infra.Data.map(img => ({
@@ -98,12 +98,12 @@ const Infrastructure_Section = () => {
                     description: img.description
                 }))}
                 index={selectedImage}
-                // plugins={['Zoom']}
+                //plugins={['Zoom']}
                 styles={{
                     container: { backgroundColor: '#1A1A1A' },
                     caption: { color: '#C1E1C1' }
                 }}
-            />
+            /> */}
         </motion.section>
     );
 };

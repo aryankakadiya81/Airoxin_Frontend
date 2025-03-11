@@ -14,7 +14,7 @@
         "id": "04",
         "Title": "Year of Establishment",
         "Subtitles": [
-            "2020"
+            "2018"
         ],
         "Icon": "fa-solid fa-flag-checkered",
         "Background_Color": "#25333C",
@@ -25,8 +25,8 @@
         "Title": "Payment Mode",
         "Subtitles": [
             "100% Advance",
-            "40% Advance and 60% Before Loading",
             "50% Advance and 50% Before Loading",
+            "50% Advance and 50% Again Documents",
             "L/C"
         ],
         "Icon": "fa-solid fa-money-bill-1-wave",
