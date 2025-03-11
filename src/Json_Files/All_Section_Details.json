@@ -61,19 +61,19 @@
             {
                 "id": "04",
                 "Icon": "bi bi-box-fill",
-                "Count": 25,
+                "Count": 50,
                 "Name": "Products"
             },
             {
                 "id": "02",
                 "Icon": "fa-solid fa-thumbs-up",
-                "Count": 10,
+                "Count": 1000,
                 "Name": "Happy Buyers"
             },
             {
                 "id": "03",
                 "Icon": "fa-solid fa-trophy",
-                "Count": 4,
+                "Count": 7,
                 "Name": "Years Experience"
             }
         ]
