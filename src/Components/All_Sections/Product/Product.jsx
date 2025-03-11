@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Global } from '../../../App';
 import ProductData from '../../../Json_Files/Product_Page.json';
 // import Helmet_Jsx from '../../../Helmet_Jsx';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -115,12 +115,12 @@ const Product = () => {
                                         spaceBetween={30}
                                         slidesPerView={1}
                                         navigation
-                                        pagination={{ clickable: true }}
-                                        className="rounded-2xl h-[636px] shadow-lg overflow-hidden block"
+                                        className="rounded-2xl xl:h-[736px] shadow-lg overflow-hidden block"
                                     >
                                         {Selected_Product.Images.map((el, index) => (
                                             <SwiperSlide key={index}>
                                                 <motion.div
+                                                    className='rounded-3xl'
                                                     initial={{ opacity: 0, y: 50 }}
                                                     whileInView={{ opacity: 1, y: 0 }}
                                                     viewport={{ once: false }}
@@ -131,90 +131,103 @@ const Product = () => {
                                                         src={el}
                                                         draggable="false"
                                                         alt={`Product ${index}`}
-                                                        className="w-full p-3 rounded-2xl h-[636px] transition-transform duration-300 group-hover:scale-110"
+                                                        className="w-full p-3 rounded-3xl xl:h-[736px]transition-transform duration-300 group-hover:scale-110"
 
                                                     />
                                                 </motion.div>
                                             </SwiperSlide>
                                         ))}
                                     </Swiper>
+                                    <div className='flex justify-center'>
+                                        <motion.button
+                                            onClick={() => { navigate('/Contact'); window.scrollTo(0, 0); }}
+                                            className="bg-green-600 text-white px-10 py-3 rounded-lg hover:bg-green-700 w-96 text-xl"
+                                            whileHover={{ scale: 1.05 }}
+                                            whileTap={{ scale: 0.95 }}
+                                        >
+                                            Get Quatation
+                                        </motion.button>
+                                    </div>
                                 </div>
 
                                 {/* Right Column: Tables */}
                                 <div className="space-y-6">
                                     {Selected_Product.Tables.map((obj, ind) => (
-                                        <motion.table
-                                            key={ind}
-                                            className="w-full bg-gray-800/90 rounded-3xl overflow-hidden 
+                                        <div>
+                                            <motion.table
+                                                key={ind}
+                                                className="w-full bg-gray-800/90 rounded-3xl overflow-hidden 
                    border border-gray-700/50 backdrop-blur-lg"
-                                            variants={{
-                                                hidden: { opacity: 0 },
-                                                visible: {
-                                                    opacity: 1,
-                                                    transition: {
-                                                        staggerChildren: 0.15,
-                                                        delayChildren: 0.3
-                                                    }
-                                                }
-                                            }}
-                                            initial="hidden"
-                                            animate="visible"
-                                        >
-                                            {/* <div className="bg-gray-800 text-white text-center py-3 rounded-t-lg">
-                                            
-                                            <h3 className="text-xl font-semibold">{obj.Table_Name}</h3>
-                                        </div> */}
-                                            <motion.th
-                                                className="text-left lg:text-2xl md:text-lg font-semibold text-white p-4"
-                                                variants={{
-                                                    hidden: { x: 50, opacity: 0 },
-                                                    visible: { x: 0, opacity: 1 }
-                                                }}
-                                                transition={{ duration: 0.5 }}
-                                            >
-                                                {obj.Table_Name}
-                                            </motion.th>
-                                            <motion.tbody className="divide-y divide-gray-700/50"
                                                 variants={{
                                                     hidden: { opacity: 0 },
                                                     visible: {
                                                         opacity: 1,
                                                         transition: {
-                                                            staggerChildren: 0.15
+                                                            staggerChildren: 0.15,
+                                                            delayChildren: 0.3
                                                         }
                                                     }
-                                                }}>
-                                                {Object.keys(obj).map((key, index) => {
-                                                    if (!KeySkip.includes(key)) {
-                                                        return (
-                                                            <motion.tr
-                                                                key={index}
-                                                                className="hover:bg-gray-700/30 transition-colors"
-                                                                variants={{
-                                                                    hidden: { y: 30, opacity: 0 },
-                                                                    visible: { y: 0, opacity: 1 }
-                                                                }}
-                                                                transition={{ duration: 0.5 }}>
-                                                                <motion.td
-                                                                    className="py-4 px-6 sm:px-8 text-gray-300 font-medium"
-                                                                    whileHover={{ scale: 1.02 }}>{key}</motion.td>
-                                                                <motion.td
-                                                                    className="py-4 px-6 sm:px-8 text-gray-400"
-                                                                    whileHover={{ scale: 1.02 }}>
-                                                                    {obj[key].map((item, idx) => (
-                                                                        <div key={idx} className="flex items-center gap-2">
-                                                                            <i className="bi bi-arrow-right text-blue-500"></i>
-                                                                            <span>{item}</span>
-                                                                        </div>
-                                                                    ))}
-                                                                </motion.td>
-                                                            </motion.tr>
-                                                        );
-                                                    }
-                                                    return null;
-                                                })}
-                                            </motion.tbody>
-                                        </motion.table>
+                                                }}
+                                                initial="hidden"
+                                                animate="visible"
+                                            >
+                                                {/* <div className="bg-gray-800 text-white text-center py-3 rounded-t-lg">
+                                            
+                                            <h3 className="text-xl font-semibold">{obj.Table_Name}</h3>
+                                        </div> */}
+                                                <motion.th
+                                                    className="text-left lg:text-2xl md:text-lg font-semibold text-white p-4 ps-8"
+                                                    variants={{
+                                                        hidden: { x: 50, opacity: 0 },
+                                                        visible: { x: 0, opacity: 1 }
+                                                    }}
+                                                    transition={{ duration: 0.5 }}
+                                                >
+                                                    {obj.Table_Name}
+                                                </motion.th>
+                                                <motion.tbody className="divide-y divide-gray-700/50"
+                                                    variants={{
+                                                        hidden: { opacity: 0 },
+                                                        visible: {
+                                                            opacity: 1,
+                                                            transition: {
+                                                                staggerChildren: 0.15
+                                                            }
+                                                        }
+                                                    }}>
+                                                    {Object.keys(obj).map((key, index) => {
+                                                        if (!KeySkip.includes(key)) {
+                                                            return (
+                                                                <motion.tr
+                                                                    key={index}
+                                                                    className="hover:bg-gray-700/30 transition-colors"
+                                                                    variants={{
+                                                                        hidden: { y: 30, opacity: 0 },
+                                                                        visible: { y: 0, opacity: 1 }
+                                                                    }}
+                                                                    transition={{ duration: 0.5 }}>
+                                                                    <motion.td
+                                                                        className="py-4 px-6 sm:px-8 text-gray-300 font-medium"
+                                                                        whileHover={{ scale: 1.02 }}>{key}</motion.td>
+                                                                    <motion.td
+                                                                        className="py-4 px-6 sm:px-8 text-gray-400"
+                                                                        whileHover={{ scale: 1.02 }}>
+                                                                        {obj[key].map((item, idx) => (
+                                                                            <div key={idx} className="flex items-center gap-2">
+                                                                                <i className="bi bi-arrow-right text-blue-500"></i>
+                                                                                <span>{item}</span>
+                                                                            </div>
+                                                                        ))}
+                                                                    </motion.td>
+                                                                </motion.tr>
+                                                            );
+                                                        }
+                                                        return null;
+                                                    })}
+                                                </motion.tbody>
+                                            </motion.table>
+
+                                        </div>
                                     ))}
                                 </div>
                             </div>

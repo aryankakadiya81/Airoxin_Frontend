@@ -123,7 +123,7 @@ const ContactUs_Section = () => {
 
             // console.log("Form Data Submitted:", formData);
             // const response = await axios.post("http://localhost:5000/v1/Mail", formData);
-            
+
             // Reset form fields after successful submission
             setFormData({
                 name: "",
@@ -136,7 +136,7 @@ const ContactUs_Section = () => {
             });
             setCountryCode("");
             setLoad(false);
-            
+
         } catch (error) {
             console.error("Error submitting form:", error);
         }
@@ -148,16 +148,27 @@ const ContactUs_Section = () => {
             className="bg-gray-900 text-white py-16 px-4"
         >
             {/* Title Section */}
-            <div
+            {/* <div
                 className="text-center mb-12"
             >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400">
                     Contact Us
                 </h2>
+
+            </div> */}
+            <motion.h2
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.5 }}
+                className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12"
+            >
+                Contact Us
                 <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-400">
                     We'd love to hear from you.
                 </p>
-            </div>
+                <span className="block my-4 h-1 bg-gradient-to-r from-green-500 to-blue-500 w-24 mx-auto rounded-full" />
+            </motion.h2>
 
             {/* Content Grid */}
             <div className="container mx-auto max-w-6xl items-center grid grid-cols-1 lg:grid-cols-2 gap-8">

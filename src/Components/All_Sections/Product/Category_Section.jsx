@@ -213,7 +213,7 @@ const Category_Section = () => {
                                                                 className="flex justify-center"
                                                             >
 
-                                                                <img src={el.Images}
+                                                                <img src={el.Thumbnail_Image}
                                                                     alt={el.Product_Name} className='rounded-2xl'></img>
 
 

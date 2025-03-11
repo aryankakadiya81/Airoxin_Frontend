@@ -10,8 +10,8 @@ const ContactUs_Page = () => {
     <div>
       <Helmet_Jsx All={Seo_Data.ContactUspage}></Helmet_Jsx>
       <Navbar></Navbar>
-      {/* <Heading Title="Contact Us"></Heading> */}
       <ContactUs_Section></ContactUs_Section>
+      
       <Footer></Footer>
     </div>
   )

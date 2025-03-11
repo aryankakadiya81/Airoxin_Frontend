@@ -32,30 +32,24 @@
 			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
 			"Category_Name": "Round Plates",
 			"SubCategory_Name": "Round Plate"
-
-
 		},
 		{
 			"id": 2,
 			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612327/General/aqsmnveqovdvyqfcnb6j.jpg",
 			"Category_Name": "Compartment Plates",
 			"SubCategory_Name": "Compartment Plate"
-
 		},
 		{
 			"id": 3,
 			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612329/General/zezlfeogdzmpgvr7qj9y.jpg",
 			"Category_Name": "Square Plates",
 			"SubCategory_Name": "Square Plate"
-
 		},
 		{
 			"id": 4,
 			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612331/General/jrz0gwpctk6mdeups2dm.jpg",
 			"Category_Name": "Bowls",
 			"SubCategory_Name": "Bowl"
-
-			
 		},
 		{
 			"id": 5,
@@ -65,40 +59,344 @@
 		}
 	],
 	"Products": [
-		
 		{
-			"id": "07",
+			"id": 1,
 			"SubCategory_Name": "Round Plate",
 			"Category_Name": "Round Plates",
 			"Product_Name": "6 Inch Round Plate",
-			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662466/Product_Photos/6%20Inch%20Round%20Plates/pftcoo3qcv4jvfa4halj.png",
 			"Images": [
-				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741612326/General/ebmuozurjpwuwkmsgpen.jpg"
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662466/Product_Photos/6%20Inch%20Round%20Plates/pftcoo3qcv4jvfa4halj.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662446/Product_Photos/6%20Inch%20Round%20Plates/ntznn4eqxkyhvphftrsi.png"
 			],
 			"Tables": [
 				{
-					"id": "01",
-					"Table_Name": "General Information",
+					"id": 1,
+					"Table_Name": "Information",
 					"Product Name": [
-						"6 Inch Round Plat"
+						"6 Inch Round Plate"
 					],
 					"Also Known As": [
-						"Bagasse Paper Dish"
+						"Bagasse Paper Plate"
 					],
-					"Packaging": [
-						"50 Pieces/1 Packet",
-						"40 Packet/1 Box",
-						"3000 Box/1 Twenty Ft Container",
-						"4000 Box/1 Fourty Ft Container"
+					"Product Size": [
+						"6.0 x H 0.7 Inch",
+						"151 x H 18 MM"
 					],
-					"Single Package Size": [
-						"Approx 30 cm X 27 cm X 8 cm"
-					],
-					"Single Gross Weight": [
-						"0.15 Grams"
+					"Product Weight": [
+						"7 Grams"
 					],
 					"Material": [
 						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"30 Pack"
+					],
+					"Total Piece In Box": [
+						"1500 Piece"
+					],
+					"Box Dimension": [
+						"12.00 x 12.00 x 18.00 (Inch)",
+						"305 x 305 x 458 (MM)"
+					],
+					"Box CBM": [
+						"0.0426"
+					],
+					"Container Quantity": [
+						"611 Boxes (20Ft)",
+						"1597 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
+			"Product_Name": "7 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662451/Product_Photos/7%20Inch%20Round%20Plates/ezjm7hrbfjwyocnfcfp6.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662451/Product_Photos/7%20Inch%20Round%20Plates/ezjm7hrbfjwyocnfcfp6.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741675727/Product_Photos/7%20Inch%20Round%20Plates/issdzcltabqurhz9ed2j.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"7 Inch Round Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"7.0 x H 0.75 Inch",
+						"180 x H 19.5 MM"
+					],
+					"Product Weight": [
+						"9 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"20 Pack"
+					],
+					"Total Piece In Box": [
+						"1000 Piece"
+					],
+					"Box Dimension": [
+						"14.00 x 14.00 x 17.00 (Inch)",
+						"356 x 356 x 432 (MM)"
+					],
+					"Box CBM": [
+						"0.0547"
+					],
+					"Container Quantity": [
+						"476 Boxes (20Ft)",
+						"1244 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
+			"Product_Name": "9 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662443/Product_Photos/9%20Inch%20Round%20Plates/j8a8tubljkmx3vrzsfr0.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662443/Product_Photos/9%20Inch%20Round%20Plates/j8a8tubljkmx3vrzsfr0.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741697954/Product_Photos/9%20Inch%20Round%20Plates/wta6mzc7x6moslcp7lhl.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"9 Inch Round Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"9.0 x H 0.8 Inch",
+						"225 x H 20 MM"
+					],
+					"Product Weight": [
+						"15 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"10 Pack"
+					],
+					"Total Piece In Box": [
+						"500 Piece"
+					],
+					"Box Dimension": [
+						"18.00 x 9.00 x 11.50 (Inch)",
+						"458 x 229 x 293 (MM)"
+					],
+					"Box CBM": [
+						"0.0307"
+					],
+					"Container Quantity": [
+						"847 Boxes (20Ft)",
+						"2215 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 4,
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
+			"Product_Name": "10 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662443/Product_Photos/10%20Inch%20Round%20Plates/mjyxsr35vknnhr0z0qil.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662443/Product_Photos/10%20Inch%20Round%20Plates/mjyxsr35vknnhr0z0qil.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741698871/Product_Photos/10%20Inch%20Round%20Plates/xqtwnrsepxjprryzzjfg.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"10 Inch Round Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"10.0 x H 0.9 Inch",
+						"256 x H 22 MM"
+					],
+					"Product Weight": [
+						"20 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"10 Pack"
+					],
+					"Total Piece In Box": [
+						"500 Piece"
+					],
+					"Box Dimension": [
+						"20.00 x 10.00 x 12.50 (Inch)",
+						"508 x 254 x 318 (MM)"
+					],
+					"Box CBM": [
+						"0.0410"
+					],
+					"Container Quantity": [
+						"635 Boxes (20Ft)",
+						"1659 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 5,
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
+			"Product_Name": "11 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662443/Product_Photos/10%20Inch%20Round%20Plates/mjyxsr35vknnhr0z0qil.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662442/Product_Photos/11%20Inch%20Round%20Plates/gt3mhktizg6jwodwmkxx.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662436/Product_Photos/11%20Inch%20Round%20Plates/y9yiyjvfkwbybiedfyxi.jpg"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"11 Inch Round Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"11.0 x H 0.9 Inch",
+						"280 x H 23 MM"
+					],
+					"Product Weight": [
+						"25 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"10 Pack"
+					],
+					"Total Piece In Box": [
+						"500 Piece"
+					],
+					"Box Dimension": [
+						"22.00 x 11.00 x 15.00 (Inch)",
+						"559 x 280 x 381 (MM)"
+					],
+					"Box CBM": [
+						"0.0596"
+					],
+					"Container Quantity": [
+						"437 Boxes (20Ft)",
+						"1141 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 5,
+			"SubCategory_Name": "Round Plate",
+			"Category_Name": "Round Plates",
+			"Product_Name": "12 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662452/Product_Photos/12%20Inch%20Round%20Plates/tpr6hjtgyg361szivhgs.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662452/Product_Photos/12%20Inch%20Round%20Plates/tpr6hjtgyg361szivhgs.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1741662435/Product_Photos/12%20Inch%20Round%20Plates/rk0hd9zxoqpgbaqnp4gf.jpg"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"12 Inch Round Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"12.0 x H 0.9 Inch",
+						"302 x H 24 MM"
+					],
+					"Product Weight": [
+						"28 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"10 Pack"
+					],
+					"Total Piece In Box": [
+						"500 Piece"
+					],
+					"Box Dimension": [
+						"24.00 x 12.00 x 17.00 (Inch)",
+						"610 x 305 x 432 (MM)"
+					],
+					"Box CBM": [
+						"0.0804"
+					],
+					"Container Quantity": [
+						"324 Boxes (20Ft)",
+						"846 Boxes (40Ft HC)"
 					]
 				}
 			]
