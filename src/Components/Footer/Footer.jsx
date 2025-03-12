@@ -299,8 +299,8 @@ const Footer = () => {
 
     const HSubmit = async (e) => {
         e.preventDefault();
-        
-        
+
+
         toast.success("Subscribe Successfully");
         setLoad(true);
         try {
@@ -436,7 +436,7 @@ const Footer = () => {
                                 transition={{ duration: 0.3 }}
                             >
                                 <Link to="/Infrastructure" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
-                                Infrastructure
+                                    Infrastructure
                                 </Link>
                             </motion.li>
                             <motion.li
@@ -452,7 +452,7 @@ const Footer = () => {
                                 transition={{ duration: 0.3 }}
                             >
                                 <Link to="/ProductGallery" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
-                                Product Gallery
+                                    Product Gallery
                                 </Link>
                             </motion.li>
                             {/* <motion.li
@@ -543,13 +543,21 @@ const Footer = () => {
                             )} */}
                         </form>
 
-                        <motion.button
-                            disabled={Load===true || Email.length === 0}
+                        {/* <motion.button
+                            disabled={Load === true || Email.length === 0}
                             type="submit"
                             onClick={HSubmit}
                             className="bg-green-600 text-white px-10 py-3 rounded-lg hover:bg-green-700 my-5 w-full"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
+                        >
+                            Subscribe
+                        </motion.button> */}
+                        <motion.button
+                            className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 px-10 my-5 w-full rounded-xl font-semibold"
+                            disabled={Load === true || Email.length === 0}
+                            type="submit"
+                            onClick={HSubmit}
                         >
                             Subscribe
                         </motion.button>

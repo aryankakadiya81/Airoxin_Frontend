@@ -24,23 +24,22 @@
         "Counter_Data": [
             {
                 "id": 1,
-                "value": 350000, 
-                
+                "value": 350000,
                 "label": "Annual Production in KG"
             },
             {
                 "id": 2,
-                "value": 80, 
+                "value": 80,
                 "label": "Workers & Professionals"
             },
             {
                 "id": 3,
-                "value": 18, 
+                "value": 18,
                 "label": "Exported Countries"
             },
             {
                 "id": 4,
-                "value": 90000, 
+                "value": 90000,
                 "label": "SqFt Area"
             }
         ]
@@ -101,41 +100,6 @@
             "Huge Capacity: We Meet Any Scale.",
             "Seamless Process: From Source To Doorstep.",
             "Makers' Commitment: Your Global Success."
-        ]
-    },
-    "Vision_and_Mission": {
-        "id": "01",
-        "Section_Name_in_File": "Vision_Mission_Section",
-        "title": "Our Vision & Mission",
-        "vision": {
-            "title": "Our Vision",
-            "description": "To lead the market in sustainable disposables, reducing our carbon footprint while promoting innovation and environmental stewardship globally.",
-            "iconPath": "🚀"
-        },
-        "mission": {
-            "title": "Our Mission",
-            "description": "To harness Earth’s most renewable resources, transforming plant waste into eco-friendly products that nurture and protect the environment while delivering high-quality disposable solutions for our clients.",
-            "iconPath": "🎯"
-        },
-        "coreValues": [
-            {
-                "id": 1,
-                "icon": "🌱",
-                "title": "Innovation",
-                "description": "Pioneering eco-friendly technologies"
-            },
-            {
-                "id": 2,
-                "icon": "♻️",
-                "title": "Sustainability",
-                "description": "Zero-waste practices implementation"
-            },
-            {
-                "id": 3,
-                "icon": "🌍",
-                "title": "Community",
-                "description": "Global environmental stewardship"
-            }
         ]
     },
     "Product_Features_Section": {

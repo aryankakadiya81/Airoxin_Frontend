@@ -19,6 +19,8 @@ import { ToastContainer } from 'react-toastify';
 import Infrastructure_Page from "./Components/Infrastructure_Page";
 import Certificate_Page from "./Components/Certificate_Page";
 import Product_Gallery_Page from "./Components/Product_Gallery_Page";
+import Mission_Page from "./Components/Mission_Page";
+import Scroll_To_Top_Button from "./Components/All_Sections/Scroll_To_Top_Button/Scroll_To_Top_Button";
 // import Company_Details from './Components/Company_Details/Company_Details';
 
 
@@ -112,19 +114,21 @@ const App = () => {
                     <motion.Cursor />
                     <ToastContainer theme="dark"></ToastContainer>
                     <SpeedInsights />
+                    
                     <Global.Provider
                         value={{
                             Categorys: [Category, setCategory],
                             SubCategorys: [SubCategory, setSubCategory], Selected_Products: [Selected_Product, setSelected_Product],
                             Loader: [IsLoading, setIsLoading]
                         }} >
-
+                            
                         <FloatingWhatsApp
                             phoneNumber="+91 9925614381"
                             accountName="AIROXIN INTERNATIONAL"
                             chatMessage="Hello Dear, How Can I Help You?"
                             avatar={Logo}
                         />
+                        <Scroll_To_Top_Button></Scroll_To_Top_Button>
                         <BrowserRouter>
 
 
@@ -146,6 +150,8 @@ const App = () => {
                                 <Route path='/Certificates' element={<Certificate_Page></Certificate_Page>}></Route>
 
                                 <Route path='/Infrastructure' element={<Infrastructure_Page></Infrastructure_Page>}></Route>
+
+                                <Route path='/Mission' element={<Mission_Page></Mission_Page>}></Route>
 
                                 <Route path='/ProductGallery' element={<Product_Gallery_Page></Product_Gallery_Page>}></Route>
 
