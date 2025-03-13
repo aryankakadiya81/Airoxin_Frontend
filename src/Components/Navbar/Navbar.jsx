@@ -84,7 +84,7 @@ const Navbar = () => {
                         } md:flex md:items-center md:w-auto w-full`}
                     id="menu"
                 >
-                    <ul className="font-basef text-md flex flex-col md:flex-row md:justify-end md:items-center text-[#FFFFFF] md:gap-x-4">
+                    <ul className="font-basef text-md flex flex-col md:flex-row md:justify-end md:items-center text-[#FFFFFF] md:gap-x-3">
                         <li>
                             <Link onClick={Scroll} to="/Home" className="block py-2 px-3 active:bg-[#124E66] hover:bg-[#1A3D58]">
                                 Home
@@ -138,12 +138,12 @@ const Navbar = () => {
                                             Infrastructure
                                         </Link>
                                     </li>
-                                    <li onMouseEnter={() => setIsDropdownOpen(true)}>
+                                    {/* <li onMouseEnter={() => setIsDropdownOpen(true)}>
                                         <Link onClick={Scroll} className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
                                             role="menuitem" to="/Certificates">
                                             Certificates
                                         </Link>
-                                    </li>
+                                    </li> */}
 
 
                                     <li onMouseEnter={() => setIsDropdownOpen(true)}>

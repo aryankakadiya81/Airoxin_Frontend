@@ -98,7 +98,7 @@ const Vision_Mission_Section = () => {
                         </motion.p>
                         <div className='flex justify-center my-4'>
                             <button
-                                onClick={() => { Navigate("/Mission"); window.scrollTo(0, 0); setIsLoading(true); }}
+                                onClick={() => { Navigate("/Vision"); window.scrollTo(0, 0); setIsLoading(true); }}
                                 className="flex items-center text-xl content-center gap-2 text-green-500 hover:text-green-600 transition-colors duration-200"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}

@@ -2,21 +2,21 @@ import React,{useState} from 'react';
 import { motion } from 'framer-motion';
 import Datas from '../../../Json_Files/Vision_Mission_Page.json';
 
-const WhyBagasse_Tableware_Section = () => {
-    let [Data, SetData] = useState(Datas.Mission_Page.Why_Bagasse_Tableware);
-    
+const Our_Vision_Key_Aspirations_Section = () => {
+
+    let [Data,SetData] = useState(Datas.Vision_Page.Key_Aspirations);
 
     return (
         <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
             className="py-20 bg-gray-900"
         >
             {/* Section Title */}
             <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-
+                
                 <motion.h2
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -34,16 +34,16 @@ const WhyBagasse_Tableware_Section = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="mb-20 text-center"
                 >
-                    <p className="lg:mx-20 md:mx-auto text-lg sm:text-xl text-gray-400 leading-relaxed">
+                    <p className="text-lg lg:mx-20 md:mx-auto sm:text-xl text-gray-400 leading-relaxed">
                         {Data.Description}
                     </p>
                 </motion.div>
 
-                {/* Benefits Grid */}
+                {/* Aspirations Grid */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     variants={{
                         hidden: { opacity: 0 },
                         visible: {
@@ -53,41 +53,42 @@ const WhyBagasse_Tableware_Section = () => {
                             }
                         }
                     }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
-                    {Data.Benefits.map((benefit, index) => (
+                    {Data.Aspirations.map((aspiration, index) => (
                         <motion.div
                             key={index}
                             variants={{
-                                hidden: { opacity: 0, y: 30 },
-                                visible: { opacity: 1, y: 0 }
+                                hidden: { y: 30, opacity: 0 },
+                                visible: { y: 0, opacity: 1 }
                             }}
-                            transition={{ duration: 0.6 }}
-                            className="bg-gray-800/90 rounded-3xl p-6 sm:p-8 backdrop-blur-lg text-center"
+                            transition={{ duration: 0.4 }}
+                            className="bg-gray-800/90 rounded-3xl p-6 sm:p-8 backdrop-blur-lg text-left"
                             whileHover={{ scale: 1.05 }}
                         >
                             {/* Icon Animation */}
                             <motion.span
                                 className="text-4xl text-green-500 block mb-4"
-                                animate={{ rotate: [0, 10, 0] }}
+                                animate={{ rotate: [0, 5, 0] }}
                                 transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                             >
-                                {benefit.icon}
+                                {aspiration.Emoji} {/* Extract Icon */}
                             </motion.span>
 
                             {/* Title */}
                             <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">
-                                {benefit.title}
+                                {aspiration.Title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-gray-400">{benefit.description}</p>
+                            <p className="text-gray-400 mb-4">{aspiration.Description}</p>
                         </motion.div>
                     ))}
                 </motion.div>
+
             </div>
         </motion.section>
     );
 };
 
-export default WhyBagasse_Tableware_Section;
+export default Our_Vision_Key_Aspirations_Section;

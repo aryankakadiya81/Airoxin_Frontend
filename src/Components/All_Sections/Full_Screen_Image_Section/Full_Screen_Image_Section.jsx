@@ -9,7 +9,7 @@ const Full_Screen_Image_Section = (Props) => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-20 bg-gray-900"
+                className="py-10 bg-gray-900"
             >
                 <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div

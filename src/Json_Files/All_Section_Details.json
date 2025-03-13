@@ -40,7 +40,7 @@
             {
                 "id": 4,
                 "value": 90000,
-                "label": "SqFt Area"
+                "label": "Our Factory SqFt Area"
             }
         ]
     },
@@ -88,18 +88,16 @@
         "Section_Name_in_File": "Why_Choose_Us",
         "Title": "Why Choose Us ?",
         "Features": [
-            "Manufacturers: Quality From Start To Finish.",
-            "Direct Production: Faster, Cheaper Global Trade.",
-            "Best Rates: We Manufacture, You Save.",
-            "Integrity: Reliable, Transparent Partnerships.",
-            "Vast Supply: Consistent, Timely Delivery.",
-            "Full Service: Easy Import/export Logistics.",
-            "Expert Quality: We Know Production Best.",
-            "Custom Solutions: Your Needs, Our Focus.",
-            "Efficient Delivery: Fast, Safe Global Reach.",
-            "Huge Capacity: We Meet Any Scale.",
-            "Seamless Process: From Source To Doorstep.",
-            "Makers' Commitment: Your Global Success."
+            "Eco-Friendly Products",
+            "High-Quality & Durable Products",
+            "Sustainable Manufacturing Practices",
+            "Global Reach & Reliable Export Services",
+            "Commitment To Innovation",
+            "Cost-Effective Solutions",
+            "Customization & Branding",
+            "Proven Track Record",
+            "Support For A Greener Planet",
+            "Exceptional Customer Support"
         ]
     },
     "Product_Features_Section": {

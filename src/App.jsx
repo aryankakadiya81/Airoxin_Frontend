@@ -21,6 +21,8 @@ import Certificate_Page from "./Components/Certificate_Page";
 import Product_Gallery_Page from "./Components/Product_Gallery_Page";
 import Mission_Page from "./Components/Mission_Page";
 import Scroll_To_Top_Button from "./Components/All_Sections/Scroll_To_Top_Button/Scroll_To_Top_Button";
+import Vision_Page from "./Components/Vision_Page";
+
 // import Company_Details from './Components/Company_Details/Company_Details';
 
 
@@ -152,6 +154,8 @@ const App = () => {
                                 <Route path='/Infrastructure' element={<Infrastructure_Page></Infrastructure_Page>}></Route>
 
                                 <Route path='/Mission' element={<Mission_Page></Mission_Page>}></Route>
+
+                                <Route path='/Vision' element={<Vision_Page></Vision_Page>}></Route>
 
                                 <Route path='/ProductGallery' element={<Product_Gallery_Page></Product_Gallery_Page>}></Route>
 

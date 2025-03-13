@@ -12,6 +12,8 @@ import Vision_Mission_Section from './All_Sections/Vision_Mission_Section/Vision
 import Product_Features_Section from './All_Sections/Product_Features_Section/Product_Features_Section';
 import Product_Advantage_Section from './All_Sections/Product_Advantage_Section/Product_Advantage_Section';
 import Consign_Section from './All_Sections/Consign_Section/Consign_Section';
+// import VisionCards from './VisionCards';
+import New_Sec from './All_Sections/Company_Details/Company_Details_New';
 
 const AboutUs_Page = () => {
     return (
@@ -25,19 +27,6 @@ const AboutUs_Page = () => {
 
                 {/* Main Content with Background Video */}
                 <div className="relative overflow-hidden">
-                    {/* Background Video */}
-                    {/* <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="fixed top-0 left-0 w-full h-full object-cover z-0 block"
-                    >
-                        <source src={Vid1} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video> */}
-
-                    {/* Overlay for Better Readability */}
                     <div className="absolute inset-0 bg-opacity-50 z-10"></div>
 
                     {/* Main Content */}
@@ -45,7 +34,8 @@ const AboutUs_Page = () => {
                         {/* <Heading Title="About Us"></Heading> */}
                         {/* <Hero_Section></Hero_Section> */}
                         <About_Company />
-                        <Company_Details />
+                        <New_Sec></New_Sec>
+                        {/* <Company_Details /> */}
                         <Consign_Section></Consign_Section>
                         <Product_Features_Section></Product_Features_Section>
                         <Vision_Mission_Section></Vision_Mission_Section>

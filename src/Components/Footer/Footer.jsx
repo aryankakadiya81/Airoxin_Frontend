@@ -439,14 +439,14 @@ const Footer = () => {
                                     Infrastructure
                                 </Link>
                             </motion.li>
-                            <motion.li
+                            {/* <motion.li
                                 whileHover={{ marginLeft: 10 }}
                                 transition={{ duration: 0.3 }}
                             >
                                 <Link to="/Certificates" onClick={Scroll} className="text-gray-400 hover:text-blue-500 transition-colors">
                                     Certificates
                                 </Link>
-                            </motion.li>
+                            </motion.li> */}
                             <motion.li
                                 whileHover={{ marginLeft: 10 }}
                                 transition={{ duration: 0.3 }}

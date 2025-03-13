@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Datas from '../../../Json_Files/Vision_Mission_Page.json';
 import { Global } from '../../../App';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const Mission_Conclusion_Section = () => {
@@ -34,7 +33,7 @@ const Mission_Conclusion_Section = () => {
                 <h3 className="text-3xl sm:text-4xl text-white font-semibold mb-6">
                     {Data.Conclusion.Base_Title}
                 </h3>
-                <p className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 md:mx-20">
+                <p className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 lg:mx-20 md:mx-auto">
                     {Data.Conclusion.Base_Desription}
                 </p>
                 <motion.button

@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
-import Datas from '../../Json_Files/Vision_Mission_Page.json'
+import Datas from '../../../Json_Files/Vision_Mission_Page.json'
 import 'react-toastify/dist/ReactToastify.css';
 
 
 
 const Mission_Hero_Section = () => {
-    let [Data, SetData] = useState(Datas.Mission_Page);
+    let [Data, SetData] = useState(Datas.Mission_Page.Mission_Page_Main_Data);
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -34,7 +34,7 @@ const Mission_Hero_Section = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="mb-20 text-center"
                 >
-                    <p className="text-lg sm:text-xl text-gray-400 leading-relaxed md:mx-20">
+                    <p className="text-lg sm:text-xl text-gray-400 leading-relaxed lg:mx-20 md:mx-auto">
                         {Datas.Mission_Page.Paragraph}
                     </p>
                 </motion.div>

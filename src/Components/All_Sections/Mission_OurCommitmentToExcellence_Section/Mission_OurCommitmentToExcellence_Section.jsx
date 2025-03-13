@@ -1,37 +1,11 @@
 import React,{useState} from 'react';
 import { motion } from 'framer-motion';
-import Datas from "../../Json_Files/Vision_Mission_Page.json"
+import Datas from "../../../Json_Files/Vision_Mission_Page.json"
 
 const Mission_OurCommitmentToExcellence_Section = () => {
 
     let [Data,SetData] = useState(Datas.Mission_Page.Our_Commitment_To_Excellence) 
-    // const commitments = [
-    //     {
-    //         title: 'Exceptional Quality',
-    //         description:
-    //             'Every product undergoes rigorous testing to ensure it meets the highest standards of durability, safety, and sustainability.',
-    //         icon: '🏆'
-    //     },
-    //     {
-    //         title: 'Personalized Support',
-    //         description:
-    //             'Our team is dedicated to providing tailored solutions and exceptional customer service to meet your unique needs.',
-    //         icon: '🤝'
-    //     },
-    //     {
-    //         title: 'Timely Delivery',
-    //         description:
-    //             'We prioritize efficiency and reliability to ensure your orders are delivered on time, every time.',
-    //         icon: '⏱️'
-    //     },
-    //     {
-    //         title: 'Innovative Solutions',
-    //         description:
-    //             'We continuously innovate to provide cutting-edge, eco-friendly products that address modern challenges.',
-    //         icon: '💡'
-    //     }
-    // ];
-
+   
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -59,7 +33,7 @@ const Mission_OurCommitmentToExcellence_Section = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="mb-20 text-center"
                 >
-                    <p className="text-lg md:mx-20 sm:text-xl text-gray-400 leading-relaxed">
+                    <p className="text-lg lg:mx-20 md:mx-auto sm:text-xl text-gray-400 leading-relaxed">
                     {Data.Description}
                     </p>
                 </motion.div>
