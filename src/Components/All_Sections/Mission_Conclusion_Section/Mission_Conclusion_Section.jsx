@@ -28,7 +28,7 @@ const Mission_Conclusion_Section = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-20 text-center"
+                className="mt-20 pb-0 text-center"
             >
                 <h3 className="text-3xl sm:text-4xl text-white font-semibold mb-6">
                     {Data.Conclusion.Base_Title}

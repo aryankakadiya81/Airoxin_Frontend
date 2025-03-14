@@ -97,7 +97,7 @@
             "BRCGS",
             "SGS"
         ],
-        "icon": "fa-solid fa-circle-check",
+        "icon": "fa-solid fa-stamp",
         "bgColor": "#4f46e520",
         "iconBg": "#4f46e5"
     },
@@ -106,7 +106,7 @@
         "Subtitles": [
            "ISO 9001"
         ],
-        "icon": "fa-solid fa-circle-check",
+        "icon": "fa-solid fa-industry",
         "bgColor": "#ec489920",
         "iconBg": "#ec4899"
     }

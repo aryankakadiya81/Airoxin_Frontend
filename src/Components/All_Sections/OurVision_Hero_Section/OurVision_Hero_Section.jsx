@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { motion } from 'framer-motion';
-import JsData from '../../../../Json_Files/Vision_Mission_Page.json'
+import JsData from "../../../Json_Files/Vision_Mission_Page.json";
 
 const OurVision_Hero_Section = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Datas from '../Json_Files/Vision_Mission_Page.json'
-import OurVision_Hero_Section from './All_Sections/Our_Vision_Page_Sections/OurVision_Hero_Section/OurVision_Hero_Section';
+import OurVision_Hero_Section from './All_Sections/OurVision_Hero_Section/OurVision_Hero_Section';
 import Our_Vision_Key_Aspirations_Section from './All_Sections/Our_Vision_Key_Aspirations_Section/Our_Vision_Key_Aspirations_Section';
 import Why_Vision_Matters_Section from './All_Sections/Why_Vision_Matters_Section/Why_Vision_Matters_Section';
 import Vision_Conclusion_Section from './All_Sections/Vision_Conclusion_Section/Vision_Conclusion_Section';

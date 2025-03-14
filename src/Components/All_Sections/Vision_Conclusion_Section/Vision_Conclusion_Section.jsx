@@ -42,7 +42,7 @@ const Vision_Conclusion_Section = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-20 text-center"
+          className="text-center"
         >
           <p className="text-lg lg:mx-20 md:mx-auto sm:text-xl text-gray-400 leading-relaxed">
             {Data.Description}

@@ -1,25 +1,86 @@
 {
-  "id": 1,
-  "Title": "Our Infrastructure",
-  "Paragraph":"Our Infrastructure Is A Cornerstone Of Our Success, Built Upon The Visionary Leadership. Their Commitment To Sustainability And Innovation Has Enabled Us To Make Significant Strides In The Eco-friendly, Biodegradable Tableware Industry. Every Aspect Of Our Operations Reflects Our Dedication To Producing High-quality, Environmentally Responsible Products That Meet The Evolving Needs Of Consumers And Businesses Alike.",
-  "Data": [
-    {
-      "id": 1,
-      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/z0ipaimg2nugj1irpfwb.jpg",
-      "alt": "Solar panel assembly line",
-      "description": "Our solar panel production facility using 100% renewable energy"
-    },
-    {
-      "id": 2,
-      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/ziferbxrltsavgbupp6k.jpg",
-      "alt": "Recycling center",
-      "description": "Material recovery and recycling operations"
-    },
-    {
-      "id": 3,
-      "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573842/Infrastructure/oxqshnmuvyxmmlvmlnpo.jpg",
-      "alt": "Organic packaging",
-      "description": "Biodegradable packaging production area"
-    }
-  ]
+  "Main_Infrastructure_Section": {
+    "id": 1,
+    "Title": "Our Infrastructure",
+    "Cars_Data": [
+      {
+        "Title": "Manufacturing Facility",
+        "Description": "Strategically Located In An Industrial Hub, Our Facility 90000+ Square Feet And Is Equipped With Advanced Machinery For Large-scale Production Of Bagasse Tableware.",
+        "Icon": "bi bi-building",
+        "Color": "#16a34a"
+      },
+      {
+        "Title": "Sustainable Practices",
+        "Description": "Our Zero-Waste Policy Ensures Full Utilization Of Bagasse. Water Recycling Systems And Solar Panels Reduce Environmental Impact.",
+        "Icon": "bi bi-recycle",
+        "Color": "#2563eb"
+      },
+      {
+        "Title": "Quality Control",
+        "Description": "ISO 9001 Certified Processes Ensure Food-safe, Durable, And Compostable Products Meeting Global Standards Like SGS, TUV-SUD, BRCGS.",
+        "Icon": "bi bi-check-circle-fill",
+        "Color": "#facc15"
+      },
+      {
+        "Title": "Warehousing & Logistics",
+        "Description": "Modern Warehouses With Climate-Controlled Zones And Partnerships With Freight Forwarders Ensure Timely Global Exports.",
+        "Icon": "bi bi-box-seam",
+        "Color": "#a855f7"
+      },
+      {
+        "Title": "Research & Development",
+        "Description": "Innovative R&D Center Focuses On Enhancing Product Strength, And Biodegradability While Exploring Sustainable Materials.",
+        "Icon": "fa-solid fa-microscope",
+        "Color": "#14b8a6"
+      },
+      {
+        "Title": "Workforce & Training",
+        "Description": "Skilled Technicians And Quality Assurance Teams Ensure Smooth Operations, While Regular Training Programs Upskill Employees In Sustainability Practices.",
+        "Icon": "bi bi-people-fill",
+        "Color": "#ef4444"
+      },
+      {
+        "Title": "Technology Integration",
+        "Description": "ERP Systems And IOT Sensors Will Enhance Productivity, Transparency, And Supply Chain Efficiency.",
+        "Icon": "bi bi-gear-fill",
+        "Color": "#ec4899"
+      },
+      {
+        "Title": "Future Expansion Plans",
+        "Description": "Plans Include New Production Units, Increased Automation, And Innovations Like Edible Cutlery And Bioplastics.",
+        "Icon": "bi bi-graph-up",
+        "Color": "#f59e0b"
+      }
+    ]
+  },
+  "Our_Fectory": {
+    "id": 2,
+    "Title": "🏭 Our Fectory 🏭",
+    "Fectorty_Photos_Data": [
+      {
+        "id": 1,
+        "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/z0ipaimg2nugj1irpfwb.jpg",
+        "alt": "Solar panel assembly line",
+        "description": "Our solar panel production facility using 100% renewable energy"
+      },
+      {
+        "id": 2,
+        "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573843/Infrastructure/ziferbxrltsavgbupp6k.jpg",
+        "alt": "Recycling center",
+        "description": "Material recovery and recycling operations"
+      },
+      {
+        "id": 3,
+        "Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1741573842/Infrastructure/oxqshnmuvyxmmlvmlnpo.jpg",
+        "alt": "Organic packaging",
+        "description": "Biodegradable packaging production area"
+      }
+    ]
+  },
+  "Infrastructure_Conclusion": {
+    "id": 2,
+    "Title": "🌿 Partner With Us For A Sustainable Future 🌿",
+    "Paragraph_1": "Our Infrastructure Is A Cornerstone Of Our Success, Built Upon The Visionary Leadership. Their Commitment To Sustainability And Innovation Has Enabled Us To Make Significant Strides In The Eco-friendly, Biodegradable Tableware Industry. Every Aspect Of Our Operations Reflects Our Dedication To Producing High-quality, Environmentally Responsible Products That Meet The Evolving Needs Of Consumers And Businesses Alike.",
+    "Paragraph_2": "The Company’s Robust Infrastructure Reflects Its Dedication To Producing Eco-Friendly Bagasse Tableware While Prioritizing Sustainability, Quality, And Innovation. With Advanced Facilities, Skilled Personnel, And A Focus On Global Export Capabilities, The Company Is Well-positioned To Lead The Transition To A Greener Future. By Continuously Investing In Technology, Sustainability, And Scalability, The Company Ensures It Remains At The Forefront Of The Eco-friendly Tableware Industry."
+  }
 }
