@@ -70,7 +70,7 @@ const QuotationForm = () => {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 0.8 }}
       className="py-20 bg-gray-900"
     >

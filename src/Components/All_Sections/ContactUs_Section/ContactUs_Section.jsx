@@ -13,7 +13,7 @@ const ContactUs_Section = () => {
     let [Data, setData] = useState(Contact_Json);
     let [Load, setLoad] = useState(false);
 
-    // const isInView = useInView(ref, { once: true });
+    // const isInView = useInView(ref, { once: false });
     const animationControls = useAnimation();
     const [countries, setCountries] = useState([]);
     const [countryCode, setCountryCode] = useState("");

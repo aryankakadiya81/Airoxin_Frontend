@@ -9,7 +9,7 @@ const Team_Card = (Props) => {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="flex justify-center"
         >
             {/* Card Container */}

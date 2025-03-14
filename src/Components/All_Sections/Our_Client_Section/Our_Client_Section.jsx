@@ -28,7 +28,7 @@ const Our_Client_Section = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     transition={{ duration: 0.8 }}
                     className="text-3xl sm:text-4xl font-bold text-center text-blue-500 mb-12"
                 >
@@ -39,7 +39,7 @@ const Our_Client_Section = () => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     transition={{ duration: 0.8 }}
                 >
                     <Swiper

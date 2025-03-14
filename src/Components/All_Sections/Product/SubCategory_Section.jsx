@@ -45,7 +45,7 @@ const SubCategory_Section = () => {
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8 }}
               className="text-4xl sm:text-5xl font-bold text-center mb-12 text-blue-500"
             >
@@ -55,7 +55,7 @@ const SubCategory_Section = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.6 }}
               className="mb-8"
             >
@@ -89,7 +89,7 @@ const SubCategory_Section = () => {
                         key={el.id}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6 }}
                         className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer bg-gray-800 hover:bg-gray-700 transition-colors mx-5"
                       >
@@ -127,7 +127,7 @@ const SubCategory_Section = () => {
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   transition={{ duration: 0.6 }}
                   className="col-span-full text-center text-3xl font-bold text-gray-500 h-screen"
                 >

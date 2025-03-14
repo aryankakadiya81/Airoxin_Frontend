@@ -10,7 +10,7 @@ const WhyBagasse_Tableware_Section = () => {
         <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
             className="py-20 bg-gray-900"
         >
@@ -43,7 +43,7 @@ const WhyBagasse_Tableware_Section = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     variants={{
                         hidden: { opacity: 0 },
                         visible: {

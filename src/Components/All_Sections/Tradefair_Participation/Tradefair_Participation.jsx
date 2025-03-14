@@ -162,7 +162,7 @@ const Tradefair_Participation = () => {
                             key={index}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                             className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer"
                             onClick={() => setSelectedImageIndex(index)}

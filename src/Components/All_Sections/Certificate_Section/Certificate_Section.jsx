@@ -38,7 +38,7 @@ const Certificate_Section = () => {
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.6, delay: index * 0.2 }}
                                 className="relative group rounded-xl overflow-hidden shadow-lg bg-gray-800 hover:bg-gray-700 transition-colors cursor-pointer"
                             // onClick={() => setSelectedImageIndex(index)}
