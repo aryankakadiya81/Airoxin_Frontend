@@ -214,7 +214,7 @@ const Product = () => {
                                                                         whileHover={{ scale: 1.02 }}>
                                                                         {obj[key].map((item, idx) => (
                                                                             <div key={idx} className="flex items-center gap-2">
-                                                                                <i className="bi bi-arrow-right text-blue-500"></i>
+                                                                                <i className="bi bi-arrow-right text-green-500"></i>
                                                                                 <span>{item}</span>
                                                                             </div>
                                                                         ))}

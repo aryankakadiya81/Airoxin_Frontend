@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import { Global } from '../../App';
+import Pdf from '../../Assets/Pdf/Airoxin International Catalog.pdf';
 import Logo from '../../Assets/Logo/WHITE/HORIZONTAL/HORIZONTAL WHITE.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import Product_Data from '../../Json_Files/Product_Page.json';
@@ -20,6 +22,16 @@ const Navbar = () => {
         window.scrollTo(0, 0);
         setIsLoading(true);
     }
+
+    const DownloadBroucher = () => {
+        const link = document.createElement("a");
+        link.href = Pdf;
+        link.download = "AIROXIN Brochure.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        toast.success("Catalogue Download Successfully");
+    };
 
 
     const toggleMobileMenu = () => {
@@ -151,6 +163,14 @@ const Navbar = () => {
                                             role="menuitem">
                                             Product Gallery
                                         </Link>
+                                    </li>
+
+
+                                    <li onMouseEnter={() => setIsDropdownOpen(true)}>
+                                        <p onClick={DownloadBroucher} to="/ProductGallery" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"
+                                            role="menuitem">
+                                            Get Cetalogue
+                                        </p>
                                     </li>
                                     {/* <li onMouseEnter={() => setIsDropdownOpen(true)}>
                                         <Link onClick={Scroll} to="/ProductGallery" className="hover:bg-[#1A3D58] active:bg-[#124E66] block py-2 px-4 hover:text-white"

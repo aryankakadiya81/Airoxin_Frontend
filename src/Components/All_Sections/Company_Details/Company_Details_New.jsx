@@ -9,7 +9,7 @@ import 'swiper/css/pagination'; // Optional: For pagination
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 const Company_Details_New = () => {
-    
+
     return (
         <div className="py-16 px-7">
             {/* Swiper Slider */}
@@ -28,12 +28,15 @@ const Company_Details_New = () => {
                 centeredSlides={true} // Center the active card
                 loop={true} // Infinite loop
                 autoplay={{ delay: 3000, disableOnInteraction: false }} // Auto-scroll every 3 seconds
-                navigation // Navigation arrows
+                navigation={{
+                    nextEl: '.custom-next',
+                    prevEl: '.custom-prev',
+                }} // Navigation arrows
                 // pagination={{ clickable: true }} // Pagination dots
-                pagination={false} // Pagination dots
-
+                pagination={false}
                 className="rounded-2xl max-w-[1920px]"
             >
+
                 {Details.map((el, index) => (
                     <SwiperSlide key={index}>
                         <motion.div
@@ -43,8 +46,8 @@ const Company_Details_New = () => {
                                 visible: { opacity: 1, y: 0 }
                             }}
                             transition={{ duration: 0.6 }}
-                            style={{ backgroundColor: `${el.bgColor}`}}
-                            className={`rounded-3xl p-6 sm:p-8  backdrop-blur-lg text-left shadow-lg`}
+                            style={{ backgroundColor: `${el.bgColor}` }}
+                            className={`rounded-3xl p-6  backdrop-blur-lg text-left shadow-lg`}
                         >
                             {/* Main Icon */}
                             <div
@@ -52,7 +55,7 @@ const Company_Details_New = () => {
                                 style={{ backgroundColor: `${el.iconBg}` }}
                             >
                                 <i
-                                    
+
                                     className={`${el.icon} text-3xl text-white`}
                                 ></i>
                             </div>
@@ -77,7 +80,22 @@ const Company_Details_New = () => {
                         </motion.div>
                     </SwiperSlide>
                 ))}
+                {/* Custom Navigation Buttons */}
+
             </Swiper>
+
+            <div className="flex justify-between items-center mt-4 font-extraboldc">
+                {/* Prev Button (Hidden on sm and xs screens) */}
+                <button className="custom-prev bg-green-700 hover:bg-green-600 font-extrabold text-3xl md:text-xl text-white px-4 py-2 rounded transition-colors">
+                    ⟵
+                </button>
+
+                {/* Next Button (Hidden on sm and xs screens) */}
+                <button className="custom-next bg-green-700 hover:bg-green-600 font-extrabold text-3xl md:text-xl text-white px-4 py-2 rounded transition-colors">
+                    ⟶
+                </button>
+
+            </div>
 
 
         </div>
@@ -109,12 +127,12 @@ export default Company_Details_New;
 // bgColor: #f59e0b20 (Amber with 20% opacity)
 // iconBg: #f59e0b (Solid amber)
 // "bgColor": "#16a34a20",
-// "iconBg": "#16a34a"    
-// "bgColor": "#2563eb20", 
-// "iconBg": "#2563eb"    
-// "bgColor": "#facc1520", 
-// "iconBg": "#facc15"    
-// "bgColor": "#a855f720", 
-// "iconBg": "#a855f7"    
+// "iconBg": "#16a34a"
+// "bgColor": "#2563eb20",
+// "iconBg": "#2563eb"
+// "bgColor": "#facc1520",
+// "iconBg": "#facc15"
+// "bgColor": "#a855f720",
+// "iconBg": "#a855f7"
 // "bgColor": "#14b8a620",
 // "iconBg": "#14b8a6"
