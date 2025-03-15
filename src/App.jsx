@@ -49,9 +49,9 @@ export let Global = createContext();
 
 const App = () => {
 
-    let [Category, setCategory] = useState(Pro_Data.Products[0].Category_Name);
-    let [SubCategory, setSubCategory] = useState(Pro_Data.Products[0].SubCategory_Name);
-    let [Selected_Product, setSelected_Product] = useState(Pro_Data.Products[0]);
+    let [Category, setCategory] = useState(Pro_Data.Products[6].Category_Name);
+    let [SubCategory, setSubCategory] = useState(Pro_Data.Products[6].SubCategory_Name);
+    let [Selected_Product, setSelected_Product] = useState(Pro_Data.Products[6]);
 
     const [IsLoading, setIsLoading] = useState(true);
 

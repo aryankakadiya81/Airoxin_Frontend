@@ -400,6 +400,291 @@
 					]
 				}
 			]
+		},
+		{
+			"id": 6,
+			"SubCategory_Name": "Compartment Plate",
+			"Category_Name": "Compartment Plates",
+			"Product_Name": "3CP - Square Tray",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1742044757/Product_Photos/3%20CP%20Square%20Plates/o4zkgavpv70hzp6gwfsz.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742044757/Product_Photos/3%20CP%20Square%20Plates/o4zkgavpv70hzp6gwfsz.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742044756/Product_Photos/3%20CP%20Square%20Plates/ekdkajwzpne8p3p2wfpl.jpg"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"3CP - Square Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"8.5 x 8.5 x H 0.9 Inch",
+						"215 x 215 x H 24  MM"
+					],
+					"Product Weight": [
+						"20 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"10 Pack"
+					],
+					"Total Piece In Box": [
+						"500 Piece"
+					],
+					"Box Dimension": [
+						"17 x 8.5 x 20 (Inch)",
+						"432 x 216 x 508 (MM)"
+					],
+					"Box CBM": [
+						"0.0474"
+					],
+					"Container Quantity": [
+						"549 Boxes (20Ft)",
+						"1435 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 7,
+			"SubCategory_Name": "Compartment Plate",
+			"Category_Name": "Compartment Plates",
+			"Product_Name": "5CP - Meal Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045114/Product_Photos/5%20CP%20Square%20Plates/m5xdrx0mcigpcztg1aqj.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045114/Product_Photos/5%20CP%20Square%20Plates/m5xdrx0mcigpcztg1aqj.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045110/Product_Photos/5%20CP%20Square%20Plates/dhylvqcouiudzmmhmsnk.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"5CP - Meal Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"11.6 x 8.9 x H 1.4 Inch",
+						"295 x 220 x H 35  MM"
+					],
+					"Product Weight": [
+						"35 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"6 Pack"
+					],
+					"Total Piece In Box": [
+						"300 Piece"
+					],
+					"Box Dimension": [
+						"14 x 14 x 17 (Inch)",
+						"356 x 356 x 432 (MM)"
+					],
+					"Box CBM": [
+						"0.0547"
+					],
+					"Container Quantity": [
+						"476 Boxes (20Ft)",
+						"1244 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 8,
+			"SubCategory_Name": "Compartment Plate",
+			"Category_Name": "Compartment Plates",
+			"Product_Name": "6CP - Meal Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045960/Product_Photos/6%20CP%20Square%20Plates/jxogpvmdfm4zh3wqdpnu.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045960/Product_Photos/6%20CP%20Square%20Plates/jxogpvmdfm4zh3wqdpnu.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742045960/Product_Photos/6%20CP%20Square%20Plates/eigpuxhutzdkhopyowku.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"6CP - Meal Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"12 x 9 x H 1.3 Inch",
+						"304 x 228 x H 33  MM"
+					],
+					"Product Weight": [
+						"38 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"6 Pack"
+					],
+					"Total Piece In Box": [
+						"300 Piece"
+					],
+					"Box Dimension": [
+						"18.5 x 12.3 x 13.5 (Inch)",
+						"470 x 313 x 343 (MM)"
+					],
+					"Box CBM": [
+						"0.0505"
+					],
+					"Container Quantity": [
+						"515 Boxes (20Ft)",
+						"1347 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 9,
+			"SubCategory_Name": "Compartment Plate",
+			"Category_Name": "Compartment Plates",
+			"Product_Name": "9CP - Round Meal Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047735/Product_Photos/9%20CP%20Round%20Meal%20Plates/afek8scznszskjguetdn.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047735/Product_Photos/9%20CP%20Round%20Meal%20Plates/afek8scznszskjguetdn.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047733/Product_Photos/9%20CP%20Round%20Meal%20Plates/z7ylgikmena19a4su8kz.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"9CP - Round Meal Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"13.8 x H 1.4 Inch",
+						"322 x H 27  MM"
+					],
+					"Product Weight": [
+						"60 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"4 Pack"
+					],
+					"Total Piece In Box": [
+						"200 Piece"
+					],
+					"Box Dimension": [
+						"25.75 x 12.75 x 10 (Inch)",
+						"655 x 324 x 254 (MM)"
+					],
+					"Box CBM": [
+						"0.0539"
+					],
+					"Container Quantity": [
+						"483 Boxes (20Ft)",
+						"1262 Boxes (40Ft HC)"
+					]
+				}
+			]
+		},
+		{
+			"id": 9,
+			"SubCategory_Name": "Compartment Plate",
+			"Category_Name": "Compartment Plates",
+			"Product_Name": "4CP - 12 Inch Round Plate",
+			"Thumbnail_Image": "https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047735/Product_Photos/9%20CP%20Round%20Meal%20Plates/afek8scznszskjguetdn.png",
+			"Images": [
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047735/Product_Photos/9%20CP%20Round%20Meal%20Plates/afek8scznszskjguetdn.png",
+				"https://res.cloudinary.com/dtnqlv91f/image/upload/v1742047733/Product_Photos/9%20CP%20Round%20Meal%20Plates/z7ylgikmena19a4su8kz.png"
+			],
+			"Tables": [
+				{
+					"id": 1,
+					"Table_Name": "Information",
+					"Product Name": [
+						"9CP - Round Meal Plate"
+					],
+					"Also Known As": [
+						"Bagasse Paper Plate"
+					],
+					"Product Size": [
+						"13.8 x H 1.4 Inch",
+						"322 x H 27  MM"
+					],
+					"Product Weight": [
+						"60 Grams"
+					],
+					"Material": [
+						"Sugercane Bagasse"
+					]
+				},
+				{
+					"id": 2,
+					"Table_Name": "Packaging",
+					"Piece In Pack": [
+						"50 Piece"
+					],
+					"Pack In Box": [
+						"4 Pack"
+					],
+					"Total Piece In Box": [
+						"200 Piece"
+					],
+					"Box Dimension": [
+						"25.75 x 12.75 x 10 (Inch)",
+						"655 x 324 x 254 (MM)"
+					],
+					"Box CBM": [
+						"0.0539"
+					],
+					"Container Quantity": [
+						"483 Boxes (20Ft)",
+						"1262 Boxes (40Ft HC)"
+					]
+				}
+			]
 		}
 	]
 }
